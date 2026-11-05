@@ -1,0 +1,79 @@
+[
+  {
+    "_comment": "TEST FIXTURE. Numbers copied from the TTO PDF; titles, inventors, dates and text are placeholders, NOT real USPTO data. Case: granted patent, should link to 2018-168 by patent number.",
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "10113979",
+    "application_number": null,
+    "publication_number": "US10113979B2",
+    "title": "TEST - Dielectric probe for closed bottles",
+    "abstract": "TEST placeholder abstract.",
+    "filing_date": null,
+    "grant_date": null,
+    "inventors": [
+      {"first": "Paul", "last": "Meaney", "city": null, "state": null, "country": "US"},
+      {"first": "Timothy", "last": "Raynolds", "city": null, "state": null, "country": "US"}
+    ],
+    "assignees": [{"name": "Trustees of Dartmouth College"}],
+    "government_interest": null,
+    "source": {"system": "test_fixture"},
+    "quality_flags": ["test_fixture"]
+  },
+  {
+    "_comment": "TEST FIXTURE. Case: the TTO page says 'US PATENT NO 18/359,373' but it is an application. Should link to 2021-023 by application number.",
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18359373",
+    "publication_number": "US20240109947A1",
+    "title": "TEST - IL-33 + IL-2 CAR T cell platform",
+    "abstract": "TEST placeholder abstract.",
+    "filing_date": null,
+    "grant_date": null,
+    "inventors": [
+      {"first": "Yina", "last": "Huang", "city": null, "state": null, "country": "US"}
+    ],
+    "assignees": [{"name": "Trustees of Dartmouth College"}],
+    "government_interest": "TEST placeholder: This invention was made with government support under grant number XX-000000.",
+    "source": {"system": "test_fixture"},
+    "quality_flags": ["test_fixture"]
+  },
+  {
+    "_comment": "TEST FIXTURE. Case: copy-paste conflict. 2018-168 (app 17/264,691) AND 2021-026 (app 18/229,086) both link to publication US20240000316A1 on the TTO page. Correct result: confirmed link to 2018-168 (application number agrees), uncertain link for 2021-026 (publication only, application number disagrees) -> human review.",
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "17264691",
+    "publication_number": "US20240000316A1",
+    "title": "TEST - Non-invasive testing of liquids in bottles",
+    "abstract": "TEST placeholder abstract.",
+    "filing_date": null,
+    "grant_date": null,
+    "inventors": [
+      {"first": "Paul", "last": "Meaney", "city": null, "state": null, "country": "US"}
+    ],
+    "assignees": [{"name": "Trustees of Dartmouth College"}],
+    "government_interest": null,
+    "source": {"system": "test_fixture"},
+    "quality_flags": ["test_fixture"]
+  },
+  {
+    "_comment": "TEST FIXTURE. Case: negative control. A patent that is on no TTO page. Must produce NO link.",
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "99999999",
+    "application_number": null,
+    "publication_number": "US99999999B2",
+    "title": "TEST - Unrelated patent",
+    "abstract": "TEST placeholder abstract.",
+    "filing_date": null,
+    "grant_date": null,
+    "inventors": [
+      {"first": "Jane", "last": "Doe", "city": null, "state": null, "country": "US"}
+    ],
+    "assignees": [{"name": "Example Corp"}],
+    "government_interest": null,
+    "source": {"system": "test_fixture"},
+    "quality_flags": ["test_fixture"]
+  }
+]

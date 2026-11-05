@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vc-dd-pipeline"
+version = "0.1.0"
+description = "Group 5 VC Due Diligence Tool: TTO crawler, Neo4j loader and linking v1"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Carson B" },
+  { name = "Mia J" },
+  { name = "Prajwal P" },
+  { name = "Augustin G" },
+]
+dependencies = [
+  "pdfplumber>=0.10",   # TTO PDF crawler
+  "neo4j>=5.0",         # loader and linking (Neo4j 5 driver)
+  "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+py-modules = ["normalize", "tto_crawler", "load_to_neo4j", "link_v1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
