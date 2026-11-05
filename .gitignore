@@ -225,3 +225,5 @@ __marimo__/
 # mac
 .DS_Store
 
+# app
+data/processed/*
