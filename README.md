@@ -29,25 +29,46 @@ Follows `data_contract.md` v0.2.
 
 ## Run order
 
+### Set up (once)
+
 ```bash
 pip install -e ".[dev]"
+cp .env .env.local             # then put your real NEO4J_PASSWORD in .env.local
+mkdir -p data/raw data/processed
+```
+
+### Tests
+
+```bash
 pytest
-export NEO4J_URI=bolt://localhost:7687 NEO4J_USER=neo4j NEO4J_PASSWORD=yourpassword
+```
 
-# 0. Tests (no database needed)
-pytest tests/test_link_v1.py
+### Docker
 
-# 1. Schema (once)
+```bash
+docker compose --env-file .env --env-file .env.local up -d
+docker compose ps          # wait until the status shows "healthy"
+```
+
+### Python scripts and tests
+
+```bash
+# Schema (once)
 python src/load_to_neo4j.py schema
 
-# 2. TTO technologies
-python src/load_to_neo4j.py tto technologies_life_sciences.json
+# Crawl the TTO PDF
+python src/tto_crawler.py data/raw/Life-Sciences.pdf --category "Life Sciences" \
+  -o data/processed/technologies_life_sciences.json
 
-# 3. Patents: test fixtures now, Mia's file later
-python src/load_to_neo4j.py patents test_fixtures/uspto_patents_test.json
+# Load the TTO technologies
+python src/load_to_neo4j.py tto data/processed/technologies_life_sciences.json
 
-# 4. Linking
-python src/link_v1.py technologies_life_sciences.json test_fixtures/uspto_patents_test.json -o links.json --neo4j
+# Load the patents: test fixtures now, Mia's file later
+python src/load_to_neo4j.py patents tests/fixtures/uspto_patents_test.json
+
+# Linking
+python src/link_v1.py data/processed/technologies_life_sciences.json \
+  tests/fixtures/uspto_patents_test.json -o data/processed/links.json --neo4j
 ```
 
 Every command accepts `--dry-run` (loader) or runs without `--neo4j` (linker) to check without a database.

@@ -142,17 +142,15 @@ SET l.match_method = $methods, l.confidence = $confidence, l.conflicts = $confli
 """
 
 
+LINK_FIELDS = ("tto_id", "patent_key", "status", "methods", "confidence", "conflicts",
+               "evidence_ref", "matched_at", "linker_version", "flags")
 def write_neo4j(links):
-    from neo4j import GraphDatabase
-    driver = GraphDatabase.driver(os.environ.get("NEO4J_URI", "bolt://localhost:7687"),
-                                  auth=(os.environ.get("NEO4J_USER", "neo4j"), os.environ["NEO4J_PASSWORD"]))
-    with driver.session() as s:
+    from db import neo4j_driver
+    with neo4j_driver() as driver, driver.session() as s:
         for l in links:
             cypher = CONFIRMED_CYPHER if l["status"] == "confirmed" else UNCERTAIN_CYPHER
-            s.execute_write(lambda tx: tx.run(cypher, **{k: l[k] for k in (
-                "tto_id", "patent_key", "status", "methods", "confidence", "conflicts",
-                "evidence_ref", "matched_at", "linker_version", "flags")}).consume())
-    driver.close()
+            params = {k: l[k] for k in LINK_FIELDS}
+            s.execute_write(lambda tx: tx.run(cypher, **params).consume())
 
 
 if __name__ == "__main__":

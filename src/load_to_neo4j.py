@@ -126,13 +126,10 @@ def run(statements, dry_run):
             print(cypher.strip().splitlines()[0], "...", json.dumps(params, ensure_ascii=False)[:200])
         print(f"[dry-run] {len(statements)} statements")
         return
-    from neo4j import GraphDatabase   # imported here so --dry-run works without the driver
-    driver = GraphDatabase.driver(os.environ.get("NEO4J_URI", "bolt://localhost:7687"),
-                                  auth=(os.environ.get("NEO4J_USER", "neo4j"), os.environ["NEO4J_PASSWORD"]))
-    with driver.session() as session:
+    from db import neo4j_driver
+    with neo4j_driver() as driver, driver.session() as s:
         for cypher, params in statements:
-            session.execute_write(lambda tx: tx.run(cypher, **params).consume())
-    driver.close()
+            s.execute_write(lambda tx: tx.run(cypher, **params).consume())
     print(f"{len(statements)} statements written")
 
 
