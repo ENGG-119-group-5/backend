@@ -18,6 +18,8 @@ dependencies = [
   "pdfplumber>=0.10",   # TTO PDF crawler
   "neo4j>=5.0",         # loader and linking (Neo4j 5 driver)
   "python-dotenv>=1.0",
+  "fastapi",
+  "uvicorn[standard]",
 ]
 
 [project.optional-dependencies]
