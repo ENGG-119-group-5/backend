@@ -13,10 +13,8 @@ from .models import (AuditEntry, EntityRef, InventorSummary, IpScore, LinkEviden
                      PatentWithLink, SimilarTechnology, SourceRef, TechnologyDetail)
 from .scoring import compute_ip_score
 
-NEO4J_URI = os.getenv("NEO4J_URI", "neo4j://localhost:7687")
-NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
-NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "password")
-NEO4J_DATABASE = os.getenv("NEO4J_DATABASE", "neo4j")
+import config
+NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD = config.NEO4J_URI, config.NEO4J_USER, config.NEO4J_PASSWORD
 TTO_URL = os.getenv("TTO_LISTING_URL", "https://tto.dartmouth.edu/engage-us/licensing-opportunities")
 
 LABELS = {"technology": "Technology", "patent": "Patent", "inventor": "Inventor"}
@@ -58,8 +56,8 @@ def iso(v) -> str | None:
     return v.iso_format() if hasattr(v, "iso_format") else str(v)
 
 
-def map_status(s: str | None) -> str:
-    return "available" if s == "available_for_license" else "unknown"
+def map_status(s):
+    return "available" if s in ("available_for_license", "portfolio_available_for_review") else "unknown"
 
 
 def link_method(methods) -> str:

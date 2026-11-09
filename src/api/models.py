@@ -29,8 +29,8 @@ class LinkEvidence(CamelModel):
 class PatentSummary(CamelModel):
     id: str
     number: str
-    title: str
     granted_at: str | None
+    title: str | None = None
 
 
 class PatentWithLink(PatentSummary):
