@@ -18,6 +18,8 @@ dependencies = [
   "pdfplumber>=0.10",   # TTO PDF crawler
   "neo4j>=5.0",         # loader and linking (Neo4j 5 driver)
   "python-dotenv>=1.0",
+  "fastapi",
+  "uvicorn[standard]",
 ]
 
 [project.optional-dependencies]
@@ -27,7 +29,8 @@ dev = [
 
 [tool.setuptools]
 package-dir = { "" = "src" }
-py-modules = ["normalize", "tto_crawler", "load_to_neo4j", "link_v1"]
+py-modules = ["normalize", "tto_crawler", "load_to_neo4j", "link_v1", "evaluate", "config", "db"]
+packages = ["api"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
