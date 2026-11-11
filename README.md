@@ -1,79 +1,115 @@
-# Pipeline v0.1 — TTO → Neo4j → Linking
+# VC Due Diligence Tool: backend
 
-Follows `data_contract.md` v0.2.
+[![CI](https://github.com/ENGG-119-group-5/backend/actions/workflows/ci.yml/badge.svg)](https://github.com/ENGG-119-group-5/backend/actions/workflows/ci.yml)
+
+Pipeline v0.1 (TTO → Neo4j → linking) and the FastAPI API used by the [web app](https://github.com/ENGG-119-group-5/webapp). Data formats follow [`docs/data_contract.md`](docs/data_contract.md) (v0.3).
 
 ## Files
 
 | File | What it does |
 | --- | --- |
-| `normalize.py` | Shared rules for patent keys and name keys (one place, used by all scripts) |
-| `load_to_neo4j.py` | Creates the schema, loads TTO technologies and USPTO patents. Rerunnable (`MERGE`) |
-| `link_v1.py` | Links technologies to patents by exact identifiers. Writes `links.json`, optionally Neo4j |
-| `test_fixtures/uspto_patents_test.json` | 4 **fake** patent records to test linking before the real USPTO data |
-| `test_link_v1.py` | 7 tests: grant, mislabeled application, copy-paste conflict, negative control, keys |
+| `src/tto_crawler.py` | Reads a Dartmouth TTO licensing PDF (one technology per page) into Technology records |
+| `src/normalize.py` | Shared rules for patent keys and name keys (one place, used by all scripts) |
+| `src/load_to_neo4j.py` | Creates the schema, loads TTO technologies and USPTO patents. Rerunnable (`MERGE`) |
+| `src/link_v1.py` | Links technologies to patents by exact identifiers. Writes `links.json`, optionally Neo4j |
+| `src/config.py` | Neo4j settings, read from `.env` then `.env.local` |
+| `src/api/` | FastAPI app (`main.py`), response models (`models.py`), rule-based IP score (`scoring.py`) |
+| `tests/fixtures/technologies_life_sciences.json` | Frozen crawler output for the Life Sciences PDF (29 technologies) |
+| `tests/fixtures/uspto_patents_test.json` | 4 **fake** patent records to test linking before the real USPTO data |
+| `data/validation/spinout_cases.csv` | Known Dartmouth spin-outs with their expected patents and inventors |
 
-```test
+```text
 .
-├── .gitignore          ← venv, __pycache__, .env, data/
-├── .env.example        ← NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD (no real password)
+├── .env                ← placeholder Neo4j settings (no real password)
+├── .env.local          ← your real password, not in git (.env.* is ignored)
+├── compose.yaml        ← Neo4j 5 in Docker
 ├── pyproject.toml
-├── README.md
-├── data/               ← real inputs and outputs, not in git
+├── data/
 │   ├── raw/            ← TTO PDFs
-│   ├── cache/          ← cached USPTO responses (Mia)
-│   └── processed/      ← technologies_*.json from the crawler
+│   ├── validation/     ← known cases for checking the pipeline
+│   └── processed/      ← crawler output and links.json, not in git
 ├── docs/
 ├── src/
 └── tests/
 ```
 
-## Run order
+## Setup (once)
 
-### Set up (once)
+Needs Python 3.10+ and Docker Desktop.
 
 ```bash
+python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
-cp .env .env.local             # then put your real NEO4J_PASSWORD in .env.local
-mkdir -p data/raw data/processed
+mkdir -p data/processed
 ```
 
-### Tests
+`.env` holds a placeholder password (`your_password`) that works for local development. To use a different password, put `NEO4J_PASSWORD=...` in `.env.local`; it overrides `.env` and is not committed.
+
+## Start Neo4j
 
 ```bash
-pytest
+docker compose up -d                       # add: --env-file .env --env-file .env.local  if you use .env.local
+docker compose ps                          # wait until the status shows "healthy"
 ```
 
-### Docker
+Neo4j Browser: http://localhost:7474 (user `neo4j`, password from `.env`).
+
+## Run the pipeline
+
+Run from the repo root:
 
 ```bash
-docker compose --env-file .env --env-file .env.local up -d
-docker compose ps          # wait until the status shows "healthy"
-```
-
-### Python scripts and tests
-
-```bash
-# Schema (once)
+# 1. Schema (once)
 python src/load_to_neo4j.py schema
 
-# Crawl the TTO PDF
+# 2. Crawl the TTO PDF
 python src/tto_crawler.py data/raw/Life-Sciences.pdf --category "Life Sciences" \
   -o data/processed/technologies_life_sciences.json
 
-# Load the TTO technologies
+# 3. Load the TTO technologies
 python src/load_to_neo4j.py tto data/processed/technologies_life_sciences.json
 
-# Load the patents: test fixtures now, Mia's file later
+# 4. Load the patents (test fixtures until the USPTO loader exists)
 python src/load_to_neo4j.py patents tests/fixtures/uspto_patents_test.json
 
-# Linking
+# 5. Link technologies to patents
 python src/link_v1.py data/processed/technologies_life_sciences.json \
   tests/fixtures/uspto_patents_test.json -o data/processed/links.json --neo4j
 ```
 
-Every command accepts `--dry-run` (loader) or runs without `--neo4j` (linker) to check without a database.
+The loader accepts `--dry-run`. The linker writes to Neo4j only with `--neo4j`. Both are rerunnable.
 
-## Expected result with the test fixtures
+## Run the API
+
+```bash
+uvicorn api.main:app --app-dir src --reload      # http://localhost:8000/docs
+curl "http://localhost:8000/search?q=&type=technology&limit=5"
+curl "http://localhost:8000/technology/2018-168"
+```
+
+The web app expects the API at `http://localhost:8000` (`NEXT_PUBLIC_API_BASE_URL` in the web app's `.env.local`). CORS allows `http://localhost:3000` by default; change it with `CORS_ORIGINS`.
+
+## Tests
+
+```bash
+pytest -rs
+```
+
+- **Unit tests** (linking, keys, scoring) need nothing else.
+- **API tests** (`tests/test_api.py`) need Neo4j running with the **test fixtures** loaded. They only read. Without Neo4j they are skipped, and the reason is printed. To run them:
+
+  ```bash
+  python src/load_to_neo4j.py schema
+  python src/load_to_neo4j.py tto tests/fixtures/technologies_life_sciences.json
+  python src/load_to_neo4j.py patents tests/fixtures/uspto_patents_test.json
+  python src/link_v1.py tests/fixtures/technologies_life_sciences.json \
+    tests/fixtures/uspto_patents_test.json -o data/processed/links.json --neo4j
+  pytest -rs
+  ```
+
+CI (`.github/workflows/ci.yml`) does exactly this on every pull request, with a Neo4j service container and `REQUIRE_NEO4J=1`, so the API tests cannot silently skip there.
+
+## Expected linking result with the test fixtures
 
 ```
 confirmed 2018-168 -> US-10113979      (patent number)
@@ -104,6 +140,7 @@ MATCH (n) RETURN labels(n)[0] AS label, count(*) ORDER BY label;
 
 - Exact identifiers only. PCT (5), provisional (6) and "portfolio" pages (4) cannot link by number. Name matching comes in v2.
 - People are not merged across sources yet: `tto:randy noelle` and `tto:randolph noelle` are two nodes (v2: `SAME_AS`).
+- The recency part of the IP score is measured from today's date, so scores drift slightly over time.
 - The test fixtures are **not real USPTO data**. Remove them from the database before the demo:
   ```cypher
   MATCH (p:Patent) WHERE 'test_fixture' IN p.quality_flags DETACH DELETE p;
