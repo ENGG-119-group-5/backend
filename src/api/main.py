@@ -15,6 +15,7 @@ from .scoring import compute_ip_score
 
 import config
 NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD = config.NEO4J_URI, config.NEO4J_USER, config.NEO4J_PASSWORD
+NEO4J_DATABASE = os.getenv("NEO4J_DATABASE", "neo4j")
 TTO_URL = os.getenv("TTO_LISTING_URL", "https://tto.dartmouth.edu/engage-us/licensing-opportunities")
 
 LABELS = {"technology": "Technology", "patent": "Patent", "inventor": "Inventor"}
