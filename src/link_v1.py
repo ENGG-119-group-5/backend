@@ -145,8 +145,9 @@ SET l.match_method = $methods, l.confidence = $confidence, l.conflicts = $confli
 LINK_FIELDS = ("tto_id", "patent_key", "status", "methods", "confidence", "conflicts",
                "evidence_ref", "matched_at", "linker_version", "flags")
 def write_neo4j(links):
+    import config
     from db import neo4j_driver
-    with neo4j_driver() as driver, driver.session() as s:
+    with neo4j_driver() as driver, driver.session(database=config.NEO4J_DATABASE) as s:
         for l in links:
             cypher = CONFIRMED_CYPHER if l["status"] == "confirmed" else UNCERTAIN_CYPHER
             params = {k: l[k] for k in LINK_FIELDS}

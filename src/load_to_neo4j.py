@@ -126,8 +126,9 @@ def run(statements, dry_run):
             print(cypher.strip().splitlines()[0], "...", json.dumps(params, ensure_ascii=False)[:200])
         print(f"[dry-run] {len(statements)} statements")
         return
+    import config
     from db import neo4j_driver
-    with neo4j_driver() as driver, driver.session() as s:
+    with neo4j_driver() as driver, driver.session(database=config.NEO4J_DATABASE) as s:
         for cypher, params in statements:
             s.execute_write(lambda tx: tx.run(cypher, **params).consume())
     print(f"{len(statements)} statements written")
