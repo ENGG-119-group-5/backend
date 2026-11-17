@@ -19,6 +19,10 @@ Pipeline v0.1 (TTO → Neo4j → linking) and the FastAPI API used by the [web a
 | `data/validation/spinout_cases.csv` | Known Dartmouth spin-outs with their expected patents and inventors |
 | `data/demo/` | **Synthetic** demo dataset: 30 made-up TTO listings and 19 made-up USPTO patents |
 | `scripts/load_demo.sh` | Replaces the graph with the demo dataset |
+| `src/api/matcher.py` | Thesis matcher: one Claude call scores every technology against a thesis PDF |
+| `data/demo/theses/` | Two sample theses (PDF + Markdown source) |
+| `data/demo/results/` | Saved real match results for the sample theses (served without an API key) |
+| `scripts/run_demo_matches.py` | Re-creates the saved results (needs an API key) |
 
 ```text
 .
@@ -98,6 +102,22 @@ uvicorn api.main:app --app-dir src --reload --reload-dir src   # http://localhos
 curl "http://localhost:8000/search?q=&type=technology&limit=5"
 curl "http://localhost:8000/technology/2018-168"
 ```
+
+## Thesis matching (MVP)
+
+`POST /match` takes an investment-thesis PDF and returns every technology labelled **strong / potential / none**, with area, problem, stage and deal fit scores. Each score comes with a quote from the technology's merged TTO + USPTO record, and the code checks every quote really is in that record. One Claude call (`claude-opus-5-5`) does the scoring (`src/api/matcher.py`). The rest is plain code.
+
+```bash
+curl -F "file=@data/demo/theses/oncology-fund-thesis.pdf" localhost:8000/match
+```
+
+- **Sample theses:** `GET /samples` lists them. Their **saved results** in `data/demo/results/` are returned immediately, with **no API key and no cost**, so anyone can run the demo from a fresh clone.
+- **Your own thesis:** needs an Anthropic API key. Put it in `.env.local` (gitignored, never commit it) and restart the API:
+  ```bash
+  echo "ANTHROPIC_API_KEY=sk-ant-..." >> .env.local
+  ```
+  One run costs roughly $0.20–0.50. Set a monthly spend limit in the Anthropic Console if you share the key.
+- **Saved results:** if you change the demo data, the prompt or a sample PDF, regenerate them with `python scripts/run_demo_matches.py` (needs the key and `scripts/load_demo.sh`).
 
 The web app expects the API at `http://localhost:8000` (`NEXT_PUBLIC_API_BASE_URL` in the web app's `.env.local`). CORS allows `http://localhost:3000` by default; change it with `CORS_ORIGINS`.
 
