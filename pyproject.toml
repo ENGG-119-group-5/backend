@@ -32,7 +32,7 @@ dev = [
 
 [tool.setuptools]
 package-dir = { "" = "src" }
-py-modules = ["normalize", "tto_crawler", "load_to_neo4j", "link_v1", "config", "db"]
+py-modules = ["normalize", "tto_crawler", "fetch_patents", "load_to_neo4j", "link_v1", "config", "db"]
 packages = ["api"]
 
 [tool.pytest.ini_options]

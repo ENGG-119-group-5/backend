@@ -227,3 +227,6 @@ __marimo__/
 
 # app
 data/processed/*
+
+# Cached API / web responses (data_contract.md section 8)
+data/cache/
