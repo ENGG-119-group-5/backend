@@ -80,7 +80,14 @@ def number_label(p: dict) -> str:
     return p.get("publication_number") or p.get("patent_key") or ""
 
 
+def is_synthetic(record: dict) -> bool:
+    """Synthetic demo data (data/demo/) must never link to real USPTO / Google Patents pages."""
+    return "synthetic" in (record.get("quality_flags") or [])
+
+
 def patent_url(p: dict) -> str | None:
+    if is_synthetic(p):
+        return None
     if p.get("doc_type") == "grant" and p.get("patent_number"):
         return f"https://patents.google.com/patent/US{p['patent_number']}"
     if p.get("publication_number"):
@@ -99,7 +106,7 @@ RETURN t.tto_id AS id, t.status AS status,
     application_number: p.application_number, publication_number: p.publication_number,
     grant_date: p.grant_date, filing_date: p.filing_date,
     has_funding: coalesce(trim(p.government_interest), '') <> '',
-    confidence: l.confidence } END) AS patents
+    quality_flags: p.quality_flags, confidence: l.confidence } END) AS patents
 """
 
 
@@ -191,7 +198,7 @@ async def search(
 async def get_technology(request: Request, id: str):
     async def work(tx):
         tech = await rows(tx, """MATCH (t:Technology {tto_id: $id})
-            RETURN t{.tto_id, .title, .category, .status, .description,
+            RETURN t{.tto_id, .title, .category, .status, .description, .quality_flags,
                      .source_document, .source_page} AS t""", id=id)
         if not tech:
             return None
@@ -234,13 +241,15 @@ async def get_technology(request: Request, id: str):
             seen.add(r["i"]["name_key"])
 
     doc, page = t.get("source_document"), t.get("source_page")
+    synthetic = is_synthetic(t)
     return TechnologyDetail(
         id=t["tto_id"], title=t["title"], tto_case_number=t["tto_id"],
         status=map_status(t.get("status")), summary=t.get("description") or "",
         categories=[t["category"]] if t.get("category") else [],
         published_at=None,
-        sources=[SourceRef(kind="tto", url=TTO_URL,
+        sources=[] if synthetic else [SourceRef(kind="tto", url=TTO_URL,
                            label=f"TTO listing {t['tto_id']}" + (f" ({doc}, p. {page})" if doc else ""))],
+        synthetic=synthetic,
         patents=[PatentWithLink(
             id=r["p"]["patent_key"], number=number_label(r["p"]), title=r["p"]["title"],
             granted_at=iso(r["p"].get("grant_date")),

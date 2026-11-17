@@ -101,3 +101,4 @@ class TechnologyDetail(CamelModel):
     ip_score: IpScore
     similar: list[SimilarTechnology]
     audit_log: list[AuditEntry]
+    synthetic: bool = False   # demo data from data/demo/: made up, no real source links
