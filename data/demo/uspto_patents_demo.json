@@ -1,0 +1,725 @@
+[
+  {
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "12104417",
+    "application_number": "17552390",
+    "publication_number": "US12104417B2",
+    "title": "Inducible cytokine switch for armored chimeric antigen receptor T cells",
+    "abstract": "Engineered T cells expressing a chimeric antigen receptor and an inducible IL-12 cassette that is activated by an orally administered small molecule within the tumor microenvironment.",
+    "filing_date": "2021-11-02",
+    "grant_date": "2024-10-01",
+    "inventors": [
+      {
+        "first": "Elena",
+        "last": "Marsh",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      },
+      {
+        "first": "Tomas",
+        "last": "Reyes",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under a grant awarded by the National Institutes of Health. The government has certain rights in the invention.",
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18623905",
+    "publication_number": "US20250118342A1",
+    "title": "Bispecific antibodies targeting PD-1 and myeloid checkpoint receptor 7",
+    "abstract": "Bispecific antibody constructs that bind PD-1 and myeloid checkpoint receptor 7 and restore anti-tumor immunity in checkpoint-resistant cancers.",
+    "filing_date": "2023-08-14",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Samuel",
+        "last": "Okafor",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      },
+      {
+        "first": "Lina",
+        "last": "Park",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under a grant awarded by the National Institutes of Health. The government has certain rights in the invention.",
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "11987330",
+    "application_number": "16994012",
+    "publication_number": "US11987330B2",
+    "title": "Oncolytic herpes simplex virus encoding a STING agonist",
+    "abstract": "Recombinant oncolytic herpes simplex viruses encoding an enzyme that produces a cyclic dinucleotide STING agonist in infected tumor cells.",
+    "filing_date": "2020-06-19",
+    "grant_date": "2024-05-21",
+    "inventors": [
+      {
+        "first": "Elena",
+        "last": "Marsh",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      },
+      {
+        "first": "Victor",
+        "last": "Hale",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under a grant awarded by the National Institutes of Health. The government has certain rights in the invention.",
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18744120",
+    "publication_number": "US20250201876A1",
+    "title": "Methods for detecting minimal residual disease from circulating tumor DNA",
+    "abstract": "Sequencing methods and error correction for detecting circulating tumor DNA at low allele fractions after cancer surgery.",
+    "filing_date": "2024-02-09",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Marcus",
+        "last": "Lin",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": null,
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "11802256",
+    "application_number": "16801533",
+    "publication_number": "US11802256B2",
+    "title": "Radiosensitizing nanoparticles for brain tumors",
+    "abstract": "Metal oxide nanoparticles coated to cross the blood-brain barrier and increase the local dose of ionizing radiation in brain tumors.",
+    "filing_date": "2020-02-26",
+    "grant_date": "2023-10-31",
+    "inventors": [
+      {
+        "first": "Victor",
+        "last": "Hale",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      },
+      {
+        "first": "Nadia",
+        "last": "Petrov",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under a grant awarded by the National Institutes of Health. The government has certain rights in the invention.",
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18690441",
+    "publication_number": "US20250164011A1",
+    "title": "Antibody-drug conjugates targeting ovarian cancer stem cells",
+    "abstract": "Antibody-drug conjugates binding a cancer stem cell surface antigen for the treatment of recurrent ovarian cancer.",
+    "filing_date": "2023-11-30",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Lina",
+        "last": "Park",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": null,
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "11655902",
+    "application_number": "17120876",
+    "publication_number": "US11655902B2",
+    "title": "Anti-IL-17F antibodies for inflammatory arthritis",
+    "abstract": "Monoclonal antibodies selectively binding interleukin-17F and methods of treating rheumatoid arthritis.",
+    "filing_date": "2020-12-11",
+    "grant_date": "2023-05-23",
+    "inventors": [
+      {
+        "first": "Rachel",
+        "last": "Dunn",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under a grant awarded by the National Institutes of Health. The government has certain rights in the invention.",
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "12055318",
+    "application_number": "17398204",
+    "publication_number": "US12055318B2",
+    "title": "Sulfide solid electrolytes for sodium metal batteries",
+    "abstract": "Sodium-ion conducting sulfide solid electrolytes and all-solid-state sodium metal battery cells.",
+    "filing_date": "2021-08-10",
+    "grant_date": "2024-08-06",
+    "inventors": [
+      {
+        "first": "Nadia",
+        "last": "Petrov",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      },
+      {
+        "first": "Wei",
+        "last": "Zhang",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under a grant awarded by the Department of Energy. The government has certain rights in the invention.",
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18511279",
+    "publication_number": "US20250042716A1",
+    "title": "Self-healing polymer binders for silicon-containing anodes",
+    "abstract": "Dynamic covalent polymer binders that restore electrode integrity in silicon anodes during lithium cycling.",
+    "filing_date": "2023-05-22",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Wei",
+        "last": "Zhang",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      },
+      {
+        "first": "Isabel",
+        "last": "Moreno",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under a grant awarded by the National Science Foundation. The government has certain rights in the invention.",
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18402277",
+    "publication_number": "US20240387195A1",
+    "title": "Printable perovskite layers for silicon tandem solar cells",
+    "abstract": "Ink formulations and low-temperature deposition of perovskite absorbers on textured silicon solar cells.",
+    "filing_date": "2023-01-18",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Isabel",
+        "last": "Moreno",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under a grant awarded by the Department of Energy. The government has certain rights in the invention.",
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "11893467",
+    "application_number": "17004398",
+    "publication_number": "US11893467B2",
+    "title": "Distributed methane sensing network for oil and gas sites",
+    "abstract": "A wireless network of low-power methane sensors with source localization for oil and gas production sites.",
+    "filing_date": "2020-08-28",
+    "grant_date": "2024-02-06",
+    "inventors": [
+      {
+        "first": "Benjamin",
+        "last": "Cole",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under a grant awarded by the Department of Energy. The government has certain rights in the invention.",
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18577712",
+    "publication_number": "US20250089133A1",
+    "title": "Ion exchange membranes derived from recycled polyethylene terephthalate",
+    "abstract": "Ion exchange membranes produced from depolymerized recycled PET for redox flow batteries.",
+    "filing_date": "2023-09-29",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Isabel",
+        "last": "Moreno",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      },
+      {
+        "first": "Wei",
+        "last": "Zhang",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under a grant awarded by the National Science Foundation. The government has certain rights in the invention.",
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18466530",
+    "publication_number": "US20250007548A1",
+    "title": "Nickel-molybdenum electrocatalysts for alkaline water electrolysis",
+    "abstract": "Electrodeposited nickel-molybdenum catalysts for the hydrogen evolution reaction in alkaline electrolyzers.",
+    "filing_date": "2023-04-03",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Hannah",
+        "last": "Brooks",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      },
+      {
+        "first": "Wei",
+        "last": "Zhang",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under a grant awarded by the Department of Energy. The government has certain rights in the invention.",
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "11751208",
+    "application_number": "16955812",
+    "publication_number": "US11751208B2",
+    "title": "Near-infrared imaging device for early dental caries",
+    "abstract": "Handheld near-infrared transillumination imaging device and software for detecting early dental caries.",
+    "filing_date": "2020-05-14",
+    "grant_date": "2023-09-12",
+    "inventors": [
+      {
+        "first": "Marcus",
+        "last": "Lin",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      },
+      {
+        "first": "Benjamin",
+        "last": "Cole",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": null,
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18730166",
+    "publication_number": "US20250185924A1",
+    "title": "Wearable gait sensing insole for fall risk prediction",
+    "abstract": "Pressure-sensing insoles and machine learning models predicting fall risk in patients with Parkinson's disease.",
+    "filing_date": "2024-01-22",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Victor",
+        "last": "Hale",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      },
+      {
+        "first": "Benjamin",
+        "last": "Cole",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under a grant awarded by the National Institutes of Health. The government has certain rights in the invention.",
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "11604773",
+    "application_number": "16870055",
+    "publication_number": "US11604773B2",
+    "title": "Wireless roof load monitoring system",
+    "abstract": "Wireless strain sensors and alerting software for monitoring snow load on flat roofs.",
+    "filing_date": "2020-04-07",
+    "grant_date": "2023-03-14",
+    "inventors": [
+      {
+        "first": "Benjamin",
+        "last": "Cole",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": null,
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18651390",
+    "publication_number": "US20250139870A1",
+    "title": "Adjuvant compositions for avian vaccines",
+    "abstract": "Oil-in-water adjuvant compositions enabling single-dose vaccination of poultry against avian influenza.",
+    "filing_date": "2023-10-17",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Rachel",
+        "last": "Dunn",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      },
+      {
+        "first": "Tomas",
+        "last": "Reyes",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": null,
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "11530681",
+    "application_number": "16712308",
+    "publication_number": "US11530681B2",
+    "title": "Snow density measurement probe",
+    "abstract": "A capacitive probe measuring snow density for avalanche forecasting.",
+    "filing_date": "2019-12-12",
+    "grant_date": "2022-12-20",
+    "inventors": [
+      {
+        "first": "Aisha",
+        "last": "Kamara",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under a grant awarded by the National Science Foundation. The government has certain rights in the invention.",
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18799041",
+    "publication_number": "US20250233517A1",
+    "title": "Peptide inhibitors of bacterial biofilm formation",
+    "abstract": "Synthetic peptides that prevent biofilm formation by Pseudomonas aeruginosa.",
+    "filing_date": "2024-05-02",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Rachel",
+        "last": "Dunn",
+        "city": "Hanover",
+        "state": "NH",
+        "country": "US"
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Trustees of Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under a grant awarded by the National Institutes of Health. The government has certain rights in the invention.",
+    "source": {
+      "system": "synthetic",
+      "document": "synthetic-demo-uspto",
+      "extracted_at": "2026-11-17T00:00:00+00:00"
+    },
+    "quality_flags": [
+      "synthetic"
+    ]
+  }
+]
