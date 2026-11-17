@@ -5,6 +5,14 @@ indicators in compute_ip_score(). Pure Python, no database or web imports.
 Contract rules (docs/API_CONTRACT.md):
   contribution = normalized * weight * 100 (1 dp); weights sum to 1;
   computed = sum of contributions; effective = override.score or computed.
+
+In plain words: the IP score (0 to 100) is a quick "how strong is the patent
+position?" number for each invention. It is not AI: it adds up six simple checks,
+each worth a fixed share of the 100 points (the WEIGHTS below). For example, a granted
+patent earns the full 30 "protection" points, an application earns 15, and nothing
+earns 0. Every check keeps its reason and a link to the patent, so anyone can see
+exactly why an invention got its score. An analyst can override the number by hand,
+with a written reason; the original computed score is still kept and shown.
 """
 from datetime import date
 

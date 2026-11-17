@@ -9,6 +9,14 @@ investment-thesis PDF (MVP, "Pre Commercial Tech" deck slide 5).
 
 The LLM never supplies facts: it only judges the records we give it, and every
 score must quote the record it is based on.
+
+In plain words: this is the AI part. An investor's thesis says what they want to fund
+(for example "immune therapies, early stage, ready to license"). We hand Claude that
+PDF plus a written summary of every Dartmouth invention, and ask it to grade each
+invention on four questions (area, problem, stage, deal), from 0 to 2, and to copy a
+short quote from the invention's record as proof for each grade. Our own code then
+checks every quote really appears in the record, so made-up evidence is caught and
+flagged on screen. Finally, the inventions are sorted: strong matches first.
 """
 import base64
 import re

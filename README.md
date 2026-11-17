@@ -4,6 +4,8 @@
 
 Pipeline v0.1 (TTO → Neo4j → linking) and the FastAPI API used by the [web app](https://github.com/ENGG-119-group-5/webapp). Data formats follow [`docs/data_contract.md`](docs/data_contract.md) (v0.5).
 
+**New here? Start with [docs/how-it-works.md](docs/how-it-works.md)**, a plain-language tour of what each part does and how they fit together.
+
 ## Files
 
 | File | What it does |

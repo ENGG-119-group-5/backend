@@ -1,3 +1,11 @@
+"""Settings for connecting to the database.
+
+In plain words: this file answers "where is the database and what is the password?".
+It reads the answers from two small text files in the backend folder: `.env` (shared
+placeholder values, kept in git) and `.env.local` (your own private values, never in
+git). Anything in `.env.local` wins. Every other file imports these settings from here,
+so there is only one place to change them.
+"""
 from pathlib import Path
 import os
 from dotenv import load_dotenv

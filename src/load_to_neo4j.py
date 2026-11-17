@@ -12,6 +12,13 @@ Usage:
     python load_to_neo4j.py patents uspto_patents.json          # USPTO side (or test fixtures)
 
     Add --dry-run to print the Cypher and parameters without a database.
+
+In plain words: this script puts the records into the Neo4j database. Neo4j is a
+"graph" database: instead of tables, it stores things (inventions, patents, inventors,
+companies) as dots and the relationships between them as arrows ("this inventor
+INVENTED this patent"). That makes questions like "who else worked on patents linked
+to this invention?" easy to answer. Running it twice is safe: it updates what is
+already there instead of making copies. This is step 4 of the data pipeline.
 """
 
 import argparse
@@ -74,6 +81,7 @@ FOREACH (a IN $assignees |
 
 
 def tto_params(rec):
+    """Reshape one TTO invention record into the values the database query expects."""
     refs = []
     for i, ref in enumerate(rec["ip_refs"]):
         pk = patent_key_from_ref(ref)
@@ -103,6 +111,7 @@ def tto_params(rec):
 
 
 def patent_params(p):
+    """Reshape one USPTO patent record into the values the database query expects."""
     inventors = []
     for inv in p.get("inventors", []):
         full = f"{inv.get('first', '')} {inv.get('last', '')}".strip()

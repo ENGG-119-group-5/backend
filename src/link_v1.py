@@ -11,6 +11,13 @@ Rules (in order of trust):
 Only 'confirmed' links become PROTECTED_BY in the graph. 'uncertain' links become
 POSSIBLY_PROTECTED_BY, so that graph queries never present them as facts.
 
+In plain words: we now have two piles of records, inventions (from the TTO) and
+patents (from USPTO). This script decides which patent belongs to which invention,
+using only exact numbers printed on the TTO page, never guesses based on similar
+titles. A match the numbers fully agree on is "confirmed" and treated as fact. A match
+where the numbers disagree is "uncertain" and kept aside for a person to review.
+This is step 3 of the data pipeline.
+
 Usage:
     python link_v1.py technologies_life_sciences.json test_fixtures/uspto_patents_test.json -o links.json
     python link_v1.py ... --neo4j          # also write the links to Neo4j
@@ -69,6 +76,8 @@ def match_ref(ref, by_grant, by_app, by_pub):
 
 
 def link(technologies, patents):
+    """Match every invention to its patents. Returns the list of links (each marked
+    confirmed or uncertain, with a confidence number) and a short summary report."""
     by_grant, by_app, by_pub = build_indexes(patents)
     links = {}                                        # (tto_id, patent_key) -> link
     report = {"technologies": len(technologies), "patents": len(patents),
@@ -145,6 +154,8 @@ SET l.match_method = $methods, l.confidence = $confidence, l.conflicts = $confli
 LINK_FIELDS = ("tto_id", "patent_key", "status", "methods", "confidence", "conflicts",
                "evidence_ref", "matched_at", "linker_version", "flags")
 def write_neo4j(links):
+    """Save the links into the database: confirmed ones as PROTECTED_BY,
+    uncertain ones as POSSIBLY_PROTECTED_BY (so they are never shown as fact)."""
     import config
     from db import neo4j_driver
     with neo4j_driver() as driver, driver.session(database=config.NEO4J_DATABASE) as s:
