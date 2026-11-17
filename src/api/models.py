@@ -102,3 +102,46 @@ class TechnologyDetail(CamelModel):
     similar: list[SimilarTechnology]
     audit_log: list[AuditEntry]
     synthetic: bool = False   # demo data from data/demo/: made up, no real source links
+
+
+# --------------------------------------------------------- thesis matching (/match)
+class TechnologySummary(CamelModel):
+    id: str
+    title: str
+    tto_case_number: str
+    status: Literal["available", "licensed", "unknown"]
+    ip_score: float | None = None
+
+
+class FitScore(CamelModel):
+    key: Literal["area", "problem", "stage", "deal"]
+    question: str
+    score: int                # 0 no, 1 partly, 2 clearly
+    reason: str
+    quote: str                # evidence copied from the invention record
+    quote_verified: bool      # True only if the quote really appears in the record
+
+
+class TechnologyMatch(CamelModel):
+    technology: TechnologySummary
+    category: str | None
+    label: Literal["strong", "potential", "none"]
+    total_score: int          # sum of the four fit scores, 0-8
+    summary: str
+    fits: list[FitScore]
+
+
+class MatchResponse(CamelModel):
+    thesis_name: str
+    thesis_sha256: str
+    thesis_summary: str
+    model: str
+    source: Literal["saved_demo", "live"]
+    generated_at: str
+    matches: list[TechnologyMatch]
+    unassessed_ids: list[str]  # inventions Claude skipped (never filled in by us)
+
+
+class SampleThesis(CamelModel):
+    name: str
+    title: str
