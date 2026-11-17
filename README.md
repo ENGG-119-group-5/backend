@@ -17,6 +17,8 @@ Pipeline v0.1 (TTO → Neo4j → linking) and the FastAPI API used by the [web a
 | `tests/fixtures/technologies_life_sciences.json` | Frozen crawler output for the Life Sciences PDF (29 technologies) |
 | `tests/fixtures/uspto_patents_test.json` | 4 **fake** patent records to test linking before the real USPTO data |
 | `data/validation/spinout_cases.csv` | Known Dartmouth spin-outs with their expected patents and inventors |
+| `data/demo/` | **Synthetic** demo dataset: 30 made-up TTO listings and 19 made-up USPTO patents |
+| `scripts/load_demo.sh` | Replaces the graph with the demo dataset |
 
 ```text
 .
@@ -79,10 +81,20 @@ python src/link_v1.py data/processed/technologies_life_sciences.json \
 
 The loader accepts `--dry-run`. The linker writes to Neo4j only with `--neo4j`. Both are rerunnable.
 
+## Demo dataset (synthetic)
+
+The MVP demo runs on **made-up** data in `data/demo/`: 30 Dartmouth-style inventions (oncology, climate/energy hardware, and others) and 19 USPTO-style patents that the linker merges with them. Nothing in it describes a real invention, and the API never links it to real patent pages. Details: data contract, section 11.
+
+```bash
+scripts/load_demo.sh     # WARNING: deletes everything in the graph first, then loads the demo data
+```
+
+To go back to the real Life Sciences listings or the test fixtures, run `python src/load_to_neo4j.py reset` and follow "Run the pipeline" above.
+
 ## Run the API
 
 ```bash
-uvicorn api.main:app --app-dir src --reload      # http://localhost:8000/docs
+uvicorn api.main:app --app-dir src --reload --reload-dir src   # http://localhost:8000/docs
 curl "http://localhost:8000/search?q=&type=technology&limit=5"
 curl "http://localhost:8000/technology/2018-168"
 ```
@@ -96,7 +108,7 @@ pytest -rs
 ```
 
 - **Unit tests** (linking, keys, scoring) need nothing else.
-- **API tests** (`tests/test_api.py`) need Neo4j running with the **test fixtures** loaded. They only read. Without Neo4j they are skipped, and the reason is printed. To run them:
+- **API tests** (`tests/test_api.py`) need Neo4j running with the **test fixtures** loaded (not the demo dataset). They only read. Without Neo4j they are skipped, and the reason is printed. To run them:
 
   ```bash
   python src/load_to_neo4j.py schema
