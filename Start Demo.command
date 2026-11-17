@@ -7,8 +7,8 @@
 # If it is missing, this script clones it there. The first run also installs
 # the Python and Node packages, which takes a few minutes.
 
-# Web app branch used when cloning. Switch to "main" once webapp PR #2 is merged.
-WEBAPP_BRANCH="claude/dartmouth-samples"
+# Web app branch used when cloning.
+WEBAPP_BRANCH="main"
 WEBAPP_REPO="https://github.com/ENGG-119-group-5/webapp.git"
 
 cd "$(dirname "$0")"

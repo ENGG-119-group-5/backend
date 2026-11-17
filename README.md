@@ -48,7 +48,7 @@ Needs Docker Desktop, Python 3.10+, Node.js 20+ and git.
 
 ```bash
 mkdir vc-demo && cd vc-demo
-git clone --branch claude/dartmouth-data https://github.com/ENGG-119-group-5/backend.git
+git clone https://github.com/ENGG-119-group-5/backend.git
 ```
 
 Then double-click `backend/Start Demo.command` in Finder (or run `"backend/Start Demo.command"`). It clones the [web app](https://github.com/ENGG-119-group-5/webapp) next to `backend/` if it is missing, installs the Python and Node packages on the first run, starts Neo4j, loads the demo data, starts the API and the website, and opens http://localhost:3000. Close the window to stop everything.
