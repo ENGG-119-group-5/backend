@@ -8,11 +8,14 @@ from api import matcher
 
 INVENTION = {
     "tto_id": "X-1", "title": "Armored CAR T Cells", "category": "Life Sciences", "status": "available_for_license",
+    "rights": "us_and_china",
     "description": "Stage: preclinical; tumors cleared in two mouse models.",
-    "advantages": ["Works with any CAR target."], "looking_for": ["Exclusive license."],
+    "advantages": ["Works with any CAR target."], "features": ["Cleared ovarian tumors in mice."],
+    "looking_for": ["Exclusive license."],
     "refs": [{"raw_label": "US PATENT NO 12,104,417", "ip_type": "granted_patent"}],
     "patents": [{"patent_key": "US-12104417", "doc_type": "grant", "title": "Inducible cytokine switch",
-                 "abstract": "Engineered T cells.", "grant_date": "2024-10-01", "government_interest": "NIH grant"}],
+                 "abstract": "Engineered T cells.", "grant_date": "2024-10-01", "government_interest": "NIH grant",
+                 "assignees": ["Dartmouth College", "Celdara Medical LLC"]}],
     "people": ["Elena Marsh (Associate Professor)"],
 }
 
@@ -20,9 +23,11 @@ INVENTION = {
 # ----------------------------------------------------------------- pure functions
 def test_invention_text_merges_tto_and_uspto():
     text = matcher.invention_text(INVENTION)
-    for expected in ("### X-1: Armored CAR T Cells", "Stage: preclinical", "Looking for: Exclusive license.",
+    for expected in ("### X-1: Armored CAR T Cells", "Stage: preclinical", "Details: Cleared ovarian tumors in mice.",
+                     "Looking for: Exclusive license.",
                      "US PATENT NO 12,104,417 (granted patent)", "USPTO record US-12104417 (granted patent, granted 2024-10-01)",
-                     "Federally funded.", "Elena Marsh"):
+                     "Federally funded.", "Assignees: Dartmouth College; Celdara Medical LLC.",
+                     "Rights available: us and china.", "Elena Marsh"):
         assert expected in text
     bare = matcher.invention_text({"tto_id": "X-2", "title": "T", "refs": [], "patents": []})
     assert "IP listed by the TTO: none listed" in bare and "no confirmed patent" in bare
@@ -44,6 +49,24 @@ def test_rank_orders_by_label_then_total_then_ip_score():
     ranked = matcher.rank([m("a", "none", 8), m("b", "potential", 3), m("c", "strong", 6),
                            m("d", "strong", 8, 70.5), m("e", "strong", 8, 87.0)])
     assert [x["technology"]["title"] for x in ranked] == ["e", "d", "c", "b", "a"]
+
+
+def test_skipped_inventions_get_a_second_call(monkeypatch):
+    import asyncio
+    calls = []
+
+    async def fake_score(claude, pdf, inventions):
+        ids = [i["tto_id"] for i in inventions]
+        calls.append(ids)
+        first_call = len(calls) == 1
+        return matcher.MatchOutput(thesis_summary="t", verdicts=[
+            matcher.Verdict(invention_id=i, label="none", area=fit(0), problem=fit(0), stage=fit(0), deal=fit(0),
+                            summary="s") for i in (ids[:1] if first_call else ids + ["A"])])   # skips; then repeats A
+    monkeypatch.setattr(matcher, "score", fake_score)
+
+    out = asyncio.run(matcher.run_match(None, b"%PDF", [{"tto_id": "A"}, {"tto_id": "B"}, {"tto_id": "C"}]))
+    assert calls == [["A", "B", "C"], ["B", "C"]]                      # only the skipped ones are asked again
+    assert [v.invention_id for v in out.verdicts] == ["A", "B", "C"]   # and nothing is duplicated
 
 
 # -------------------------------------------------------- /match and /samples (need Neo4j + fixtures)

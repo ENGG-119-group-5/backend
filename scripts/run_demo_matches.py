@@ -4,7 +4,7 @@ The API returns these saved results for the sample PDFs, so anyone can see the d
 without an API key. Rerun this only when the demo data, the prompt or the PDFs change.
 
 Needs: Neo4j with the demo data (scripts/load_demo.sh) and ANTHROPIC_API_KEY in .env.local.
-Usage (repo root, venv active):  python scripts/run_demo_matches.py
+Usage (repo root, venv active):  python scripts/run_demo_matches.py [sample.pdf ...]   (default: all)
 """
 import json
 import sys
@@ -22,9 +22,9 @@ out_dir = main.DEMO_DIR / "results"
 out_dir.mkdir(exist_ok=True)
 
 with TestClient(main.app) as client:
-    for name in main.SAMPLES:
+    for name in sys.argv[1:] or main.SAMPLES:
         pdf = (main.DEMO_DIR / "theses" / name).read_bytes()
-        print(f"Matching {name} (this takes about a minute)...")
+        print(f"Matching {name} (this takes a few minutes)...", flush=True)
         r = client.post("/match", files={"file": (name, pdf, "application/pdf")})
         if r.status_code != 200:
             sys.exit(f"  failed: {r.status_code} {r.text}")

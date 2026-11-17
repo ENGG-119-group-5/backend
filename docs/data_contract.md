@@ -1,8 +1,10 @@
 # Data Contract
 
-**Version:** 0.4 · **Owner:** Augustin · **Status:** shared with Prajwal (TTO) and Mia (USPTO) on Nov 5, waiting for answers (section 9)
+**Version:** 0.5 · **Owner:** Augustin · **Status:** shared with Prajwal (TTO) and Mia (USPTO) on Nov 5, waiting for answers (section 9)
 
 > **Why this document exists:** everyone writes data in the same format, so the TTO crawler, the USPTO loader, the linking step and the API can be built in parallel. If you need a new field, add it here first, then in code.
+
+**Changes in v0.5:** the demo dataset is now **real**: both Dartmouth decks crawled (41 technologies) and the real USPTO record for every US number on those pages, fetched by `src/fetch_patents.py` (section 11) · source system `google_patents` · crawler: several PDFs in one run, duplicates merged, short PCT numbers, more section headings, rights `us_and_china` · `Technology.features` stored in the graph · synthetic dataset removed.
 
 **Changes in v0.4:** synthetic demo dataset (`data/demo/`, source system and quality flag `synthetic`, section 11) · `load_to_neo4j.py reset` · `Technology.looking_for` stored in the graph (what the lab wants from a partner; used for deal fit).
 
@@ -29,18 +31,18 @@ Produced by `src/tto_crawler.py`. One record per technology page.
 | `schema_version` | string | `"0.1"` | |
 | `tto_id` | string | `"2018-168"` | **Primary key.** Dartmouth case number |
 | `title` | string | `"Non-Invasive Dielectric Probe…"` | |
-| `category` | string | `"Life Sciences"` | Name of the TTO PDF it comes from |
+| `category` | string | `"Life Sciences"` | Name of the TTO PDF it comes from; `"Life Sciences / Physical Sciences"` when listed in both |
 | `status` | enum | `available_for_license` / `portfolio_available_for_review` | |
-| `rights` | enum or null | `worldwide` / `us` / `null` | |
+| `rights` | enum or null | `worldwide` / `us` / `us_and_china` / `null` | |
 | `description` | string or null | | Text of DESCRIPTION / INVENTION OVERVIEW |
 | `advantages` | list of strings | | One item per bullet |
-| `other_sections` | object | `{"looking_for": [...]}` | Keys: `features`, `efficacy`, `looking_for` |
+| `other_sections` | object | `{"looking_for": [...]}` | Keys: `features`, `efficacy`, `details` (MORE DETAILS), `looking_for` |
 | `ip_refs` | list of IpRef | | See 2.1 |
 | `people` | list of Person | | See 2.2 |
 | `contacts` | list of Contact | | TTO licensing managers, no duplicates |
 | `publications` | list of Publication | | From "View publication" links |
 | `source` | Source | | See section 4 |
-| `quality_flags` | list of strings | `["no_ip_identifier_on_page"]` | Includes IpRef flags as `ip:<flag>` |
+| `quality_flags` | list of strings | `["no_ip_identifier_on_page"]` | Includes IpRef flags as `ip:<flag>`. Cross-record: `publication_number_shared:…`, `ip_number_shared:…` (same number on two technologies), `also_listed:<pdf>:p<page>` (printed again elsewhere, merged into this record) |
 
 ### 2.1 IpRef
 
@@ -112,7 +114,7 @@ One record per patent document (grant **or** published application). Loaded by `
 }
 ```
 
-`system` values: `dartmouth_tto`, `uspto` (plus the API endpoint and the cached response file name), `test_fixture`, `synthetic` (made-up demo data, section 11).
+`system` values: `dartmouth_tto`, `uspto` (plus the API endpoint and the cached response file name), `google_patents` (a USPTO record read from its public Google Patents page; `document` = publication number, `source_url` = the page), `test_fixture`, `synthetic` (made-up data; no current dataset uses it).
 
 ---
 
@@ -192,7 +194,7 @@ Produced by `src/link_v1.py`. The file is an object, not a list:
 
 | Label | Key property | Main properties |
 | --- | --- | --- |
-| `Technology` | `tto_id` | `title`, `category`, `status`, `rights`, `description`, `advantages`, `looking_for` (v0.4, from `other_sections.looking_for`), `source_document`, `source_page`, `extracted_at`, `quality_flags` |
+| `Technology` | `tto_id` | `title`, `category`, `status`, `rights`, `description`, `advantages`, `features` (v0.5, every other page section except LOOKING FOR, in page order), `looking_for` (v0.4, from `other_sections.looking_for`), `source_document`, `source_page`, `extracted_at`, `quality_flags` |
 | `IpRef` | `ref_key` | What the TTO page **claims**: `raw_label`, `ip_type`, `patent_key`, `number_normalized`, `publication_number`, `google_patents_url`, `flags` |
 | `Patent` | `patent_key` | `doc_type`, `patent_number`, `application_number`, `publication_number`, `title`, `abstract`, `filing_date`, `grant_date`, `government_interest`, `source_system`, `quality_flags` |
 | `Inventor` | `inventor_id` | `name`, `name_key`, `source` (`tto` / `uspto`), `profile_url` (TTO), `city`, `state`, `country` (USPTO) |
@@ -233,11 +235,11 @@ Loaders use `MERGE` on these keys, so they are **rerunnable** (running twice doe
 
 | What | Where | In git? |
 | --- | --- | --- |
-| TTO PDFs | `data/raw/` | No |
-| Cached USPTO responses | `data/cache/` | No |
+| TTO PDFs | `data/raw/` | Yes for the two decks the demo is built from |
+| Cached Google Patents pages | `data/cache/google_patents/` | No |
 | Crawler output, links | `data/processed/` | No (regenerate anytime) |
 | Frozen test data | `tests/fixtures/` | Yes |
-| Synthetic demo data | `data/demo/` | Yes |
+| Demo dataset (crawled TTO + fetched USPTO) | `data/demo/` | Yes |
 
 ---
 
@@ -263,6 +265,18 @@ Data quality issues found in the source PDF:
 - **Typo in heading:** "DESCRIPTON" (2024-029), handled by the crawler.
 - **Extraction limit:** chart labels can leak into the text (e.g. "VISTA as a Ligand" in 2004-0269).
 
+### 9.1 What the second PDF taught us (Physical Sciences, v0.5)
+
+15 pages, 14 technologies, 12 of them new:
+
+- **Repeats:** 2020-039 is printed on two pages with different IP lists (merged: PCT + two US applications). 2020-014 and 2021-026 are also in the Life Sciences deck. `merge_duplicates()` keeps one record and notes `also_listed:<pdf>:p<page>`.
+- **Short PCT numbers:** `PCT/US23/077930` and `PCT/US24/33807` were read as US applications; now normalized to `PCT/US2023/077930` and `PCT/US2024/033807` (flag `pct_number_short_form`).
+- **Wrong PCT number:** 2020-075 prints `PCT/US2024/055039`, which is 2024-010's application (its own figure caption cites a different PCT). Flag `ip_number_shared`.
+- **Label on its own line:** 2025-023 prints `PCT PATENT APPLICATION:` and the number on the next line. Lines with no digits are skipped.
+- **Wrong labels again:** 2024-049 says "US PATENT" for application 18/776,887; 2024-046 says "APPLICATION" for provisional 63/688,132.
+- **New headings:** KEY ADVANTAGES, ADVANTAGES / SCOPE, FEATURES, FEATURES AND BENEFITS, FEATURES / OPERATING PRINCIPALS (typo), MORE DETAILS. Without them the advantages ended up inside the description.
+- **New rights wording:** "US AND CHINA RIGHTS AVAILABLE" (`rights = us_and_china`).
+
 ---
 
 ## 10. Open questions for the team
@@ -274,19 +288,22 @@ Data quality issues found in the source PDF:
 
 ---
 
-## 11. Synthetic demo dataset (v0.4)
+## 11. Demo dataset (v0.5): real TTO + real USPTO
 
-For the MVP demo, real USPTO bulk data was too hard to download, so `data/demo/` holds **made-up** data in exactly the formats above:
+`data/demo/` holds real data, built by the pipeline from the two Dartmouth licensing decks in `data/raw/`:
 
-| File | Records | Notes |
+| File | Records | Built by |
 | --- | --- | --- |
-| `technologies_demo.json` | 30 Technology records (`DEMO-01` … `DEMO-30`) | Dartmouth-style listings: ~11 oncology/immunology, ~10 climate/energy hardware, ~9 neither. Mixed IP: granted, application, provisional, PCT, none |
-| `uspto_patents_demo.json` | 19 Patent records | Grants and applications assigned to Dartmouth; 2 have no TTO listing |
+| `technologies_dartmouth.json` | 41 Technology records: 29 Life Sciences, 14 Physical Sciences, 2 listed in both | `python src/tto_crawler.py data/raw/Life-Sciences.pdf data/raw/Physical-Sciences.pdf -o data/demo/technologies_dartmouth.json` |
+| `uspto_patents_dartmouth.json` | 20 Patent records (7 grants, 13 published applications) | `python src/fetch_patents.py data/demo/technologies_dartmouth.json -o data/demo/uspto_patents_dartmouth.json` |
 
-Rules:
+How `fetch_patents.py` resolves each TTO reference: a granted patent is read from its page `US<number>B2`; an application from the publication the TTO page links to, **only if** that publication's application number is the one printed on the page; if USPTO has granted the application since, the grant is used. PCT and provisional numbers are not in USPTO.
 
-- Every record has `source.system = "synthetic"` and `"synthetic"` in `quality_flags`. People, numbers and results are invented; no record describes a real invention.
-- The API never builds external links (USPTO, Google Patents, TTO site) for synthetic records, and returns `synthetic: true` on `/technology/{id}`.
-- Linking works unchanged: 17 confirmed links, 1 uncertain (`DEMO-08`, copy-paste publication number, like 2021-026), and `DEMO-20` prints a patent number with no USPTO record.
-- Load with `scripts/load_demo.sh`. It runs `load_to_neo4j.py reset` first, which **deletes the whole graph**, so the demo graph never mixes with real or fixture data.
+What the merge shows (`link_v1`): 20 confirmed links on 17 technologies, 1 uncertain.
 
+- **Granted since the deck was printed:** 2018-119 (application 16/639,836 is now US 12,545,734, co-owned with Celdara Medical LLC) and 2021-027 (now US 12,427,342). The TTO page alone would undersell both.
+- **Copy-paste error caught:** 2018-168 links US20240000316A1, which is 2021-026's application. The link is `uncertain` (review queue), not a fact.
+- **Not resolved:** 2018-168's application 17/264,691 (its only link is the wrong one) and 2022-020's application 18/849,436 (no link printed). Both stay unlinked.
+- **Same PCT number on two technologies:** 2020-075 prints PCT/US2024/055039, which belongs to 2024-010 (flag `ip_number_shared`).
+
+Load with `scripts/load_demo.sh`. It runs `load_to_neo4j.py reset` first, which **deletes the whole graph**, so the demo graph never mixes with fixture data. `tests/test_demo_data.py` checks that the JSON is exactly what the crawler produces from the PDFs.

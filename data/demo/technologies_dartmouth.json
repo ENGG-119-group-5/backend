@@ -1,0 +1,2945 @@
+[
+  {
+    "schema_version": "0.1",
+    "tto_id": "2004-0269",
+    "title": "Leveraging PD-L3 and VISTA Antibodies to Address the Following Indications: Autoimmunity, Cancer, Viral Infection, and Inflammation",
+    "category": "Life Sciences",
+    "status": "portfolio_available_for_review",
+    "rights": null,
+    "description": "Autoimmune disorders, various cancers, inflammatory diseases, and viral infections affect the lives of many in the US and globally. Immunotherapies and anti-inflammatory drugs are utilized treat these conditions. V-domain Ig suppressor of T cell activation (VISTA) is an immune checkpoint molecule that is expressed on various immune cells. These technologies target VISTA, as well as PD-L3, for multiple indications such as autoimmune diseases, viruses, and various cancers.",
+    "advantages": [
+      "Utilizing an anti-PD-L3 antibody results in enhanced T cell immune responses, strengthened anti-tumor immunity, and defense against viral infection.",
+      "The use of PD-L3-lg fusion proteins suppresses excessive immune activity to treat autoimmune disorders, and controls inflammation in various conditions. VISTA as a Ligand VISTA as a Receptor",
+      "Leveraging a VISTA-Ig fusion protein results in immunosuppression.",
+      "Harnessing anti-VISTA antibodies induces immunosuppression and treats ovarian cancer.",
+      "The use of VISTA-IG treats inflammation in multiple sclerosis.",
+      "Administering an anti-VISTA antibody alongside a PD-1 antagonist enhances antitumor immunity, and boosts CD8+ T cell responses in conditions other than cancer.",
+      "Removing T cells, genetically modifying them to eliminate VISTA-mediated immune suppression, and reintroducing them strengthens antitumor activity.",
+      "Removing T cells, genetically modifying them using siRNA to downregulate VISTA, PD-1, and/or PD-L1, then reintroducing them enhances immune responses against cancer.",
+      "The combined use of a VISTA agonist and an iNOS/NO inhibitor restores B cell immunity in cancer and infectious disease."
+    ],
+    "other_sections": {},
+    "ip_refs": [],
+    "people": [
+      {
+        "name": "Randy Noelle",
+        "name_raw": "Dr. Randy Noelle",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Emeritus Professor of Microbiology and Immunology",
+        "profile_url": "https://geiselmed.dartmouth.edu/faculty/facultydb/view.php/?uid=136"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37795437/",
+        "doi": null,
+        "pmid": "37795437"
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 2,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "no_ip_identifier_on_page"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2014-0828",
+    "title": "Deimmunized Lysostaphin is effective against multi-resistant S. aureus without inducing unwanted immune response",
+    "category": "Life Sciences",
+    "status": "portfolio_available_for_review",
+    "rights": null,
+    "description": "Lysins are effective bacteriolytic enzymes against S.aureus and other drug-resistant bacteria but they suffer from immunogenic responses, especially upon repeat dosing. A directed evolution approach has been used to produce a deimmunized lysostaphin variant, F12. Immunological analysis with human PBMCs and human HLA transgenic mice provide preclinical evidence that the F12 variant achieved general evasion of human immune surveillance while maintaining efficacy against S. aureus.",
+    "advantages": [
+      "F12 dampens human T cell activation: A study of T-cell activation in a 17-donor human peripheral blood mononuclear cell (PBMC) assay showed highly effective dampening of the T cell response by F12 compared to LST.",
+      "F12 reduced immunogenicity in vivo: Using SC injection and inhaled routes of delivery, studies showed reduced immunogenicity by one to two orders of magnitude for F12 compared to LST in two different human HLA transgenic mouse strains.",
+      "F12 evades established anti-LST immunity: Ex vivo assays using (i) splenocytes harvested from HLA transgenic mice exposed to LST and (ii) human PBMCs expanded in the presence of LST showed F12 evades surveillance by helper T cells primed to recognize the LST protein. An in vivo HLA transgenic mouse preimmunization study showed that F12 is capable of rescuing mice from a lethal MRSA challenge despite preexisting anti-LST immunity. Deimmunized lysostaphin variant, F12, shows reduced immune reaction in DR4 and DR2 mouse splenocytes following immunizations with LST and F12."
+    ],
+    "other_sections": {
+      "efficacy": [
+        "F12 retains potent in vitro anti-staphyloccocal activity against MRSA, VRSA, LRSA and DRSA. In vivo, F12 rescued all mice and/or achieved significantly better protection (dose dependent) compared to non-deimmunized lysostaphin (LST) in an acute bacteremia study.",
+        "F12 exhibited better minimum inhibitory concentration (MIC) potency than two clinical-stage anti-MRSA lysins: CF-301 (Aurobac/Boehringer Ingelheim) and SAL200 (iNtRON Biotechnology).",
+        "F12 in combination with daptomycin reduced mortality in a rabbit endocarditis MRSA infection model to 0% compared to 14% for daptomycin and 20% for F12 monotherapy. The combination therapy eradicated MRSA from all target tissues while monotherapies were only marginally effective at reducing bacterial burden."
+      ]
+    },
+    "ip_refs": [],
+    "people": [
+      {
+        "name": "Karl Griswold",
+        "name_raw": "Dr. Karl Griswold",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Engineering",
+        "profile_url": "https://engineering.dartmouth.edu/community/faculty/karl-griswold"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Tammy Heesakker",
+        "phone": "(267) 240-4549",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Tammy.A.Heesakker@dartmouth.edu"
+      },
+      {
+        "name": "Don Castle",
+        "phone": "(603) 731-1503",
+        "role": "Director for Industry Engagement",
+        "email": "Don.Castle-2@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://www.science.org/doi/10.1126/sciadv.abb9011",
+        "doi": "10.1126/sciadv.abb9011",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 3,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "no_ip_identifier_on_page"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2017-1005",
+    "title": "Portfolio of Novel Steroid-like Molecules for Oncology and Inflammatory Disorders",
+    "category": "Life Sciences",
+    "status": "portfolio_available_for_review",
+    "rights": null,
+    "description": "This portfolio introduces a wide variety of steroid-like novel compounds available for development including glucocorticoid receptor modulators, estrogen receptor beta agonists, androgen receptor agonists, G protein-coupled receptors modulators, TLX nuclear receptor ligands, liver X receptor modulators and tetracyclic and pentacyclic triterpenoid compounds that show high activity and/or selectivity against relevant targets. It also presents a revolutionary chemical platform for the design and synthesis of novel steroid-like molecules and fatty acid mimetics that overcome the limitations of traditional drug discovery.",
+    "advantages": [
+      "Simple and Efficient Synthesis: The technology provides a simple and efficient solution for the enantioselective synthesis of functionalized steroid-like molecules, including the unnatural enantiomers (“ent-steroids”), enabling expedited drug discovery and efficient scale up and manufacturing.",
+      "Access to Novel Chemical Space: The technology enables the synthesis of previously inaccessible steroid-like molecules, including unnatural enantiomers and diverse structural scaffolds, opening up unexplored regions of chemical space.",
+      "Enhanced Potency and Selectivity: The technology allows for the intentional design of drugs with improved binding affinity and selectivity for nuclear receptors. For example, ALZ-201 demonstrates 10x better binding affinity to the Androgen Receptor compared to Enzalutamide, and ERβ agonists have shown over 1600x selectivity (ALZ-101). Evaluation of 8 as a dual selective ERβ agonist and AR antagonist. Differences in human estrogen receptor (hER) 17β-estradiol (17β-E2) and 8 response between (A) and (B) are due to use of complementary assays systems (transiently transfected HEK-293 cells and stably transfected CHO cells, respectively; see the Supporting Information). (E) and (F) confirm potent and selective ERβ agonist activity is maintained against murine estrogen receptors (mERs) facilitating preclinical in vivo study. 95% confidence intervals (95% CI) for EC50 and IC50 estimates are provided where calculated. ND, not determined."
+    ],
+    "other_sections": {},
+    "ip_refs": [],
+    "people": [
+      {
+        "name": "Glenn Micalizio",
+        "name_raw": "Dr. Glenn Micalizio",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Chemistry",
+        "profile_url": "https://ssihi.uci.edu/ssihi-profile-glenn-micalizio-phd/"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Tammy Heesakker",
+        "phone": "(267) 240-4549",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Tammy.A.Heesakker@dartmouth.edu"
+      }
+    ],
+    "publications": [],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 4,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "no_ip_identifier_on_page"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2018-119",
+    "title": "Cellular Therapies for Fibrotic, Inflammatory and Autoimmune Disease",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "Fibrotic diseases contribute to 20-25% of all deaths in the industrialized world, yet there are few effective treatments for fibrosis. Systemic Sclerosis (SSc) is a progressive, chronic, and ultimately, deadly fibrotic disease that lacks curative treatment. SSc is characterized by dermal and internal organ fibrosis, loss of subcutaneous fat, inflammation, and vasculopathy. CD206+ macrophages induce SSc fibroblast activation, and mediate pathology in multiple diseases. This invention leverages an Anti-CD206 Chimeric Antigen Receptor (CAR) T Cell to attack fibrosis.",
+    "advantages": [
+      "Anti-CD206 CAR-T cell therapy reduces dermal thickness in local delivery model and restores subcutaneous fat in systemic delivery model.",
+      "Unique macrophage targeting therapy eliminates a key source of fibrotic activation and is the first CAR T cell treatment focused on the innate immune system for fibrotic disease.",
+      "Target is supported by significant data, is mechanistic, and we can identify patients most likely to derive therapeutic benefit.",
+      "Potential for a durable response and can be engineered to secrete anti-fibrotics."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT APPLICATION 16,639,836",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "16639836",
+        "publication_number": "US20200369773A1",
+        "google_patents_url": "https://patents.google.com/patent/US20200369773A1/",
+        "flags": [
+          "application_number_missing_slash"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "name": "Patricia Pioli",
+        "name_raw": "Patricia Pioli",
+        "role": "principal_investigator",
+        "degrees": [
+          "Ph.D."
+        ],
+        "title_affiliation": "Associate Professor, Department of Microbiology and Immunology",
+        "profile_url": "https://geiselmed.dartmouth.edu/faculty/facultydb/view.php/?uid=1530"
+      },
+      {
+        "name": "Michael Whitfield",
+        "name_raw": "Michael Whitfield",
+        "role": "principal_investigator",
+        "degrees": [
+          "Ph.D."
+        ],
+        "title_affiliation": "Professor of Molecular and Systems Biology",
+        "profile_url": "https://geiselmed.dartmouth.edu/faculty/facultydb/view.php/?uid=2260"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      }
+    ],
+    "publications": [],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 5,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "ip:application_number_missing_slash"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2018-168",
+    "title": "Non-Invasive Dielectric Probe for Testing Closed Bottles of Wine",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "This invention introduces advanced systems and methods for non-invasive microwave testing of liquids contained within bottles or edible oils like olive oil. Conventional quality testing in the wine industry demands opening bottled products to sample the liquid, resulting in an invasive process that dramatically decreases the value of the tested wine. Existing methods, such as Nuclear Magnetic Resonance (NMR) spectroscopy, are prohibitively expensive and other radio-frequency coil measurement techniques are reliant on sophisticated accompanying electronics.",
+    "advantages": [
+      "Non-destructive evaluation: The system effectively measures the liquid's properties without requiring physical penetration of the bottle, cap, or cork, thus preserving the commercial integrity of the product.",
+      "High distinguishing power: Experiments confirm the system's robust capability to distinguish clearly between various alcoholic beverages, such as 80 proof dark rum, 151 proof vodka, and water, utilizing measurable differences in permittivity and conductivity spectra.",
+      "Fraud detection accuracy: The technology leverages a trained classifier to distinguish olive oil from common and frequently used adulterants, including soybean, canola, and safflower oils, based on distinct spectral data.",
+      "Corrupted signal minimization: Utilizing a side-by-side transmission mode configuration significantly reduces the likelihood of signal corruption caused by multipath interference, leading to spectral signatures more reliably attributed to the actual liquid properties."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT NO 10,113,979B2",
+        "ip_type": "granted_patent",
+        "country": "US",
+        "number_normalized": "10113979",
+        "publication_number": "US10113979B2",
+        "google_patents_url": "https://patents.google.com/patent/US10113979B2/",
+        "flags": []
+      },
+      {
+        "raw_label": "US PATENT APPLICATION 17/264,691",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "17264691",
+        "publication_number": "US20240000316A1",
+        "google_patents_url": "https://patents.google.com/patent/US20240000316A1/",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Paul M. Meaney",
+        "name_raw": "Paul M. Meaney",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Engineering",
+        "profile_url": "https://engineering.dartmouth.edu/community/faculty/paul-meaney"
+      },
+      {
+        "name": "Timothy Raynolds",
+        "name_raw": "Timothy Raynolds",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Retired Research Engineer",
+        "profile_url": "https://www.linkedin.com/in/timothy-raynolds-5b416210/"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Cheryl Junker",
+        "phone": "(603) 646-0976",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Cheryl.L.Junker@dartmouth.edu"
+      }
+    ],
+    "publications": [],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 6,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "publication_number_shared:US20240000316A1:2018-168,2021-026"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2019-001",
+    "title": "Automatic Detection of Vertebral Fractures on CT Scans",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "Vertebral fractures are common in older adults and are frequently underdiagnosed or underreported in clinical practice due to reliance on manual review of medical imaging scans by radiologists. The invention describes a system and method for automatically detecting vertebral fractures using deep neural networks applied to medical imaging data. The system processes imaging scans through multiple stages including image preprocessing, vertebra localization, feature extraction using convolutional neural networks (CNNs), and feature aggregation using recurrent neural networks (RNNs) and long short-term memory (LSTM) models. It analyzes sequential image slices to identify fracture regions and generate fracture predictions. The automated approach may assist radiologists by reducing reading time and improving consistency in fracture detection.",
+    "advantages": [
+      "Automated Fracture Detection: The invention automatically detects vertebral fractures from medical imaging scans using deep neural networks, reducing reliance on fully manual radiologist review.",
+      "Sequential Image Analysis: The system uses CNNs and LSTM-based feature aggre- gation to analyze sequential imaging slices and capture spatial relationships across volumetric scan data.",
+      "Integrated Multi-Stage Processing: The workflow combines image preprocessing, vertebra localization, feature extraction, and fracture classification into a unified automated pipeline.",
+      "Improved Clinical Consistency: The automated approach may improve consistency in vertebral fracture detection and assist radiologists by reducing reading time.",
+      "Fracture Region Visualization: The system includes visualization and saliency mapping techniques that highlight suspected fracture regions within imaging scans."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT 12,026,876",
+        "ip_type": "granted_patent",
+        "country": "US",
+        "number_normalized": "12026876",
+        "publication_number": "US12026876B2",
+        "google_patents_url": "https://patents.google.com/patent/US12026876B2",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Saeed Hassanpour",
+        "name_raw": "Dr. Saeed Hassanpour",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Founding Director of Dartmouth Center for Precision Health & Artificial Intelligence (CPHAI) and Professor in the Departments of Biomedical Data Science, Computer Science, and Epidemiology at Dartmouth",
+        "profile_url": "https://www.hassanpourlab.com"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      },
+      {
+        "name": "Heather Brownell",
+        "phone": "(978) 378-5475",
+        "role": "Associate Director for Health Sciences",
+        "email": "heather.l.brownell@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://doi.org/10.1016/j.compbiomed.2018.05.011",
+        "doi": "10.1016/j.compbiomed.2018.05.011",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 7,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2020-014",
+    "title": "Handheld, Inexpensive, Side-by-side Transmission Probe",
+    "category": "Life Sciences / Physical Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "Critical to clinical diagnosis and monitoring of conditions such as lymphedema, edema and skin wound is an accurate picture of all the diseased and injured tissues. Current technologies such as commercial reflection- based dielectric probes include inadequate penetration for interrogating deeper tissues and high sensitivity to movement during measurements, rendering them less suitable for dynamic or point-of-care applications. This handheld, inexpensive, side-by-side transmission dielectric probe builds upon the principles of oversized coaxial probes and transmission techniques, combining deeper signal penetration with reduced susceptibility to artifacts and improved clinical usability. The probe operates using an “open-circuit” coaxial interface, where a signal fringes out from one open-circuit coax and is coupled to an adjacent receiving open-circuit coax, propagating through the intervening tissue for interrogation.",
+    "advantages": [
+      "Enhanced penetration: This technology achieves penetration depths of several centimeters, far surpassing the sub-millimeter range of existing probes.",
+      "Motion artifact reduction: Its transmission-based design is far less susceptible to cable motion artifacts than current technologies.",
+      "Improved clinical applicability: The side-by-side layout mitigates multi-path signal corruption, enhancing clinical versatility.",
+      "Broadband capability: An “open-circuit” coaxial interface enables very broad bandwidth and rich spectral content for diagnosis at varying tissue depths.",
+      "Portability and cost: The probe pairs with emerging handheld Vector Network Analyzers (VNAs) operating up to 3 GHz for under $500.",
+      "Prototypes have been fabricated using advanced CAD and metal 3D metal printing, showing strong early promise. The design has evolved from earlier concepts, now potentially using elliptical coaxes to better confine fields and focus the interrogation zone."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT APPLICATION 17/766,121",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "17766121",
+        "publication_number": "US20220354425A1",
+        "google_patents_url": "https://patents.google.com/patent/US20220354425A1/",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Paul M. Meaney",
+        "name_raw": "Paul M. Meaney",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Engineering, Dartmouth",
+        "profile_url": "https://home.dartmouth.edu/search/google?keys=Paul%20M.%20Meaney"
+      },
+      {
+        "name": "Timothy Raynolds",
+        "name_raw": "Timothy Raynolds",
+        "role": "co_inventor",
+        "degrees": [],
+        "title_affiliation": "Lead Senior Systems Engineer, Dartmouth",
+        "profile_url": "https://www.linkedin.com/in/timothy-raynolds-5b416210/"
+      },
+      {
+        "name": "Robin Augustine",
+        "name_raw": "Dr. Robin Augustine",
+        "role": "co_inventor",
+        "degrees": [],
+        "title_affiliation": "Associate Professor of Electrical Engineering, Uppsala University",
+        "profile_url": "https://www.uu.se/en/contact-and-organisation/staff?query=N11-2151"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Cheryl Junker",
+        "phone": "(603) 646-0976",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Cheryl.L.Junker@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://doi.org/10.3390/s22030748",
+        "doi": "10.3390/s22030748",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 8,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "also_listed:Physical-Sciences.pdf:p2"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2020-015",
+    "title": "Modulation of Fungal Oxygen Consumption via Expression of a Novel Gene Cluster",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "The current industrial enzymes market relies heavily on fungal bioproduction via large-scale fermentation with a $10 billion market growing at 7% annually. Producing enzymes requires large, dense fungal cultures that demand proper aeration. Researchers at Dartmouth have identified targeted genetic modifications in commercial fungal strains that will improve characteristics beneficial for industrial fermentation, including reduced oxygen consumption and increased adherence. Either inserting the hypoxia responsive morphology factor A (hrmA) associated (HAC) cluster or making a specific mutation in the regulatory gene (hrmA, D304G) within the HAC is sufficient to produce the beneficial phenotypes in commercial fungal strains even if the cluster is already present in the strain but normally silenced. [Top]: Comparison of mutant EVOL20’s loose, non-pelleting mycelial network with wild-type AF293’s dense pellets, showing a morphology that diffuse oxygen more efficiently. Kowalski, C. H., Kerkaert, J. D., Liu, K. W., Bond, M. C., Hartmann, R., Nadell, C. D., Stajich, J. E., & Cramer, R. A. (2019). Fungal biofilm morphology impacts hypoxia fitness and disease progression. Nature microbiology, 4(12), 2430–2441. https://doi.org/10.1038/s41564-019-0558-7 [Left]: Mutated strains display significantly decreased oxygen consumption. [Center]: Mutated strains exhibits diffuse mycelial morphology, a desirable trait in fungal biomanufacturing. [Right]:Evolved strains increase secretion of industrially-relevant chemicals in hypoxia.",
+    "advantages": [
+      "Reduced oxygen consumption: Introducing the discovered gene cluster or a specific mutation into fungal strains can reduce 02 consumption by 50%.",
+      "Increased biomass: The technology achieves decreased oxygen consumption while maintaining and even increasing the amount of biomass the fungus produces.",
+      "Reduced adherence: Expression of the novel gene cluster or introduction of the A. fumigatus baf protein reduces fungal adherence to surfaces, which improves the fermentation process.",
+      "Improved fermentation: The invention confers a diffuse mycelial morphology, which is a desirable trait in fungal biomanufacturing, unlike the adherent, biofilm-prone cultures that are problematic in large-scale fermentations."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT 12,116,579",
+        "ip_type": "granted_patent",
+        "country": "US",
+        "number_normalized": "12116579",
+        "publication_number": "US12116579B2",
+        "google_patents_url": "https://patents.google.com/patent/US12116579B2/",
+        "flags": []
+      },
+      {
+        "raw_label": "US PATENT APPLICATION 18/440,756",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "18440756",
+        "publication_number": "US20250034581A1",
+        "google_patents_url": "https://patents.google.com/patent/US20250034581A1/en?",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Robert A. Cramer",
+        "name_raw": "Dr. Robert A. Cramer",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Microbiology and Immunology",
+        "profile_url": "https://geiselmed.dartmouth.edu/faculty/facultydb/view.php/?uid=4949"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://doi.org/10.1038/s41564-019-0558-7",
+        "doi": "10.1038/s41564-019-0558-7",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 9,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2020-027",
+    "title": "Immunologically Optimized Botulinum Toxin Light Chain Variants",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "Botulinum neurotoxin serotype A (BoNT/A) is a biotherapeutic used for both cosmetics and for the treatment of diseases. BoNT/A, however, is immunogenic and its use can result in adverse immune responses resulting in various consequences. This technology leverages a computationally-driven design of deimmunized BoNT/A LC libraries. Using this approach, the immunogenicity of BoNT/A is overcome by preventing anti-drug antibodies (ADAs) via T cell epitope deletion.",
+    "advantages": [
+      "This novel method for deimmunizing BoNT/A results in reduced immunogenicity of the botulinum toxin light chain or fragment.",
+      "By utilizing computational protein library design coupled with ultra-high throughput screening, highly deimmunized yet highly active BoNT light chain variants are produced.",
+      "Botulinum toxin has many therapeutic applications, and this mechanism has the potential to improve this drug’s utility to improve patient outcomes."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "PCT/US2021/014145",
+        "ip_type": "pct",
+        "country": "WO",
+        "number_normalized": "PCT/US2021/014145",
+        "publication_number": "WO2021150581A2",
+        "google_patents_url": "https://patents.google.com/patent/WO2021150581A2",
+        "flags": []
+      },
+      {
+        "raw_label": "US PATENT APPLICATION US17/759,045",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "17759045",
+        "publication_number": "US20230120677A1",
+        "google_patents_url": "https://patents.google.com/patent/US20230120677A1",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Karl Griswold",
+        "name_raw": "Dr. Karl Griswold",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Engineering",
+        "profile_url": "https://engineering.dartmouth.edu/community/faculty/karl-griswold"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36623275/",
+        "doi": null,
+        "pmid": "36623275"
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 10,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2020-047",
+    "title": "Amanuensis - A Healthcare Data System for Information Provenance",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "Many healthcare providers are recommending patients use mobile health (mHealth) devices because they allow providers to monitor individuals' health outside of a clinical setting. These devices tend to be managed by different organizations and implemented using different technologies, which makes creating a trusted and secure data sharing ecosystem difficult. Current solutions face technological limitations in ensuring both data confidentiality during computation and verifiable information provenance across disparate mHealth data silos. Amanuensis is a secure and integrated health data system designed to achieve information provenance for mobile health (mHealth) data. It leverages Blockchain and Trusted Execution Environment (TEE) technologies to establish a trusted and secure data sharing ecosystem. The prototype implementation utilizes the VeChain Thor blockchain, a public blockchain with a Proof-of- Authority consensus mechanism, and Intel Software Guard Extensions (SGX) for the TEE component, leveraging GrapheneSGX, a library OS that allows deploying unmodified applications within SGX enclaves. This demonstrates the practical feasibility of the Amanuensis concept using readily available technologies.",
+    "advantages": [
+      "Enhanced security and trust: Amanuensis establishes a consortium of participants who collectively verify data integrity and enforce access policies recorded on a blockchain, removing the need to trust a single entity for gatekeeping health data.",
+      "Confidential and verifiable: This technology enables confidential computations on sensitive health data within TEEs, addressing the limitations of traditional blockchain-based smart contracts that expose data due to their transparency.",
+      "Scalability: A prototype implementation using Intel SGX and VeChain Thor blockchain demonstrates the potential to support up to 14,256,000 mHealth data sources at $0.07 per data source per day, showcasing its scalability and potential cost-effectiveness for managing large volumes of mHealth data.",
+      "Improved data provenance: Amanuensis provides transparent and immutable data trails by recording provenance metadata on the blockchain, allowing data owners and consumers to verify the origin and history of mHealth data and derived information without accessing the raw data. System Overview: A high-level depiction of the relationship between the different components of the Amanuensis system."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT 12,244,726",
+        "ip_type": "granted_patent",
+        "country": "US",
+        "number_normalized": "12244726",
+        "publication_number": "US12244726B2",
+        "google_patents_url": "https://patents.google.com/patent/US12244726B2/",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "David F Kotz",
+        "name_raw": "Dr. David F Kotz",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Computer Science",
+        "profile_url": "https://faculty-directory.dartmouth.edu/david-kotz"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Cheryl Junker",
+        "phone": "(603) 646-0976",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Cheryl.L.Junker@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://doi.org/10.1016/j.ipm.2020.102460",
+        "doi": "10.1016/j.ipm.2020.102460",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 11,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2021-023",
+    "title": "IL-33 + IL-2 Cytokine Platform: Achieving CAR T Cell Efficacy Against Solid Cancers",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "In 2024 in the U.S. there were currently 16.4 million people living with solid cancer in the U.S. and an estimated 1.6 million new solid cancer diagnoses. There are zero FDA-approved CAR T cells for solid cancers. Current immunotherapies that fail patients in the clinic are unable to overcome the highly immunosuppressive tumor microenvironment (TME) and the heterogeneity of solid cancers. The IL-33 + IL-2 Cytokine Platform combines IL-33 and IL-2 to safely, effectively, and durably overcome the sol- id TME and activate new T cells to delay tumor growth.",
+    "advantages": [
+      "The IL-33 + IL-2 CAR Platform:",
+      "Overcomes the key challenges to efficacy in solid tumors.",
+      "Eliminates the need for toxic co-treatments.",
+      "Expands patient eligibility.",
+      "Offers diverse, flexible product compatibility.",
+      "Outperforms other armoring strategies against solid tumors."
+    ],
+    "other_sections": {
+      "features": [
+        "The IL-33 + IL-2 CAR Platform is the only immunotherapy to co-deliver Type I and Type II cytokines.",
+        "The IL-33 + IL-2 CAR Platform activates host immunity & shifts the TME from immune suppressive to stimulatory.",
+        "The IL-33 + IL-2 CAR Platform is effective against multiple heterogenous tumors, independent of tumor type, target antigen, or CAR construct.",
+        "The IL-33 + IL-2 CAR Platform generates persistent & durable antitumor immunity, promoting favorable CAR & host T cell memory phenotypes."
+      ]
+    },
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT NO 18/359,373",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "18359373",
+        "publication_number": "US20240109947A1",
+        "google_patents_url": "https://patents.google.com/patent/US20240109947A1",
+        "flags": [
+          "label_says_patent_but_number_is_application"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "name": "Yina Huang",
+        "name_raw": "Yina Huang",
+        "role": "principal_investigator",
+        "degrees": [
+          "PhD"
+        ],
+        "title_affiliation": "Professor of Microbiology & Immunology, Geisel School of Medicine at Dartmouth",
+        "profile_url": "https://geiselmed.dartmouth.edu/faculty/facultydb/view.php/?uid=5325"
+      },
+      {
+        "name": "Melanie Peck",
+        "name_raw": "Melanie Peck",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Current Graduate Student, Dartmouth PhD Innovation Fellow",
+        "profile_url": "https://graduate.dartmouth.edu/mcb/people/melanie-peck"
+      },
+      {
+        "name": "Rachel Brog",
+        "name_raw": "Rachel Brog",
+        "role": "principal_investigator",
+        "degrees": [
+          "PhD"
+        ],
+        "title_affiliation": "Former Graduate Student",
+        "profile_url": "https://geiselmed.dartmouth.edu/huang/profile/rachel-a-brog-ph-d/"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-022-03736-6",
+        "doi": "10.1186/s12967-022-03736-6",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 12,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "ip:label_says_patent_but_number_is_application"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2021-026",
+    "title": "Optical time-of-flight imaging methods and systems for surgical guidance and fluorescence depth estimation in tissue",
+    "category": "Life Sciences / Physical Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "Critical information about the depth and shape of targets in florescence-guided surgery procedures is limited by the one-millimeter visualization barrier that hampers objectivity and utility. This invention introduces an optical imaging system that leverages time-of-flight data to precisely determine the depth and shape of fluorescence-tagged targets, such as tumor tissue, embedded within scattering media like healthy tissue. The technology addresses limitations in current surgical tumor guidance by enabling subsurface imaging through diffuse radiation transport.",
+    "advantages": [
+      "Enhanced visualization: The technology provides surgeons with crucial information about the depth and shape of fluorescent targets in vivo or ex vivo, offering guidance during procedures like fluorescence-guided surgery.",
+      "Improved accuracy: By integrating multi-wavelength time-of-flight data, the invention calculates the target’s surface topology, optical properties, and fluorophore depth, enhancing the precision of depth localization and shape evaluation.",
+      "Signal discrimination: The technology reliably distinguishes the primary fluorescence signal from reflected secondary signals using time-of- flight information."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT NO 11,771,323",
+        "ip_type": "granted_patent",
+        "country": "US",
+        "number_normalized": "11771323",
+        "publication_number": "US11771323B2",
+        "google_patents_url": "https://patents.google.com/patent/US11771323B2/",
+        "flags": []
+      },
+      {
+        "raw_label": "US PATENT APPLICATION 18/229,086",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "18229086",
+        "publication_number": "US20240000316A1",
+        "google_patents_url": "https://patents.google.com/patent/US20240000316A1/",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Brian W. Pogue",
+        "name_raw": "Dr. Brian W. Pogue",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Adjunct Professor of Engineering",
+        "profile_url": "https://engineering.dartmouth.edu/community/faculty/brian-pogue"
+      },
+      {
+        "name": "Petr Brůža",
+        "name_raw": "Dr. Petr Brůža",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Assistant Professor of Engineering",
+        "profile_url": "https://engineering.dartmouth.edu/community/faculty/petr-bruza"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Cheryl Junker",
+        "phone": "(603) 646-0976",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Cheryl.L.Junker@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://doi.org/10.1364/OPTICA.431521",
+        "doi": "10.1364/OPTICA.431521",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 13,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "also_listed:Physical-Sciences.pdf:p6",
+      "publication_number_shared:US20240000316A1:2018-168,2021-026"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2021-027",
+    "title": "MR-Linac Compatible Daily Quality Assurance System and Methods Utilizing Cherenkov Imaging for Imaging-Radiation Isocenter Coincidence Measurement",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "The installation of magnetic resonance guided radiation therapy systems (MRgRT) has introduced the benefits of real-time magnetic resonance (MR) imaging to adaptive radiation therapy planning on a magnetic resonance guided linear accelerator (referred to as MR-Linac or MRI-Linac) platform. These benefits include superior soft tissue contrast compared to x-ray imaging and continuous imaging during treatment, enabling high positional accuracy and robust inter-fraction adjustments. However, the MR-Linac technology has more quality assurance (QA) procedure complications than with conventional accelerators due to the magnetic environment's incompatibility with traditional detectors and the limited availability of onboard x-ray imaging. Issues with setup complexities, time-intensive procedures, and the need for specialized post-pro- cessing, hinder current QA technologies’ suitability for daily use. This invention introduces a Cherenkov imaging-based system as a daily use MR-Linac QA systems, specifically addressing the verification of mechanical- imaging-radiation isocenter coincidence.",
+    "advantages": [
+      "Simplified measurement: This system allows for simplified and more efficient measurement of imaging-radiation isocenter coincidence in therapeutic linear accelerators.",
+      "Near-real-time analysis: The system enables immediate analysis of results after localized data acquisition via custom software, avoiding time- consuming post-exposure readout.",
+      "Comprehensive QA capability: The phantom is compatible with clinically available ionization chambers for machine output measurements, allowing it to perform all TG-142 dosimetric measurements for MR-Linac daily QA in high precision."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT APPLICATION 18/280,289",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "18280289",
+        "publication_number": "US20240066324A1",
+        "google_patents_url": "https://patents.google.com/patent/US20240066324A1",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Petr Brůža",
+        "name_raw": "Dr. Petr Brůža",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Assistant Professor of Engineering",
+        "profile_url": "https://engineering.dartmouth.edu/community/faculty/petr-bruza"
+      },
+      {
+        "name": "David J. Gladstone",
+        "name_raw": "Dr. David J. Gladstone",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Engineering and Professor of Medicine",
+        "profile_url": "https://engineering.dartmouth.edu/community/faculty/david-gladstone"
+      },
+      {
+        "name": "Rongxiao Zhang",
+        "name_raw": "Dr. Rongxiao Zhang",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Assistant Professor/Clinical Physics",
+        "profile_url": null
+      },
+      {
+        "name": "Daniel A. Alexander",
+        "name_raw": "Daniel A. Alexander",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "PhD Graduate",
+        "profile_url": null
+      },
+      {
+        "name": "Jacqueline M. Andreozz",
+        "name_raw": "Jacqueline M. Andreozz",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "PhD Graduate",
+        "profile_url": null
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Heather Brownell",
+        "phone": "(978) 378-5475",
+        "role": "Associate Director for Health Sciences",
+        "email": "heather.l.brownell@dartmouth.edu"
+      },
+      {
+        "name": "Cheryl Junker",
+        "phone": "(603) 646-0976",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Cheryl.L.Junker@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://doi.org/10.1002/mp.14892",
+        "doi": "10.1002/mp.14892",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 14,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2021-032",
+    "title": "Barcoded-Antibody Library for in vitro Enhanced Fc Function Variance Screening",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": "worldwide",
+    "description": "This invention introduces a novel protein engineering platform that allows for efficient discovery of antibody drugs with enhanced Fc functions compared to manual screening. The platform enables high-throughput screening of soluble proteins by attaching cell-specific identifiers to both expressed proteins and their encoding nucleic acids. This overcomes existing limitations by enabling the screening of complex multi-chain proteins such as full-length antibodies without altering their natural format.",
+    "advantages": [
+      "Soluble Protein Screening: The platform enables the screening of soluble proteins to directly interrogate Fc activities, solid tumor penetration and many existing in vitro assays in parallel, allowing for better evaluation of their properties before actually making the proteins.",
+      "High Efficiency and Precision: Experiments confirmed <0.1% incorrect identifiers between antibodies and transcripts from single cells. More information is available on a confidential basis."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PROVISIONAL APPLICATION 63/744,007",
+        "ip_type": "provisional",
+        "country": "US",
+        "number_normalized": "63744007",
+        "publication_number": null,
+        "google_patents_url": null,
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Jiwon Lee",
+        "name_raw": "Dr. Jiwon Lee",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Ralph and Marjorie Crump Assistant Professor of Engineering",
+        "profile_url": "https://engineering.dartmouth.edu/community/faculty/jiwon-lee"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Tammy Heesakker",
+        "phone": "(267) 240-4549",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Tammy.A.Heesakker@dartmouth.edu"
+      }
+    ],
+    "publications": [],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 15,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2021-049",
+    "title": "NEMO protein engineering for NMR and Structural Biology",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "This invention introduces novel variants of the natural NEMO protein to enable the development of new therapies targeting the NF- κB pathway in cancer. Existing technology could not utilize NMR and X-ray techniques effectively in the study of wild-type (WT) NEMO for drug discovery efforts. Current solutions faced significant limitations, as WT-NEMO exhibited conformational heterogeneity and line broadening in NMR spectra, hindering its use in NMR-based screening and structure determination. These modifications are specifically designed to achieve improved structural characteristics, enhanced stability and solubility, higher quality NMR spectra, and suitability for X-ray crystallography, all while maintaining crucial biological activity, such as IKK binding.",
+    "advantages": [
+      "Enables structural studies: The modified NEMO proteins are suited for NMR and X-ray techniques, enabling structure determination of NEMO in both the apo-form and in complex with ligands/inhibitors, which was not achievable with WT-NEMO.",
+      "Improves NMR screening quality: Mutant NEMO proteins like MP12 generate high-quality, well-dispersed NMR spectra, compared to the diffuse density spectra of WT-NEMO, thereby enabling effective NMR-based screening and lead validation.",
+      "Enhanced properties: The modifications improve helical content, coiled-coil structure, dimerization propensity, and protein stability, reducing aggregation and conformational exchange compared to wild-type NEMO.",
+      "Enhanced drug discovery: Improved properties facilitate structure-based rational design, screening, and validation of inhibitors targeting the NEMO-IKK interaction, accelerating the development of potential therapies."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT APPLICATION 18/514,761",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "18514761",
+        "publication_number": "US20240239851A1",
+        "google_patents_url": "https://patents.google.com/patent/US20240239851A1/",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Maria Pellegrini",
+        "name_raw": "Dr. Maria Pellegrini",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Research Professor",
+        "profile_url": "https://faculty-directory.dartmouth.edu/maria-pellegrini"
+      },
+      {
+        "name": "Gevorg Grigoryan",
+        "name_raw": "Dr. Gevorg Grigoryan",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Research Associate Professor of Computer Science",
+        "profile_url": "https://faculty-directory.dartmouth.edu/gevorg-grigoryan"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://doi.org/10.1021/bi500861x",
+        "doi": "10.1021/bi500861x",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 16,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2022-019",
+    "title": "Methods To Predict Time Since CMV Infection",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "It is crucial to develop reliable systems and methods to both identify whether subjects have herpesvirus infections (primary or latent) and determine the time since the subject was exposed to or infected with a herpesvirus. This is especially important in subjects that are pregnant (vertical transmission). This novel method uses bodily fluid sample to detect a set of anti-virus antibody features of the subject and generate an input vector with this data. This method applies the input vector to a trained machine learning algorithm to classify the sample. This method also determines whether the subject is a suitable candidate for therapeutic intervention based on the classification.",
+    "advantages": [
+      "The invention has the potential to identify important details of herpesvirus infections in an individual subject using the subject’s bodily fluid sample in a machine learning platform.",
+      "This approach can determine whether a subject is a candidate for therapeutic intervention, thus improving health outcomes."
+    ],
+    "other_sections": {
+      "features": [
+        "A computer-implemented system identifies herpesvirus infections and exposures.",
+        "The machine learning model classifies the subjects as having primary versus latent infections, and a less or more recent viral exposure.",
+        "The system recognizes anti-herpesvirus antibody features from subject samples.",
+        "This system can be used in cases of cytomegalovirus (CMV), and assigns an importance measure to the detected anti- herpesvirus antibody features to determine therapeutic interventions (antiviral therapy).",
+        "This approach can also be used in a pregnant subject."
+      ]
+    },
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT NO 18/837,293",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "18837293",
+        "publication_number": "US20250140407A1",
+        "google_patents_url": "https://patents.google.com/patent/US20250140407A1",
+        "flags": [
+          "label_says_patent_but_number_is_application"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "name": "Margie Ackerman",
+        "name_raw": "Dr. Margie Ackerman",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Engineering",
+        "profile_url": "https://engineering.dartmouth.edu/community/faculty/margie-ackerman"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Tammy Heesakker",
+        "phone": "(267) 240-4549",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Tammy.A.Heesakker@dartmouth.edu"
+      },
+      {
+        "name": "Don Castle",
+        "phone": "(603) 731-1503",
+        "role": "Director for Industry Engagement",
+        "email": "Don.Castle-2@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://www.jci.org/articles/view/180560",
+        "doi": null,
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 17,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "ip:label_says_patent_but_number_is_application"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2022-032",
+    "title": "Compositions And Methods For Preventing Or Ameliorating Neonatal HSV Infection",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "Neonates are at risk for herpesvirus (HSV) infection during birth or close contact with an infected individual. There are an estimated 14,000 annaul cases of neonatal HSV (nHSV) globally. nHSV infections often result in significant morbidity and mortality. Current antiviral drug therapy does not adequately ameliorate the effects of nHSV, highlighting a need for improved clinical interventions for neonates with HSV infections. This invention treats pregnant mothers or neonates with an anti-HSV antibody to reduce mortality and morbidity associated with nHSV.",
+    "advantages": [
+      "This invention engineers an anti-HSV antibody that comprises an Fc region with >1 modification or mutation.",
+      "The anti-HSV antibody is administered to a maternal subject that is pregnant or likely to become pregnant, or to a neonate infected with HSV or at risk to be infected with HSV.",
+      "Mouse studies demonstrate that this delivery of anti-HSV antibody results in ameliorated or prevented nHSV. Data indicates treatment with anti-HSV antibody results in significantly increased probability of survival as compared to isotype control."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "PCT/US2019/055685",
+        "ip_type": "pct",
+        "country": "WO",
+        "number_normalized": "PCT/US2019/055685",
+        "publication_number": "WO2020077119A1",
+        "google_patents_url": "https://patents.google.com/patent/WO2020077119A1/",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Margie Ackerman",
+        "name_raw": "Dr. Margie Ackerman",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Engineering",
+        "profile_url": "https://engineering.dartmouth.edu/community/faculty/margie-ackerman"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Tammy Heesakker",
+        "phone": "(267) 240-4549",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Tammy.A.Heesakker@dartmouth.edu"
+      },
+      {
+        "name": "Don Castle",
+        "phone": "(603) 731-1503",
+        "role": "Director for Industry Engagement",
+        "email": "Don.Castle-2@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://rupress.org/jem/article/219/12/e20220110/213499/Maternally-transferred-mAbs-protect-neonatal-mice",
+        "doi": null,
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 18,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2022-036",
+    "title": "Methylation Cytometry DNA-based Cell Typing Technology for Advanced Immune and Cell Type Profiling",
+    "category": "Life Sciences",
+    "status": "portfolio_available_for_review",
+    "rights": null,
+    "description": "Routine evaluation of patient immune and cell type status has many applications in precision medicine. Methylation Cytometry (MC) is a DNA-based immune cell profiling technology that allows frequent, accurate, and direct insights into immune system responses. MC leverages stable epigenetic marks on DNA called DNA methylation that define cell identity and uses the binary nature of un/methylation as a signal that is directly proportional to the number of cells. The technology portfolio includes cell typing approaches and accompanying software that enable objective, standardized immune and other cell type profiling.",
+    "advantages": [
+      "Offers advanced, scalable profiling across diverse biospecimens.",
+      "Can use stable, easy to acquire samples (including in-home collection of blood).",
+      "Can accurately quantify even low prevalence cell types in peripheral blood, tumor samples, and other specimen types.",
+      "Uses existing instrumentation.",
+      "Can provide highly accurate quantification of 12+ cell types and return >50 profile variables.",
+      "Broad applications including:",
+      "evaluation of response to therapy",
+      "clinical trial eligibility criteria",
+      "determining patient prognosis",
+      "response to vaccines Precision oncology applications of methylation cytometry – improved brain tumor prognostics"
+    ],
+    "other_sections": {
+      "looking_for": [
+        "Collaborations around clinical precision medicine applications, including outside of immune profiling. Support and management for platform start-up."
+      ]
+    },
+    "ip_refs": [],
+    "people": [
+      {
+        "name": "Brock Christensen",
+        "name_raw": "Brock Christensen",
+        "role": "principal_investigator",
+        "degrees": [
+          "Ph.D"
+        ],
+        "title_affiliation": "Professor of Epidemiology",
+        "profile_url": "https://geiselmed.dartmouth.edu/faculty/facultydb/view.php/?uid=4592"
+      },
+      {
+        "name": "Lucas Salas",
+        "name_raw": "Lucas Salas",
+        "role": "principal_investigator",
+        "degrees": [
+          "MD",
+          "PhD",
+          "MPH"
+        ],
+        "title_affiliation": "Assistant Professor of Epidemiology",
+        "profile_url": "https://geiselmed.dartmouth.edu/faculty/facultydb/view.php/?uid=7602"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-022-03736-6",
+        "doi": "10.1186/s12967-022-03736-6",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 19,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "no_ip_identifier_on_page"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2022-043",
+    "title": "A Method to Diagnosis Infants and Children with CF at Risk for Respiratory Infections Using Stool Composition Data",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "Gut microbiota dysbiosis in cystic fibrosis (CF) patients can alter a host’s inflammatory status, showing distinct microbial compositions between children with low versus high intestinal inflammation, which affects lung disease risk. Traditional diagnostic methods often involve uncomfortable oropharyngeal sampling or respiratory lavage. This invention introduces machine learning-based diagnostic tool for identifying CF patients at high risk for upper respiratory infections (URIs) or systemic inflammation. The system employs random forest machine learning models trained on stool microbiota data to classify patients’ risk. Once identified, a clinician has a broad range of therapeutic interventions to address the risk, including altering the intestinal microbiome through bacterial compositions (e.g., Bifidobacterium, Bacteroides), probiotics, prebiotics, fecal microbiota transplantation (FMT), or conventional treatments such as antibiotics, anti-inflammatory medications, and CFTR modulators.",
+    "advantages": [
+      "Non-invasive diagnosis: This invention uses stool compositional data from easily collected diaper samples to accurately identify children most likely to experience respiratory events, replacing uncomfortable and invasive sampling methods.",
+      "High predictive accuracy: The machine learning model predicts high upper respiratory infection frequency (URIfreq) with only 16% error and high neutrophil-to-lymphocyte ratio (NLR), a marker for systemic inflammation, with 27% error.",
+      "Actionable insights: By identifying specific gut microbiota profiles associated with negative health outcomes, this technology provides physicians with crucial understanding to determine the need for therapeutic interventions."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT APPLICATION 18/521,285",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "18521285",
+        "publication_number": "US20240177868A1",
+        "google_patents_url": "https://patents.google.com/patent/US20240177868A1/",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "George A. O’Toole",
+        "name_raw": "Dr. George A. O’Toole",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Microbiology & Immunology",
+        "profile_url": "https://biology.dartmouth.edu/people/george-otoole"
+      },
+      {
+        "name": "Juliette Madan",
+        "name_raw": "Juliette Madan",
+        "role": "principal_investigator",
+        "degrees": [
+          "MD"
+        ],
+        "title_affiliation": "Associate Professor, Pediatrics, Epidemiology, Quantitative Biomedical Data Science",
+        "profile_url": "https://geiselmed.dartmouth.edu/epidemiology/profile/juliette-madan-md/"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      },
+      {
+        "name": "Heather Brownell",
+        "phone": "(978) 378-5475",
+        "role": "Associate Director for Health Sciences",
+        "email": "Heather.L.Brownell@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25818499/",
+        "doi": null,
+        "pmid": "25818499"
+      },
+      {
+        "url": "https://doi.org/10.1101/2022.08.06.503028",
+        "doi": "10.1101/2022.08.06.503028",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 20,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2023-003",
+    "title": "Discovery and Development of Novel Small Molecules with Antifungal Properties",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": "worldwide",
+    "description": "Antifungal drug discovery against molds has lagged other pathogens due to their complex multicellular lifestyles. Currently, pathogenic filamentous fungi are exceedingly difficult to treat due to resistance to all three main classes of contemporary antifungals and rising drug resistance in susceptible strains. Researchers at Dartmouth have identified novel compounds and methods for treating fungal infections through a high-throughput screening platform specifically designed to find small molecules synergistic with fluconazole and/or those with preferential activity under low oxygen conditions, leveraging a sensitive luminescence-based reporter assay. Preliminary data from testing suggests some of these compounds may act through the SrbA-dependent hypoxia response pathway, a known virulence factor and regulator of azole resistance, representing a potentially novel mechanism of action.",
+    "advantages": [
+      "Targeting difficult infections: The proposed compounds specifically addressed infections caused by Aspergillus species, including azole-resistant strains which are particularly challenging.",
+      "Enhanced efficacy: The identified compounds inhibit fungal growth more effectively, including with lower concentrations of antifungal agents, and specifically potentiate antifungal agents like azoles, demonstrating synergy and increased efficacy against drug-resistant strains.",
+      "Hypoxia-specific activity: The invention identifies molecules with preferential activity under low oxygen (hypoxic) conditions, which mimics the microenvironment found at the site of established infections and in biofilms, thereby targeting a crucial resistance mechanism."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "PCT APPLICATION PCT/US2024/030955",
+        "ip_type": "pct",
+        "country": "WO",
+        "number_normalized": "PCT/US2024/030955",
+        "publication_number": "WO2024249290A2",
+        "google_patents_url": "https://patents.google.com/patent/WO2024249290A2",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Robert A. Cramer",
+        "name_raw": "Dr. Robert A. Cramer",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Microbiology and Immunology",
+        "profile_url": "https://geiselmed.dartmouth.edu/faculty/facultydb/view.php/?uid=4949"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://doi.org/10.1073/pnas.2003700117",
+        "doi": "10.1073/pnas.2003700117",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 21,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2023-039",
+    "title": "GyroGel: Redefining Bone Oncological Reconstruction",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": "us",
+    "description": "The treatment of bone disorders caused by infection, trauma, or tumor-resection, are currently reliant on surgical interventions that may fracture or otherwise degrade over time through bone resorption. Solutions such as bone cement may cause an exothermic reaction, resulting in burns to healthy cells. While synthetic bone fillers and synthetic bone grafts are made from materials which can be effective in promoting bone growth, they are not tunable or customizable. This invention utilizes both cryogels and 3D printing in combination resulting in a bone graft scaffold highlighting the advantages of both materials: high porosity and cellular infiltration of cryogels and customization and mechanical strength of 3D printing. The bone graft scaffold produced by the combination of two scaffold fabrication methods creates a composite bone graft scaffold with high porosity to ensure healthy cellular growth, while increasing mechanical durability to applied loads by the surrounding in vivo tissues.",
+    "advantages": [
+      "Better patient outcomes than traditional bone grafts",
+      "Significantly less invasive",
+      "Decreased recovery time",
+      "Less physical deformation",
+      "Estimated to be half the price of current surgical intervention"
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US APPLICATION 18/784,881",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "18784881",
+        "publication_number": "US20250090727A1",
+        "google_patents_url": "https://patents.google.com/patent/US20250090727A1/",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Katie Hixon",
+        "name_raw": "Dr. Katie Hixon",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Assistant Professor of Engineering, Clinical Assistant Professor of Orthopaedics, Thayer School of Engineering",
+        "profile_url": "https://sites.google.com/dartmouth.edu/hixon-lab/home"
+      },
+      {
+        "name": "Peter Bertone",
+        "name_raw": "Peter Bertone",
+        "role": "graduate_student",
+        "degrees": [],
+        "title_affiliation": null,
+        "profile_url": "https://sites.google.com/dartmouth.edu/hixon-lab/people/graduate-students?authuser=0"
+      },
+      {
+        "name": "Levi Olevsky",
+        "name_raw": "Levi Olevsky",
+        "role": "graduate_student",
+        "degrees": [],
+        "title_affiliation": null,
+        "profile_url": "https://sites.google.com/dartmouth.edu/hixon-lab/people/graduate-students?authuser=0"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Cheryl Junker",
+        "phone": "(603) 646-0976",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Cheryl.L.Junker@dartmouth.edu"
+      }
+    ],
+    "publications": [],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 22,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2024-005",
+    "title": "Creation of Anti-Canine PD-1 Monoclonal Antibodies to Treat Cancer",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": "worldwide",
+    "description": "HugPet9 is a novel antibody for detecting or treating canine cancers, alone or in combination therapies. The invention includes antibodies or antibody fragments binding to canine PD-1, comprising the same CDRs as HugPet9 (77A6H9) or 77A6H7, or possessing at least 98–99% sequence identity in their VH and VL polypeptides to these antibodies. These antibodies or fragments can be engineered to include various Fc regions (murine, human, feline, canine, optionally canine IgGA, IgGB, IgGC, or IgGD) and framework regions (canine or murine). The invention extends to nucleic acids encoding these antibodies, expression vectors designed to express them, and recombinant cells (including mammalian cells like CHO, BHK, COS, Hela, HEK; yeast; fungal; plant; insect; or bacterial cells) capable of producing the antibodies.",
+    "advantages": [
+      "Binding Specificity: HugPet9 binds specifically to canine peripheral blood mononuclear cells (PBMCs) and different canine tumor tissues expressing PD-1 protein.",
+      "Diagnostic Specificity: HugPet9 provides clear and specific detection of PD-1 protein levels in archival canine paraffin-embedded tissues, unlike a commercial antibody (JC053) which shows non-specific staining of multiple cell types in the same tissues.",
+      "Demonstrated Safety and Efficacy: Intratumoral (IT) HugPet9 immunotherapy showed safety in a proof-of-concept trial and preclinical studies for canine mammary cancer patients, resulting in observed partial responses in one dog and stable disease in two dogs in a small cohort.",
+      "Reduced Toxicity: The IT administration route for HugPet9 is estimated to require significantly lower doses (e.g., 2 mg total for a 4-week course vs. potentially 4–60 mg for systemic administration)."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "PCT APPLICATION PCT/US2024/055735",
+        "ip_type": "pct",
+        "country": "WO",
+        "number_normalized": "PCT/US2024/055735",
+        "publication_number": "WO2025106547A1",
+        "google_patents_url": "https://patents.google.com/patent/WO2025106547A1/",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Hugo Arias-Pulido",
+        "name_raw": "Hugo Arias-Pulido",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Senior Research Scientist, Microbiology & Immunology",
+        "profile_url": "https://www.linkedin.com/in/hugo-arias-pulido-38945659/"
+      },
+      {
+        "name": "Randolph J. Noelle",
+        "name_raw": "Dr. Randolph J. Noelle",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Emeritus Professor of Microbiology & Immunology",
+        "profile_url": "https://geiselmed.dartmouth.edu/faculty/facultydb/view.php/?uid=136"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39273048/",
+        "doi": null,
+        "pmid": "39273048"
+      },
+      {
+        "url": "https://dartmouth.wellspringsoftware.net/kms/patent/detail/4714/",
+        "doi": null,
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 23,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2024-009",
+    "title": "Method and composition for conferring abiotic stress resistance on plants by modulating activity of an F-box protein family",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": "worldwide",
+    "description": "This invention enhances abiotic stress resistance in plants by reducing the activity of an F-box protein family by altering the gene expression. Current molecular approaches to combat abiotic stress often involve transgenic expression of stress regulators, leading to genetically modified organisms (GMOs), which are subject to regulations that can limit commercial potential. There is a need for non-GMO methods that provide effective and long-lasting abiotic stress resistance, along with a more targeted approach for exogenous treatments.",
+    "advantages": [
+      "Non-GMO method: This invention uses CRISPR-Cas9 editing of the F-box family to reduce their expression and confer drought resistance.",
+      "Improved drought resistance: Reducing the expression levels of the F-box proteins in rice leads to drought resistance through delayed leaf senescence and improved seed set under drought conditions.",
+      "Broader stress resistance: Due to overlaps in plant response mechanisms, this method also provided resistance to other abiotic stresses, including salt stress, high and low temperatures, and heavy metal stress."
+    ],
+    "other_sections": {
+      "looking_for": [
+        "Licensing opportunities and collaborations around testing and using the technology for drought improvement of crops and turf grass, as well as in developing chemical approaches to target and reduce expression of this F-box protein family."
+      ]
+    },
+    "ip_refs": [
+      {
+        "raw_label": "PCT/US2025/017244",
+        "ip_type": "pct",
+        "country": "WO",
+        "number_normalized": "PCT/US2025/017244",
+        "publication_number": null,
+        "google_patents_url": null,
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "G. Eric Schaller",
+        "name_raw": "Dr. G. Eric Schaller",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Biological Sciences",
+        "profile_url": "https://biology.dartmouth.edu/people/g-eric-schaller"
+      },
+      {
+        "name": "Sitwat Aman",
+        "name_raw": "Dr. Sitwat Aman",
+        "role": "co_inventor",
+        "degrees": [],
+        "title_affiliation": "Dartmouth College",
+        "profile_url": null
+      },
+      {
+        "name": "Joseph J. Kieber",
+        "name_raw": "Dr. Joseph J. Kieber",
+        "role": "co_inventor",
+        "degrees": [],
+        "title_affiliation": "University of North Carolina",
+        "profile_url": null
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Yvonne Devineni",
+        "phone": "(603) 646-1257",
+        "role": "Director, Corporate and Foundation Relations",
+        "email": "Yvonne.J.Devineni@dartmouth.edu"
+      },
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      }
+    ],
+    "publications": [],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 24,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2024-010",
+    "title": "Method for Inducing Aneuploidy and/or Chromosomal Instability in Human or Non-Human Primate Pluripotent Stem Cells",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": "worldwide",
+    "description": "Aneuploidy is associated with a variety of human conditions and diseases including, but not limited to, cancer, congenital birth defects, infertility, aging, and rare diseases. In cancers, 90% of solid tumors and 75% of hematological malignancies are estimated to be aneuploid, making aneuploidy a near universal feature of cancers. New and improved methods and compositions for use in identifying genes and pathways that cause aneuploidy and/or CIN and which contribute to their pathological consequences are sorely needed.",
+    "advantages": [
+      "This technology generates a durable, uniformly aneuploid human pluripotent stem cell (hPSCs) population with random abnormal genomes.",
+      "Requires no genetic modification or transformation of the cells, controlling the type of mutations to aneuploid.",
+      "Easily generated and the uniformity allows matched normal vs aneuploid comparisons."
+    ],
+    "other_sections": {
+      "looking_for": [
+        "Industry therapeutic development collaboration, especially in areas outside of oncology and platform start-up development and support. Durable, uniformly aneuploid hPSCs population with random abnormal genomes Ya et al, bioRxiv. 2024."
+      ]
+    },
+    "ip_refs": [
+      {
+        "raw_label": "PCT/US2024/055039",
+        "ip_type": "pct",
+        "country": "WO",
+        "number_normalized": "PCT/US2024/055039",
+        "publication_number": "WO2025101836A1",
+        "google_patents_url": "https://patents.google.com/patent/WO2025101836A1/",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Kristine M. Godek",
+        "name_raw": "Kristine M. Godek",
+        "role": "principal_investigator",
+        "degrees": [
+          "Ph.D."
+        ],
+        "title_affiliation": "Principal Research Scientist, Geisel School of Medicine at Dartmouth",
+        "profile_url": "https://geiselmed.dartmouth.edu/godek/"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Yvonne Devineni",
+        "phone": "(603) 646-1257",
+        "role": "Director, Corporate and Foundation Relations",
+        "email": "Yvonne.J.Devineni@dartmouth.edu"
+      },
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36638786/",
+        "doi": null,
+        "pmid": "36638786"
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 25,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "ip_number_shared:PCT/US2024/055039:2020-075,2024-010"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2024-029",
+    "title": "Inhibition of Oligosaccharyltransferase (OST) as Therapy for Prion Disease",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": "worldwide",
+    "description": "Prion diseases are fatal neurodegenerative diseases caused by the misfolding of the prion protein PrPC, leading to severe neurological dysfunction. Currently, no approved treatments exist for prion diseases, and non-toxic drug treatments show limited efficacy lifespan in animal models. They also face challenges such as strain-dependent activity and administration at late clinical stages. Researchers at Dartmouth have shown that administering an oligosaccharyltransferase (OST) complex inhibitor which blocks N-glycosylation of PrPC and its cell surface expression, inhibits the replication of disease-causing PrPSc.",
+    "advantages": [
+      "Targeted mechanism: The method directly targets the cell surface expression of PrPC and inhibits the replication of disease-causing PrPSc by inhibiting the attachment of the glycosylphosphatidylinositol anchor to PrPC and/or its attachment to the outer surface of the plasma membrane.",
+      "Broad strain efficacy: OST complex inhibition of PrPC, achieved complete removal of PrPSc from cells infected with three or four different types (strains) of prions in laboratory testing.",
+      "Significant PrPC reduction: Treatment effectively lowers PrPC levels on the surface of cells by over 50%.",
+      "Superior cellular outcomes: OST complex inhibition demonstrates the unique capability to fully cure cells infected with every prion strain tested, a significant advantage over previously tested N-glycosylation inhibitors that exhibited strain-dependent results."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PROVISIONAL APPLICATION 63/730,661",
+        "ip_type": "provisional",
+        "country": "US",
+        "number_normalized": "63730661",
+        "publication_number": null,
+        "google_patents_url": null,
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Surachai Supattapone",
+        "name_raw": "Dr. Surachai Supattapone",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Biochemistry and Cell Biology",
+        "profile_url": "https://geiselmed.dartmouth.edu/faculty/facultydb/view.php/?uid=105"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      }
+    ],
+    "publications": [],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 26,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2024-038",
+    "title": "Evolved Bacteroides Strains for Use as a probiotic in Cystic Fibrosis and Inflammatory Bowel Disease",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": "worldwide",
+    "description": "While life changing the new cystic fibrosis (CF) therapeutics have demonstrated little to no positive impact on the CF gut, whose altered intestinal microbiome can lead to nutritional deficiencies and an increasing burden of linked obesity. The gut conditions of these patients, such as excess mucus, increased fat content, acidic pH, and heightened inflammation are not amendable to modification with standard probiotics either. Through evolutionary development using a serial adjusted cell culture media, a set of evolved strains that can survive the CF and other guts altered by inflammation was identified and shown to be viable in the gut and still producing the anti-inflammatory factors. Compositions containing these evolved bacteria can be formulated as nutraceutical or pharmaceutical products for oral or nasogastric administration, and are envisioned for use in subjects with low abundance of target bacteria like Phocaeicola and Bacteroides, including pediatric CF patients as young as 0 days old, potentially in conjunction with existing CF therapies.",
+    "advantages": [
+      "Increased viability in CF and inflamed GI tract: Evolved bacterial cells exhibit significantly higher viability in CF-like gastrointestinal conditions.",
+      "Retained immunomodulatory function: The evolved strains continue to produce short-chain fatty acids (SCFAs) at levels comparable to the ancestral bacterial strain, which is a key compound known to drive anti-inflammatory effects and modulate inflammation.",
+      "Effective colonization: The evolved bacterial cells have demonstrated the capability to colonize the GI tract in mammalian CF models at levels similar to ancestral strains, providing similar immunomodulatory effects.",
+      "Wide commercial potential: This technology possesses potential for other inflammatory gut conditions such as inflammatory bowel disease (IBD), ulcerative colitis, and Crohn’s disease.",
+      "Non-engineered development: These evolved strains were not genetically engineered but arose naturally through adaptive evolution in a laboratory medium designed to mimic the inflamed CF gut."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PROVISIONAL APPLICATION 63/753,628",
+        "ip_type": "provisional",
+        "country": "US",
+        "number_normalized": "63753628",
+        "publication_number": null,
+        "google_patents_url": null,
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "George A. O’Toole",
+        "name_raw": "Dr. George A. O’Toole",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Microbiology & Immunology",
+        "profile_url": "https://biology.dartmouth.edu/people/george-otoole"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://doi.org/10.1128/mbio.03144-23",
+        "doi": "10.1128/mbio.03144-23",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 27,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2025-021",
+    "title": "Lymph Node (LN) Resident Memory (Trm) Cells for the Treatment of Cancer",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "CD8+ tissue-resident memory (Trm) cells are essential to the immune responses against cancer and can be identified by surface expression of specific proteins. The Turk lab determined that a Trm population resides in tumor draining lymph nodes (TDLNs) and often has specificity for tumor-expressed antigens. This innovative approach sorts LN Trm cells using cell-surface markers to selectively capture and expand this functional, tumor antigen-specific population of cells for immunotherapy.",
+    "advantages": [
+      "The field has utilized TDLN-derived CD8 T cells for adoptive immunotherapy, but this method is limited due to lack of tumor antigen specificity.",
+      "This method allows for the selection of cells that harbor tumor antigen specificity to overcome this challenge.",
+      "Preliminary data shows that these cells can be cultured ex vivo and transferred into mice (B16F10-KVP model) to restrain growth of established melanoma tumors. LN Trm cells mediate significant tumor growth inhibition in mice bearings established B16 melanomas. Mice were transferred with no cells, 20,000 LN Trm cells, or 1.5x10⁶ pmel cells (positive control) and treated. Error bars depict SEM of n=7 mice per group for PBS and positive control and n=4 for LN_TRM group. Statistical significance was calculated by 2-way ANOVA. Second study demonstrating significant tumor growth inhibition with 20,000 LN Trm cells. B16F10-KVP tumor bearing mice were treated with PBS, LN TRM, TCM or naïve pmels . LN TRM demonstrate significant tumor growth inhibition and improved survival in mice bearing B16F10 KVP tumors. Error bars depict SEM of N=5 mice per group. Statistical significance was calculated by 2-way ANOVA."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT APPLICATION 63/777,912",
+        "ip_type": "provisional",
+        "country": "US",
+        "number_normalized": "63777912",
+        "publication_number": null,
+        "google_patents_url": null,
+        "flags": [
+          "label_says_application_but_number_is_provisional"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "name": "Mary Jo Turk",
+        "name_raw": "Mary Jo Turk",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Microbiology and Immunology",
+        "profile_url": "https://geiselmed.dartmouth.edu/faculty/facultydb/view.php/?uid=2872"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34525340/",
+        "doi": null,
+        "pmid": "34525340"
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 28,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "ip:label_says_application_but_number_is_provisional"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2025-022",
+    "title": "MIST: Mucosal-Associated Invariant T (MAIT) Cell Induced Skin Therapy",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": "worldwide",
+    "description": "The patient burden for Systemic Lupus Erythematosus (SLE) and Cutaneous LE (CLE) is high, affecting ~1 million people in the U.S. and 3.5 million people globally. There are no FDA-approved targeted topical therapies to treat CLE. Further, current treatment paradigms include systemic drugs that are not designed for skin disease. Inflamed lupus skin typically has low immune-suppressing cells, high inflammatory and tissue-damaging proteins, and low tissue-healing MAIT cells. MIST leverages MAIT cells to promote skin healing and suppress inflammation.",
+    "advantages": [
+      "Topical expansion of MAIT cells heals lupus skin lesion.",
+      "Treatment results in complete and durable local response, decreased skin inflammation, and no adverse effects with long-term exposure.",
+      "MIST offers a novel approach to CLE/SLE skin disease, which currently lacks an FDA-approved topical therapy.",
+      "MIST offers an alternative approach to current treatment paradigms, which all rely on immunosuppressants (systemic) or steroids (weak), and include major side effects.",
+      "There are currently only two topical candidates in early development, and neither are cell-specific.",
+      "The Total Addressable Market (TAM) is ~$3 billion in the U.S. and ~12 billion globally.",
+      "The Serviceable Available Market (SAM) is ~$1.8 billion in the U.S. and ~6 billion globally.",
+      "The Serviceable Obtainable Market (SOM) is ~$1 billion in the U.S. and ~3 billion globally."
+    ],
+    "other_sections": {
+      "features": [
+        "MIST uses a MAIT specific activator to activate MAIT cells to locally expand Treg in lupus skin, resulting in higher immune suppressing Treg, lower inflammatory and tissue- damaging protein, and increased tissue-healing mediators.",
+        "This novel approach uses liposomal reformulation to stabilize an unstable metabolite that expands MAIT cells, for topical use in lupus skin disease."
+      ]
+    },
+    "ip_refs": [
+      {
+        "raw_label": "US PROVISIONAL APPLICATION 63/770,185",
+        "ip_type": "provisional",
+        "country": "US",
+        "number_normalized": "63770185",
+        "publication_number": null,
+        "google_patents_url": null,
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Sladjana Skopelja-Gardner",
+        "name_raw": "Sladjana Skopelja-Gardner",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Assistant Professor of Microbiology & Immunology, Geisel School of Medicine at Dartmouth",
+        "profile_url": "https://geiselmed.dartmouth.edu/faculty/facultydb/view.php/?uid=7701"
+      },
+      {
+        "name": "Dorothea Barton",
+        "name_raw": "Dorothea Barton",
+        "role": "principal_investigator",
+        "degrees": [
+          "MD"
+        ],
+        "title_affiliation": "Associate Professor of Dermatology",
+        "profile_url": "https://geiselmed.dartmouth.edu/faculty/facultydb/view.php/?uid=4663"
+      },
+      {
+        "name": "Grace Crossland",
+        "name_raw": "Grace Crossland",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "MD/PhD Student",
+        "profile_url": "https://geiselmed.dartmouth.edu/sg-lab/lab-members/"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      },
+      {
+        "name": "Heather Brownell",
+        "phone": "(978) 378-5475",
+        "role": "Associate Director for Health Sciences",
+        "email": "heather.l.brownell@dartmouth.edu"
+      }
+    ],
+    "publications": [],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 29,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2025-025",
+    "title": "Methods for Enhancing T Cell-Based Adoptive Cell Therapy Products with Small Molecule Combinations",
+    "category": "Life Sciences",
+    "status": "available_for_license",
+    "rights": "worldwide",
+    "description": "Adoptive T cell therapy (ACT) has shown promise in certain cancer treatments, but its use remains limited due to the suppressive microenvironments and poor persistence of transferred T cells. Promoting a stem cell memory T cell (TSCM) phenotype in T cells prior to transfer is a promising strategy to improve ACT outcomes. This technology introduces a novel composition and method to improve ACT by treating the cells with a combination of pathway inhibitors and activators. Specifically, it utilizes a PI3K-AKT-mTOR pathway inhibitor, coupled with either a Wnt/β-catenin pathway activator or an acetyl-CoA synthesis inhibitor. Tested combinations significantly reduced tumor burden in a B16-OVA model compared to single treatments.",
+    "advantages": [
+      "Enhances the efficacy of cell therapies through targeted pathway modulation.",
+      "Addresses common challenges in cell therapy, including cell exhaustion and limited persistence.",
+      "Flexible composition, allowing for various modality implementations including small molecules, siRNA, and antibodies.",
+      "Potentially increases the in vivo persistence of therapeutic cells, reducing the need for repeated dosing.",
+      "Development of more efficient and durable cell-based therapeutic products could expand use for a range of diseases requiring an immune response."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PROVISIONAL APPLICATION 63/760,153",
+        "ip_type": "provisional",
+        "country": "US",
+        "number_normalized": "63760153",
+        "publication_number": null,
+        "google_patents_url": null,
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Edward Usherwood",
+        "name_raw": "Edward Usherwood",
+        "role": "principal_investigator",
+        "degrees": [
+          "Ph.D."
+        ],
+        "title_affiliation": "Professor of Microbiology and Immunology",
+        "profile_url": "https://geiselmed.dartmouth.edu/faculty/facultydb/view.php/?uid=141"
+      },
+      {
+        "name": "Danielle Douglas",
+        "name_raw": "Danielle Douglas",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Graduate student, Geisel College of Medicine",
+        "profile_url": "https://graduate.dartmouth.edu/mcb/people/danielle-douglas"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Kerry Swift",
+        "phone": "(802) 324-2379",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "kerry.e.swift@dartmouth.edu"
+      },
+      {
+        "name": "Heather Brownell",
+        "phone": "(978) 378-5475",
+        "role": "Associate Director for Health Sciences",
+        "email": "heather.l.brownell@dartmouth.edu"
+      }
+    ],
+    "publications": [],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Life-Sciences.pdf",
+      "page": 30,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:20+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2020-039",
+    "title": "Novel Cathode Material to Improve Capacity & Life Span of Li & Na Batteries",
+    "category": "Physical Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "The invention provides a metal-sulfur battery, where the cathode/catholyte is a metal-phosphorothioate. The melt phase can be used as a binder and ion-conducting buffer for battery electrodes. Synthesis is a simple two-step mixing process; forming a metal polysulfide followed by mixing with phosphorus pentasulfide to form the metal phosphorothioate. Compatible with both Li- and Na- Sulfur batteries. Cathode is formed from a combination of the metal phosphorothioate, electroconductive carbon black, and a salt.",
+    "advantages": [
+      "Improved Performance: Use of Li or Na Phosphorothioate improves energy density, diffusion rate and electrochemical kinetics by creating a continuous interphase and removing voids.",
+      "Superior electrochemical performance: 25% greater initial capacity with significantly greater Coulombic efficiency compared to conventional metal-sulfur battery.",
+      "Cost-effective: The raw materials of sodium phosphorothioates are inexpensive and the fabrication method uses a scalable and time-saving process."
+    ],
+    "other_sections": {
+      "details": [
+        "The core innovation is a complexation-precipitation method to produce sodium/lithium phosphorothioates by reacting sodium/lithium sulfide, phosphorus pentasulfide, and sulfur powders in a solvent such as diglyme.",
+        "The solid-state electrolyte (P2S5-Na2S8) exhibits an ionic conductivity of 3.04 x 10-2 mS cm-1, while its melt phase shows a conductivity of 5.70 x 10-3 mS cm-1 and maintains this conductivity even after cooling as measured using electrochemical impedance spectroscopy (EIS).",
+        "Low temperature battery performance shown down to −60°C with long-term operability down to −40°C. Novel Cathode Material to Improve Capacity & Life Span of Li & Na Batteries"
+      ]
+    },
+    "ip_refs": [
+      {
+        "raw_label": "PCT/US2020/067713",
+        "ip_type": "pct",
+        "country": "WO",
+        "number_normalized": "PCT/US2020/067713",
+        "publication_number": "WO2021138590A1",
+        "google_patents_url": "https://patents.google.com/patent/WO2021138590A1/",
+        "flags": []
+      },
+      {
+        "raw_label": "US PATENT APPLICATION US18/709,497",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "18709497",
+        "publication_number": "US20250015364A1",
+        "google_patents_url": "https://patents.google.com/patent/US20250015364A1",
+        "flags": []
+      },
+      {
+        "raw_label": "US PATENT APPLICATION US17/790,245",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "17790245",
+        "publication_number": "US20230047323A1",
+        "google_patents_url": "https://patents.google.com/patent/US20230047323A1/",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Weiyang (Fiona) Li",
+        "name_raw": "Dr. Weiyang (Fiona) Li",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Engineering",
+        "profile_url": "https://engineering.dartmouth.edu/community/faculty/weiyang-li"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Tammy Heesakker",
+        "phone": "(267) 240-4549",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Tammy.A.Heesakker@dartmouth.edu"
+      },
+      {
+        "name": "Don Castle",
+        "phone": "(603) 731-1503",
+        "role": "Director for Industry Engagement",
+        "email": "Don.Castle-2@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://doi.org/10.1073/pnas.2116184118",
+        "doi": "10.1073/pnas.2116184118",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Physical-Sciences.pdf",
+      "page": 3,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:23+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "also_listed:Physical-Sciences.pdf:p4"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2020-075",
+    "title": "Acyclic/cyclic ether-based electrolyte that outstretches the low temperature limit of sodium metal anode",
+    "category": "Physical Sciences",
+    "status": "available_for_license",
+    "rights": "us_and_china",
+    "description": "Novel low-temperature electrolytes designed for sodium metal batteries using acyclic and cyclic ether solvents. Compatible with Na, Li and K based batteries. Customizable electrolyte composition for efficient operation at ranges between −20°C and −150°C. Lithium-ion batteries (LIBs) suffer from significant energy losses below 0°C, with commercial LIBs delivering only 5% of their energy density and 1 .25% of their power density at −40°C. There is a need for alternative battery technologies that can operate effectively at extreme low temperatures.",
+    "advantages": [
+      "Low temperature performance: Stable operation of sodium metal batteries at temperatures below −80°C without salt precipitation or solvent freezing.",
+      "Enhanced stability: Reduced dendrite formation = lower incidence of battery failure.",
+      "Improved efficiency: Low electrolyte resistance and high ion transfer/migration at low temperatures, showing small overpotentials of less than 50 mV and stable cycling for more than 2000 hours in Na/Na symmetric cells.",
+      "Broad applications: Applicable to portable devices, scientific tools in polar regions, or space exploration where temperatures can drop to −125°C."
+    ],
+    "other_sections": {
+      "details": [
+        "The electrolytes consist of sodium conducting salts such as sodium trifluoromethanesulfonate (NaOTf) and/or sodium hexafluorophosphate (NaPF6) combined with organic ether-based solvents.",
+        "The use of a binary solvent electrolyte consisting of 0.5M NaOTf in DEGDME/DOL (was shown to enable stable sodium plating and stripping with a low overpotential of 50mV even at a temperature of −80°C for over 2000 hours."
+      ]
+    },
+    "ip_refs": [
+      {
+        "raw_label": "PCT/US2024/055039",
+        "ip_type": "pct",
+        "country": "WO",
+        "number_normalized": "PCT/US2024/055039",
+        "publication_number": "US20230299361A1",
+        "google_patents_url": "https://patents.google.com/patent/US20230299361A1/",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Weiyang (Fiona) Li",
+        "name_raw": "Dr. Weiyang (Fiona) Li",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Engineering",
+        "profile_url": "https://engineering.dartmouth.edu/community/faculty/weiyang-li"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Tammy Heesakker",
+        "phone": "(267) 240-4549",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Tammy.A.Heesakker@dartmouth.edu"
+      },
+      {
+        "name": "Don Castle",
+        "phone": "(603) 731-1503",
+        "role": "Director for Industry Engagement",
+        "email": "Don.Castle-2@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://doi.org/10.1038/s41467-022-32606-4",
+        "doi": "10.1038/s41467-022-32606-4",
+        "pmid": null
+      },
+      {
+        "url": "https://www.benzoenergy.com/blog/post/what-are-the-differences-between-low-temperature-lithium-ion-batteries-and-ordinary-lithium-ion-batteries.html",
+        "doi": null,
+        "pmid": null
+      },
+      {
+        "url": "https://www.sunpowernewenergy.com/company-news/low-temperature-battery-an-ultimate-solution-for-cryogenic-environment/",
+        "doi": null,
+        "pmid": null
+      },
+      {
+        "url": "https://www.ufinebattery.com/blog/what-is-the-low-temperature-lithium-battery/",
+        "doi": null,
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Physical-Sciences.pdf",
+      "page": 5,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:23+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "ip_number_shared:PCT/US2024/055039:2020-075,2024-010"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2022-020",
+    "title": "Clay Minerals to Sequester Carbon from the Ocean Surface",
+    "category": "Physical Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "Current atmospheric CO₂ removal technologies lack the scale and cost‑effectiveness needed to accelerate the transition to a low‑carbon economy. The marine biological pump processes significant atmospheric carbon (~25 Pg/year as DOM and 5–12 Pg as POM), but over 90% is oxidized back to CO₂ in the upper ocean. By promoting organoclay floc formation and rapid export, the process greatly increases the fraction of bloom‑captured carbon that is sequestered in the deep ocean rather than being rapidly returned to the atmosphere.",
+    "advantages": [
+      "High‑impact, scalable CDR: Clay minerals could remove >1 billion metric tons of atmospheric CO₂ per year by sprinkling ~10 million tons of clay, leveraging existing natural ocean processes.",
+      "Demonstrated mechanism: Peer‑reviewed lab and mesocosm experiments show that clay enhances flocculation and carbon export without harming marine bacteria or phytoplankton.",
+      "Low‑cost, abundant feedstocks: Clay minerals are inexpensive, widely available, and can be sourced from mining and phosphate‑processing by‑products, turning waste streams into climate assets.",
+      "Deployment‑ready logistics: Clay can be deployed using existing aerial application infrastructure (e.g., crop‑dusting aircraft). Field trials off Southern California will test real‑world performance."
+    ],
+    "other_sections": {
+      "features": [
+        "A mixture of clay minerals (e.g., palygorskite) is applied to surface waters at the end of phytoplankton blooms, acting as ballast and increasing the density and sinking velocity of organic matter.",
+        "Experiments show that clay addition leads to sticky organoclay flocs, which are consumed by zooplankton and repackaged into dense fecal pellets that sink rapidly during diel vertical migration, enhancing the biological pump.",
+        "The Scientific Reports study quantitatively confirms this pathway: in Gulf of Maine bloom microcosms, adding clay at experimentally relevant concentrations removed 15–42% of phytoplankton organic carbon from the surface layer (up to ~52% in some treatments) by packaging it into rapidly settling organoclay flocs"
+      ]
+    },
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT APPLICATION 18/849,436",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "18849436",
+        "publication_number": null,
+        "google_patents_url": null,
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Mukul Sharma",
+        "name_raw": "Dr. Mukul Sharma",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Earth Sciences",
+        "profile_url": "https://faculty-directory.dartmouth.edu/mukul-sharma"
+      }
+    ],
+    "contacts": [],
+    "publications": [
+      {
+        "url": "https://doi.org/10.1038/s41598-024-79912-z",
+        "doi": "10.1038/s41598-024-79912-z",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Physical-Sciences.pdf",
+      "page": 7,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:23+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2023-006",
+    "title": "Nitrogen and Sulfur co-doped MXene compounds for improved hydrogen evolution reaction",
+    "category": "Physical Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "N- and S- co-doped MXene compounds offer improved performance and stability in hydrogen evolution reaction compared to existing MXene materials which are limited by poor intrinsic chemical activity and limited active site densities Simple thermal annealing process using solid thiourea at 300-700°C for 1-3 hours; allows for controlled surface modification of MXenes and the creation of new chemical bonds.",
+    "advantages": [
+      "Enhanced performance: This technology overcomes the limitations of poor intrinsic chemical activity and the limited active site densities of pristine MXenes by tuning the interfacial chemical co-doping with anions and is more stable than Mxenes with metallic electron donors (Fe, Ni, and Co).",
+      "Improved electrocatalytic activity: The modified MXenes show significantly reduced overpotential for the hydrogen evolution reaction, achieving 260 mV at 10 mA/cm² which is three times lower than pristine Ti3C2Tx (-770 mV).",
+      "Broad applicability: The technology is generally applicable to electrocatalytically accelerating hydrogen evolution activity and could be extended to other MXenes and to enhance their performance in other electrochemical device applications such as supercapacitors and fuel cells."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "PENDING APPLICATION PCT/US23/077930",
+        "ip_type": "pct",
+        "country": "WO",
+        "number_normalized": "PCT/US2023/077930",
+        "publication_number": null,
+        "google_patents_url": null,
+        "flags": [
+          "pct_number_short_form"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "name": "Will Scheideler",
+        "name_raw": "Dr. Will Scheideler",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Assistant Professor of Engineering",
+        "profile_url": "https://engineering.dartmouth.edu/community/faculty/william-scheideler"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Tammy Heesakker",
+        "phone": "(267) 240-4549",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Tammy.A.Heesakker@dartmouth.edu"
+      },
+      {
+        "name": "Don Castle",
+        "phone": "(603) 731-1503",
+        "role": "Director for Industry Engagement",
+        "email": "Don.Castle-2@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://doi.org/10.1021/acssuschemeng.3c02771",
+        "doi": "10.1021/acssuschemeng.3c02771",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Physical-Sciences.pdf",
+      "page": 8,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:23+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "ip:pct_number_short_form"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2023-035",
+    "title": "Novel Soil Amendment to Remove Atmospheric Carbon Dioxide",
+    "category": "Physical Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "Two current approaches to carbon dioxide removal (CDR) — enhanced silicate rock weathering (EW) and the application of biochar (BC) — both have individual limitations. A novel soil amendment, Altered Basalt with Fortified Biochar (ABFB), is a composite material consisting of both biochar and basalt that can simultaneously reduce atmospheric CO2 and increase soil fertility. This technology addresses the limitations of EW by accelerating basalt weathering kinetics and also mitigates the drawbacks of BC by minimizing the release of CO2 during production and avoiding the synthesis of pollutants.",
+    "advantages": [
+      "Reduced Material Usage: The invention requires about 100 times less basalt than traditional EW.",
+      "Enhanced CO2 Removal: ABFB is projected to remove 0.3-0.5 tons of CO2 per ton of ABFB per year.",
+      "Soil Health: ABFB improves soil fertility by providing nutrients, decreasing soil acidity, and increasing soil carbon and water content.",
+      "Reduced Pollutants: ABFB does not contain harmful organic pollutants that can be present in BC.",
+      "Scalability: The reduced material requirements and enhanced reaction rates make the technology more scalable than traditional EW.",
+      "Cost Efficiency: The technology is estimated to cost less than $100 to remove a ton of CO2.",
+      "Resource Utilization: The process utilizes waste heat and liquid from BC production, increasing efficiency. Proposed technologies to get to net-zero. This invention proposes the combination of both Biochar (BC) and Enhanced Weathering (EW)."
+    ],
+    "other_sections": {
+      "features": [
+        "ABFB consists of generating an altered basalt through heating and mixing it with BC, which can be derived from various biomass sources.",
+        "This new material becomes a pool of recalcitrant carbon that can reduce atmospheric CO2 and increase soil fertility by sequestering mineral bound refractory carbon in soil and producing soluble bicarbonate ion (HCO3 − ) that has a mean residence time of 10,000 years in the environment."
+      ]
+    },
+    "ip_refs": [
+      {
+        "raw_label": "PCT/US2024/025537",
+        "ip_type": "pct",
+        "country": "WO",
+        "number_normalized": "PCT/US2024/025537",
+        "publication_number": "WO2024220896A2",
+        "google_patents_url": "https://patents.google.com/patent/WO2024220896A2/",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Mukul Sharma",
+        "name_raw": "Dr. Mukul Sharma",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Earth Sciences",
+        "profile_url": "https://earthsciences.dartmouth.edu/people/mukul-sharma"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Tammy Heesakker",
+        "phone": "(267) 240-4549",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Tammy.A.Heesakker@dartmouth.edu"
+      },
+      {
+        "name": "Yvonne Devineni",
+        "phone": "(603) 646-1257",
+        "role": "Director, Corporate and Foundation Relations",
+        "email": "Yvonne.J.Devineni@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://ui.adsabs.harvard.edu/abs/2023AGUFM.B43K2709S",
+        "doi": null,
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Physical-Sciences.pdf",
+      "page": 9,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:23+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2023-036",
+    "title": "Micro-lattice transition metal oxide materials and structures for efficient electrocatalysis",
+    "category": "Physical Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "Novel materials, structures and fabrication processes for highly stable and efficient electrocatalysts for hydrogen evolution reaction (HER) and oxygen evolution reaction (OER) processes. Current nickel- and transition metal oxide-based electrocatalysts in alkaline media suffer from sluggish kinetics, stability issues, and low active site density, severely limiting their efficiency. Platinum group metal electrocatalysts are efficient and stable but expensive.",
+    "advantages": [
+      "High stability: This invention overcomes the limitations of low stability and activity of traditional earth-abundant electrocatalysts through 3D structuring and chemical modification via a simple heat treatment.",
+      "Scalability and cost: 3-D printing manufacturing methods are low-cost and use earth-abundant materials, offering a significant cost advantage over precision metal catalysts.",
+      "Improved performance: Superior overpotential for OER and HER compared to existing solutions and benchmark noble metal-based electrocatalysts; improved stability over 3D catalysts and powder electrocatalysts.",
+      "Design flexibility: The process allows for greater design freedom in electrode architecture and the mixing of multiple transition metal precursors to form complex alloys for various catalytic reactions (HER, OER, CO2 reduction, etc). The pore structure facilitates bubble release, preventing blockage of active sites."
+    ],
+    "other_sections": {
+      "features": [
+        "The innovation uses 3D-printed, lattice-based mesoporous electrodes that provide a high density of electrochemically active sites, facilitate reactant transport, and enhance stability via efficient bubble evolution. The electrodes are fabricated using a poly- mer infusion additive manufacturing (PIAM) technique.",
+        "The 3D electrodes showed promising performance metrics: an overpotential of 155 mV at 10 mA/cm² for HER and 1.42 V at 10 mA/cm² for OER.",
+        "The electrodes also exhibit superior durability, with up to 240 hours of continuous hydrogen evolution without significant performance changes."
+      ]
+    },
+    "ip_refs": [
+      {
+        "raw_label": "PENDING APPLICATION PCT/US24/33807",
+        "ip_type": "pct",
+        "country": "WO",
+        "number_normalized": "PCT/US2024/033807",
+        "publication_number": null,
+        "google_patents_url": null,
+        "flags": [
+          "pct_number_short_form"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "name": "Will Scheideler",
+        "name_raw": "Dr. Will Scheideler",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Assistant Professor of Engineering",
+        "profile_url": "https://engineering.dartmouth.edu/community/faculty/william-scheideler"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Tammy Heesakker",
+        "phone": "(267) 240-4549",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Tammy.A.Heesakker@dartmouth.edu"
+      },
+      {
+        "name": "Don Castle",
+        "phone": "(603) 731-1503",
+        "role": "Director for Industry Engagement",
+        "email": "Don.Castle-2@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://doi.org/10.1002/admt.202400160",
+        "doi": "10.1002/admt.202400160",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Physical-Sciences.pdf",
+      "page": 10,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:23+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "ip:pct_number_short_form"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2024-004",
+    "title": "Enhanced magnetic performance of Manganese Aluminum alloy via Titanium addition",
+    "category": "Physical Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "This invention is a permanent magnet (PM) composed of a manganese-aluminum-titanium (Mn-Al-Ti) alloy, designed to improve upon existing magnet technology. Current permanent magnets with the highest performance are based on neodymium-iron-boron (Nd-Fe-B) and samarium-cobalt (Sm-Co), which have high raw material costs, scarcity, and require extractive mining. Manganese and aluminum are cheaper and more abundant, but current Mn-Al PMs do not perform as well as rare-earth magnets due to limitations in achieving both high coercivity and remanence, and issues with anti-phase boundary (APB) defects.",
+    "advantages": [
+      "Improved performance: The Mn-Al-Ti magnet exhibits higher magnetic remanence, equivalent or greater coercivity, and more stable coercivity at high temperatures compared to the standard Mn-Al alloy.",
+      "Reduced defects: The invention significantly lowers the density of APB defects and increases the size of anti-phase domains, leading to improved properties.",
+      "Enhanced stability: The titanium stabilizes the coercivity of the magnet at high temperatures and enables high temperature processing without losing coercivity.",
+      "Cost-effective alternative: The Mn-Al-Ti alloy provides a potential replacement for expensive rare-earth magnets by utilizing cheaper and more abundant materials such as manganese and aluminum. TEM BF and DF images of Mn-Al-Ti alloys showing how the density of APBs decreases with Ti addition. (a) Mn54Al46 (b) Mn54Al46 Ti1 (c) Mn54Al45Ti1. B is the beam direction and g is the diffraction vector."
+    ],
+    "other_sections": {
+      "features": [
+        "The core of the innovation is a Mn-Al-Ti alloy, with a targeted composition of about 1% of titanium, which is found to preferentially sit on APBs to enable better ferromagnetic pairing across the APB.",
+        "Experimental results demonstrate that a composition of Mn54Al45Ti1 exhibits a 33% improvement in the base magnetic performance factor (BHmax), as well as increased remanence and equivalent or greater coercivity compared to the standard Mn54Al46 alloy."
+      ]
+    },
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT APPLICATION 18/883,022",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "18883022",
+        "publication_number": "US20250084511A1",
+        "google_patents_url": "https://patents.google.com/patent/US20250084511A1/",
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Ian Baker",
+        "name_raw": "Dr. Ian Baker",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor of Engineering",
+        "profile_url": "https://engineering.dartmouth.edu/community/faculty/ian-baker"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Tammy Heesakker",
+        "phone": "(267) 240-4549",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Tammy.A.Heesakker@dartmouth.edu"
+      },
+      {
+        "name": "Don Castle",
+        "phone": "(603) 731-1503",
+        "role": "Director for Industry Engagement",
+        "email": "Don.Castle-2@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://doi.org/10.1016/j.actamat.2023.119646",
+        "doi": "10.1016/j.actamat.2023.119646",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Physical-Sciences.pdf",
+      "page": 11,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:23+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2024-046",
+    "title": "A New Class of Stable and Earth-Abundant Thin Film PV Materials",
+    "category": "Physical Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "This technology introduces a new class of Zintl-phosphide materials (AM₂P₂ family) for thin-film solar applications that combine earth-abundant compositions, high efficiency potential, and exceptional stability. A flagship compound, BaCd₂P₂, was discovered by high-throughput first-principles screening of ~40,000 inorganic compounds and then experimentally validated as a promising solar absorber. The invention covers this Zintl-phosphide platform and its use in thin-film photovoltaics, with opportunities to extend to cadmium-free analogs such as CaZn₂P₂ and related compositions.",
+    "advantages": [
+      "New material class, not an incremental tweak: Opens an AM₂P₂ Zintl-phosphide family for PV, rather than a single experimental compound.",
+      "Device-ready direction: Stability and optoelectronic properties make BaCd₂P₂ and analogs strong candidates for thin-film or tandem top cells."
+    ],
+    "other_sections": {
+      "features": [
+        "High-Efficiency Potential: Near-optimal band gap (~1.45 eV), strong photoluminescence, and long carrier lifetimes (~30 ns) observed even in unoptimized powder indicate substantial efficiency headroom. Performance trends approach GaAs despite low material purity, demonstrating strong intrinsic optoelectronic quality. Improved optical absorption of BaCd₂P₂ Optimal Electronic band structure"
+      ]
+    },
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT APPLICATION 63/688,132",
+        "ip_type": "provisional",
+        "country": "US",
+        "number_normalized": "63688132",
+        "publication_number": null,
+        "google_patents_url": null,
+        "flags": [
+          "label_says_application_but_number_is_provisional"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "name": "Geoffroy Hautier",
+        "name_raw": "Dr. Geoffroy Hautier",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Hodgson Family Professor of Engineering",
+        "profile_url": "https://www.linkedin.com/in/geoffroy-hautier-aa81a32/"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Tammy Heesakker",
+        "phone": "(267) 240-4549",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Tammy.A.Heesakker@dartmouth.edu"
+      },
+      {
+        "name": "Don Castle",
+        "phone": "(603) 731-1503",
+        "role": "Director for Industry Engagement",
+        "email": "Don.Castle-2@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://doi.org/10.1016/j.joule.2024.02.017",
+        "doi": "10.1016/j.joule.2024.02.017",
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Physical-Sciences.pdf",
+      "page": 12,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:23+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "ip:label_says_application_but_number_is_provisional"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2024-049",
+    "title": "A Dynamic Framework for Managing an Integrated Energy System Under Uncertainty",
+    "category": "Physical Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "This invention provides a dynamic framework for managing an integrated energy system using a novel approach based on weakly coupled stochastic dynamic programming. Current practices in energy management involve solving “unit commitment” and“economic dispatch” optimization problems, which, while complex, do not explicitly incorporate uncertainty. The increasing use of renewable energy sources has exacerbated issues related to variability and uncertainty in power systems, creating a need for better management techniques.",
+    "advantages": [
+      "Addresses uncertainty: This dynamic programming method incorporates uncertainty in energy demand and renewable supply, enabling more efficient energy system operation.",
+      "Improved efficiency: The dynamic approach can reduce operational costs by ~2% on average in the present Duke Energy Carolinas system and can reduce costs by 4–5% on average in a future system with increased solar and storage capacity.",
+      "Near-optimal performance: The dynamic approach performs, on average, within 0.2–0.3% of production plans based on perfect foresight about future net demands.",
+      "Scalability: This method is computationally feasible at an industrial scale and can solve the Lagrangian dual problems on a desktop computer in seconds to minutes."
+    ],
+    "other_sections": {
+      "features": [
+        "The model decomposes an integrated energy system across its various units, then uses a price model to describe the marginal value of energy production, allowing each unit to maximize its expected profit given uncertain prices.",
+        "The system operator can start up or shut down slow-start units and deploy storage as desired, and the ramping constraints are fully respected in this dynamic approach. The unit-specific value functions from the dynamic program are used to incorporate longer-term effects in dispatch decisions."
+      ]
+    },
+    "ip_refs": [
+      {
+        "raw_label": "US PATENT 18/776,887",
+        "ip_type": "application",
+        "country": "US",
+        "number_normalized": "18776887",
+        "publication_number": "US20250030240A1",
+        "google_patents_url": "https://patents.google.com/patent/US20250030240A1/",
+        "flags": [
+          "label_says_patent_but_number_is_application"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "name": "James E. Smith",
+        "name_raw": "Dr. James E. Smith",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Professor in Decision Science",
+        "profile_url": "https://jimsmith.host.dartmouth.edu"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Tammy Heesakker",
+        "phone": "(267) 240-4549",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Tammy.A.Heesakker@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4596946",
+        "doi": null,
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Physical-Sciences.pdf",
+      "page": 13,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:23+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": [
+      "ip:label_says_patent_but_number_is_application"
+    ]
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2025-023",
+    "title": "Development of Porous Heterogeneous Catalysts for Energy-efficient & Sustainable Industrial Synthesis",
+    "category": "Physical Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "80% of industrial catalytic processes rely on heterogeneous catalysts, but they are unable to precisely control reaction outcomes, leading to significant waste and costly purification steps. This invention describes a surface-bound porous catalyst platform for heterogeneous catalysis in industrial and fine-chemical synthesis, allowing for recoverable catalysts with high activity and improved selectivity.",
+    "advantages": [
+      "Eliminates Trade-Offs: Enables highly reactive, precise and recoverable catalysts, reducing expensive purification and replacement costs.",
+      "Adaptable across catalyst metals/reactions: Readily adaptable to different supported metal catalysts.",
+      "Unlocks new High-Value Production: Enables solid catalysts to access lucrative new markets where they currently fail to perform in, such as chiral pharmaceuticals and premium polymer feedstocks.",
+      "Platform for Catalyst Design: Provides a modular, tunable system to rapidly develop optimized catalysts for specific high-value reactions, de-risking R&D."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "PCT/US2025/057931",
+        "ip_type": "pct",
+        "country": "WO",
+        "number_normalized": "PCT/US2025/057931",
+        "publication_number": null,
+        "google_patents_url": null,
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Miguel Gonzalez",
+        "name_raw": "Dr. Miguel Gonzalez",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Assistant Professor of Chemistry",
+        "profile_url": "https://chemistry.dartmouth.edu/people/miguel-i-gonzalez"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Tammy Heesakker",
+        "phone": "(267) 240-4549",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Tammy.A.Heesakker@dartmouth.edu"
+      }
+    ],
+    "publications": [],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Physical-Sciences.pdf",
+      "page": 14,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:23+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2025-031",
+    "title": "High-Speed Event Cameras for Extreme Motion and High-Dynamic-Range Scenarios",
+    "category": "Physical Sciences",
+    "status": "available_for_license",
+    "rights": "worldwide",
+    "description": "Capturing high-speed visual objects in real-time in science and engineering applications has become a necessity. Traditional high-speed cameras are noteworthy, but they are bulky, expensive and can only record for a short time. This invention proposes leveraging a complementary setup of event cameras, which allows for post- capture manipulation of high-speed video, rapid refocusing on fast-moving objects, real-time true depth estimation and high-dynamic light field capture. The technology compared with traditional high-speed cameras provides continuous streaming, reduces bandwidth requirements and is more affordable while enabling robust imaging in high-speed, high-dynamic-range scenarios.",
+    "advantages": [
+      "Affordability: The technology lowers the cost of high-speed cameras, making high-speed cameras more broadly affordable and available.",
+      "Angular Capture: The technology extends current event camera capabilities introducing angular capture allowing for post-capture manipulation of the high-speed video, which was not possible in prior setups.",
+      "Ultra Capture: The technology captures light fields with unprecedented speed, resolution, and dynamic range resulting in high-speed, low-latency imaging with post-capture refocusing, depth estimation, and HDR capabilities."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PROVISIONAL APPLICATION 63/820,802",
+        "ip_type": "provisional",
+        "country": "US",
+        "number_normalized": "63820802",
+        "publication_number": null,
+        "google_patents_url": null,
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Adithya Pediredla",
+        "name_raw": "Adithya Pediredla",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Assistant Professor, Computer Science, Dartmouth",
+        "profile_url": "https://rcweb.dartmouth.edu/RISCLab/people/"
+      },
+      {
+        "name": "Ziyuan Qu",
+        "name_raw": "Ziyuan Qu",
+        "role": "co_inventor",
+        "degrees": [],
+        "title_affiliation": "PhD Student, Computer Science, Dartmouth",
+        "profile_url": null
+      },
+      {
+        "name": "Vivek Boominathan",
+        "name_raw": "Vivek Boominathan",
+        "role": "co_inventor",
+        "degrees": [],
+        "title_affiliation": "Assistant Research Professor, Computer Engineering, Rice University",
+        "profile_url": null
+      },
+      {
+        "name": "Praneeth Chakravarthula",
+        "name_raw": "Praneeth Chakravarthula",
+        "role": "co_inventor",
+        "degrees": [],
+        "title_affiliation": "Assistant Research Professor, Computer Science, University of North Carolina",
+        "profile_url": null
+      },
+      {
+        "name": "Zihao Zou",
+        "name_raw": "Zihao Zou",
+        "role": "co_inventor",
+        "degrees": [],
+        "title_affiliation": "PhD Student, Computer Science, University of North Carolina",
+        "profile_url": null
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Heather Brownell",
+        "phone": "(978) 378-5475",
+        "role": "Associate Director for Health Sciences",
+        "email": "Heather.L.Brownell@dartmouth.edu"
+      },
+      {
+        "name": "Cheryl Junker",
+        "phone": "(603) 646-0976",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Cheryl.L.Junker@dartmouth.edu"
+      }
+    ],
+    "publications": [
+      {
+        "url": "https://dartmouth-risc-lab.github.io/event-field-website/",
+        "doi": null,
+        "pmid": null
+      }
+    ],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Physical-Sciences.pdf",
+      "page": 15,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:23+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "tto_id": "2026-036",
+    "title": "Anti-ferroelectric Weberite-type Materials",
+    "category": "Physical Sciences",
+    "status": "available_for_license",
+    "rights": null,
+    "description": "Antiferroelectrics (AFEs) are valuable for applications in energy storage, cooling, and non-volatile memory but are rare, and current R&D is limited to small sets of material families, limiting the available performance and slowing discovery of new solutions. This invention introduces a new AFE material and a broader weberite-type family, with a simpler distortion mechanism and a smaller volume change during the AFE to FE phase transition.",
+    "advantages": [
+      "High-field robustness: The La₃NbO₇ AFE displays a much higher breakdown strength than currently optimised AFEs, enabling operations at higher fields especially in energy storage.",
+      "Lower mechanical stress when switching: The newly developed AFE yields very small volume change upon switching, preventing cracking and resulting in better cycling durability and overall yield.",
+      "Demonstrated switchable AFE behavior: The invention is the first demonstration of a switchable Kittel-type AFE, with a simpler AFE to FE switching process allowing for a more controllable engineering knob-set."
+    ],
+    "other_sections": {},
+    "ip_refs": [
+      {
+        "raw_label": "US PROVISIONAL APPLICATION : 63/949,926",
+        "ip_type": "provisional",
+        "country": "US",
+        "number_normalized": "63949926",
+        "publication_number": null,
+        "google_patents_url": null,
+        "flags": []
+      }
+    ],
+    "people": [
+      {
+        "name": "Geoffroy Hautier",
+        "name_raw": "Dr. Geoffroy Hautier",
+        "role": "principal_investigator",
+        "degrees": [],
+        "title_affiliation": "Hodgson Family Professor of Engineering",
+        "profile_url": "https://engineering.dartmouth.edu/community/faculty/geoffroy-hautier"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Tammy Heesakker",
+        "phone": "(267) 240-4549",
+        "role": "Sr. Business Development and Licensing Manager",
+        "email": "Tammy.A.Heesakker@dartmouth.edu"
+      }
+    ],
+    "publications": [],
+    "source": {
+      "system": "dartmouth_tto",
+      "document": "Physical-Sciences.pdf",
+      "page": 16,
+      "source_url": "https://tto.dartmouth.edu/engage-us/licensing-opportunities",
+      "extracted_at": "2026-11-17T17:18:23+00:00",
+      "extractor_version": "tto_crawler/0.1"
+    },
+    "quality_flags": []
+  }
+]

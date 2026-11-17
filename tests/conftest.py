@@ -31,12 +31,16 @@ def client():
                                   auth=(config.NEO4J_USER, config.NEO4J_PASSWORD)) as driver:
             driver.verify_connectivity()
             records, _, _ = driver.execute_query(
-                "MATCH (t:Technology {tto_id: $id}) RETURN count(t) AS n",
+                """MATCH (t:Technology {tto_id: $id}) WITH count(t) AS techs
+                   OPTIONAL MATCH (p:Patent) WHERE 'test_fixture' IN p.quality_flags
+                   RETURN techs, count(p) AS fixture_patents""",
                 id=FIXTURE_TECH, database_=config.NEO4J_DATABASE)
     except Exception as e:   # connection refused, auth error, ...
         _unavailable(f"cannot reach {config.NEO4J_URI} ({type(e).__name__})")
-    if records[0]["n"] == 0:
+    if records[0]["techs"] == 0:
         _unavailable(f"technology {FIXTURE_TECH} is not in the database")
+    if records[0]["fixture_patents"] == 0:   # e.g. the demo dataset is loaded instead
+        _unavailable("the database holds other data, not the test fixtures (reset, then load them)")
 
     from fastapi.testclient import TestClient
     from api.main import app
