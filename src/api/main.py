@@ -342,7 +342,7 @@ async def match(request: Request, file: UploadFile = File(...)):
 
     saved = saved_result(sha256)
     if saved:
-        return MatchResponse.model_validate({**saved, "source": "saved_demo"})
+        return MatchResponse.model_validate({**saved, "source": "saved_demo", "matches": matcher.rank(saved["matches"])})
 
     if not (os.getenv("ANTHROPIC_API_KEY") or os.getenv("ANTHROPIC_AUTH_TOKEN")):
         raise HTTPException(status_code=503, detail=(

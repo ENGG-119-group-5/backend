@@ -39,10 +39,11 @@ def test_quote_found(quote, found):
     assert matcher.quote_found(quote, matcher.invention_text(INVENTION)) is found
 
 
-def test_rank_orders_by_label_then_total():
-    m = lambda title, label, total: {"technology": {"title": title}, "label": label, "totalScore": total}
-    ranked = matcher.rank([m("a", "none", 8), m("b", "potential", 3), m("c", "strong", 6), m("d", "strong", 8)])
-    assert [x["technology"]["title"] for x in ranked] == ["d", "c", "b", "a"]
+def test_rank_orders_by_label_then_total_then_ip_score():
+    m = lambda title, label, total, ip=None: {"technology": {"title": title, "ipScore": ip}, "label": label, "totalScore": total}
+    ranked = matcher.rank([m("a", "none", 8), m("b", "potential", 3), m("c", "strong", 6),
+                           m("d", "strong", 8, 70.5), m("e", "strong", 8, 87.0)])
+    assert [x["technology"]["title"] for x in ranked] == ["e", "d", "c", "b", "a"]
 
 
 # -------------------------------------------------------- /match and /samples (need Neo4j + fixtures)

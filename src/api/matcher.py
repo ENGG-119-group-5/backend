@@ -163,5 +163,7 @@ def quote_found(quote: str, record_text: str) -> bool:
 
 
 def rank(matches: list[dict]) -> list[dict]:
-    """Strong first, then potential, then none; within a label, higher total fit first."""
-    return sorted(matches, key=lambda m: (LABEL_ORDER[m["label"]], -m["totalScore"], m["technology"]["title"]))
+    """Strong first, then potential, then none; within a label, higher total fit first,
+    then the stronger rule-based IP score (e.g. a granted patent before an application)."""
+    return sorted(matches, key=lambda m: (LABEL_ORDER[m["label"]], -m["totalScore"],
+                                          -(m["technology"].get("ipScore") or 0), m["technology"]["title"]))
