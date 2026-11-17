@@ -33,7 +33,7 @@ SCHEMA = [
 TTO_CYPHER = """
 MERGE (t:Technology {tto_id: $tto_id})
 SET t.title = $title, t.category = $category, t.status = $status, t.rights = $rights,
-    t.description = $description, t.advantages = $advantages,
+    t.description = $description, t.advantages = $advantages, t.looking_for = $looking_for,
     t.source_document = $source_document, t.source_page = $source_page,
     t.extracted_at = $extracted_at, t.quality_flags = $quality_flags
 FOREACH (ref IN $ip_refs |
@@ -91,6 +91,7 @@ def tto_params(rec):
         "tto_id": rec["tto_id"], "title": rec["title"], "category": rec.get("category"),
         "status": rec.get("status"), "rights": rec.get("rights"), "description": rec.get("description"),
         "advantages": rec.get("advantages", []),
+        "looking_for": (rec.get("other_sections") or {}).get("looking_for", []),
         "source_document": rec["source"]["document"], "source_page": rec["source"]["page"],
         "extracted_at": rec["source"]["extracted_at"], "quality_flags": rec.get("quality_flags", []),
         "ip_refs": refs, "people": people,
