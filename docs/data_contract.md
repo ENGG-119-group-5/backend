@@ -1,8 +1,10 @@
 # Data Contract
 
-**Version:** 0.3 · **Owner:** Augustin · **Status:** shared with Prajwal (TTO) and Mia (USPTO) on Nov 5, waiting for answers (section 9)
+**Version:** 0.4 · **Owner:** Augustin · **Status:** shared with Prajwal (TTO) and Mia (USPTO) on Nov 5, waiting for answers (section 9)
 
 > **Why this document exists:** everyone writes data in the same format, so the TTO crawler, the USPTO loader, the linking step and the API can be built in parallel. If you need a new field, add it here first, then in code.
+
+**Changes in v0.4:** synthetic demo dataset (`data/demo/`, source system and quality flag `synthetic`, section 11) · `load_to_neo4j.py reset` · `Technology.looking_for` stored in the graph (what the lab wants from a partner; used for deal fit).
 
 **Changes in v0.3:** `patent_key` is computed, not provided · inventor ID formats documented · `match_method` is a list · name-key rule corrected · new Link record (section 6) · file locations (section 8).
 
@@ -110,7 +112,7 @@ One record per patent document (grant **or** published application). Loaded by `
 }
 ```
 
-`system` values: `dartmouth_tto`, `uspto` (plus the API endpoint and the cached response file name), `test_fixture`.
+`system` values: `dartmouth_tto`, `uspto` (plus the API endpoint and the cached response file name), `test_fixture`, `synthetic` (made-up demo data, section 11).
 
 ---
 
@@ -190,7 +192,7 @@ Produced by `src/link_v1.py`. The file is an object, not a list:
 
 | Label | Key property | Main properties |
 | --- | --- | --- |
-| `Technology` | `tto_id` | `title`, `category`, `status`, `rights`, `description`, `advantages`, `source_document`, `source_page`, `extracted_at`, `quality_flags` |
+| `Technology` | `tto_id` | `title`, `category`, `status`, `rights`, `description`, `advantages`, `looking_for` (v0.4, from `other_sections.looking_for`), `source_document`, `source_page`, `extracted_at`, `quality_flags` |
 | `IpRef` | `ref_key` | What the TTO page **claims**: `raw_label`, `ip_type`, `patent_key`, `number_normalized`, `publication_number`, `google_patents_url`, `flags` |
 | `Patent` | `patent_key` | `doc_type`, `patent_number`, `application_number`, `publication_number`, `title`, `abstract`, `filing_date`, `grant_date`, `government_interest`, `source_system`, `quality_flags` |
 | `Inventor` | `inventor_id` | `name`, `name_key`, `source` (`tto` / `uspto`), `profile_url` (TTO), `city`, `state`, `country` (USPTO) |
@@ -235,6 +237,7 @@ Loaders use `MERGE` on these keys, so they are **rerunnable** (running twice doe
 | Cached USPTO responses | `data/cache/` | No |
 | Crawler output, links | `data/processed/` | No (regenerate anytime) |
 | Frozen test data | `tests/fixtures/` | Yes |
+| Synthetic demo data | `data/demo/` | Yes |
 
 ---
 
@@ -268,3 +271,22 @@ Data quality issues found in the source PDF:
 - [ ] **Mia:** can you return `government_interest` text? It is our only funding signal in the MVP.
 - [ ] **Prajwal:** do you take the crawler for the other TTO PDFs (other categories)? Target date: **Tue Nov 10**
 - [ ] **All:** OK with `Inventor` as the single label for people from both sources, linked with `SAME_AS`?
+
+---
+
+## 11. Synthetic demo dataset (v0.4)
+
+For the MVP demo, real USPTO bulk data was too hard to download, so `data/demo/` holds **made-up** data in exactly the formats above:
+
+| File | Records | Notes |
+| --- | --- | --- |
+| `technologies_demo.json` | 30 Technology records (`DEMO-01` … `DEMO-30`) | Dartmouth-style listings: ~11 oncology/immunology, ~10 climate/energy hardware, ~9 neither. Mixed IP: granted, application, provisional, PCT, none |
+| `uspto_patents_demo.json` | 19 Patent records | Grants and applications assigned to Dartmouth; 2 have no TTO listing |
+
+Rules:
+
+- Every record has `source.system = "synthetic"` and `"synthetic"` in `quality_flags`. People, numbers and results are invented; no record describes a real invention.
+- The API never builds external links (USPTO, Google Patents, TTO site) for synthetic records, and returns `synthetic: true` on `/technology/{id}`.
+- Linking works unchanged: 17 confirmed links, 1 uncertain (`DEMO-08`, copy-paste publication number, like 2021-026), and `DEMO-20` prints a patent number with no USPTO record.
+- Load with `scripts/load_demo.sh`. It runs `load_to_neo4j.py reset` first, which **deletes the whole graph**, so the demo graph never mixes with real or fixture data.
+
