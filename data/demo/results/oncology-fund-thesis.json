@@ -1,0 +1,1421 @@
+{
+  "thesisName": "oncology-fund-thesis.pdf",
+  "thesisSha256": "af67a400206cac07b5cacf294b67b2b29d0890ee4439a217d235007d9d60c288",
+  "thesisSummary": "Granite Ridge Bio Ventures Fund II leads $3-10M seed and Series A rounds in new immuno-oncology therapeutics companies. It favors platforms for solid tumors that overcome the immunosuppressive tumor microenvironment, checkpoint-inhibitor non-response, CAR T failure in solid tumors, or the systemic toxicity of IL-12 and STING agonists. It invests from late preclinical (animal efficacy plus an IND plan within about two years) through Phase 1, and requires an exclusive license to issued patents or published applications; diagnostics, devices, digital health, autoimmune disease, animal health and non-therapeutics are excluded.",
+  "model": "claude-opus-5-5",
+  "source": "live",
+  "generatedAt": "2026-11-17T16:43:02+00:00",
+  "matches": [
+    {
+      "technology": {
+        "id": "DEMO-02",
+        "title": "Bispecific Antibody Blocking PD-1 and the Myeloid Checkpoint MCR-7",
+        "ttoCaseNumber": "DEMO-02",
+        "status": "available",
+        "ipScore": 70.5
+      },
+      "category": "Life Sciences",
+      "label": "strong",
+      "totalScore": 8,
+      "summary": "An IND-enabling bispecific that tackles checkpoint non-response, with an exclusive license to a published application, fits every criterion.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 2,
+          "reason": "It is an immuno-oncology bispecific antibody that restores anti-tumor immunity.",
+          "quote": "This bispecific antibody blocks PD-1 and MCR-7, a myeloid checkpoint discovered at Dartmouth, in one molecule.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 2,
+          "reason": "It directly targets non-response to PD-1 checkpoint blockade.",
+          "quote": "Most patients do not respond to PD-1 blockade because suppressive myeloid cells remain active.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 2,
+          "reason": "It is IND-enabling, with survival benefit in a PD-1-resistant mouse model.",
+          "quote": "Stage: IND-enabling; the lead candidate doubled survival in PD-1-resistant mouse melanoma",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A published patent application is available under an exclusive worldwide license.",
+          "quote": "Exclusive worldwide license; open to co-development with an oncology company.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-04",
+        "title": "Oncolytic Herpes Virus Engineered to Express a STING Agonist",
+        "ttoCaseNumber": "DEMO-04",
+        "status": "available",
+        "ipScore": 87.0
+      },
+      "category": "Life Sciences",
+      "label": "strong",
+      "totalScore": 8,
+      "summary": "This Phase 1-ready oncolytic virus delivers a STING agonist locally and comes with an exclusively licensable granted patent, a strong match.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 2,
+          "reason": "An oncolytic virus that activates anti-tumor immunity is an explicitly named modality.",
+          "quote": "This oncolytic herpes virus kills tumor cells and produces a STING agonist that turns cold tumors hot.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 2,
+          "reason": "It produces the STING agonist locally in tumor cells, avoiding whole-body dosing, and it synergizes with PD-1 antibodies.",
+          "quote": "produces an enzyme that produces a cyclic dinucleotide STING agonist in infected tumor cells",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 2,
+          "reason": "It is clinical-ready, with GMP lots and a Phase 1 trial planned.",
+          "quote": "Stage: clinical-ready; GMP virus lots exist and an investigator-led Phase 1 trial in melanoma is planned for 2027.",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A granted patent is offered under an exclusive license.",
+          "quote": "Exclusive license to a company able to run Phase 1 and Phase 2 trials.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-01",
+        "title": "Tumor-Homing CAR T Cells Armored with an Inducible IL-12 Switch",
+        "ttoCaseNumber": "DEMO-01",
+        "status": "available",
+        "ipScore": 87.0
+      },
+      "category": "Life Sciences",
+      "label": "strong",
+      "totalScore": 8,
+      "summary": "It hits two named problems with a solid-tumor CAR T platform, has animal efficacy, and comes with an exclusively licensable granted patent, making it a top fit.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 2,
+          "reason": "This is a CAR T cell therapy platform for solid tumors, squarely in immuno-oncology.",
+          "quote": "This CAR T platform releases IL-12 only inside the tumor through a drug-inducible genetic switch.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 2,
+          "reason": "It addresses two named problems: CAR T failure in solid tumors and systemic IL-12 toxicity.",
+          "quote": "Solid tumors suppress CAR T cells, and systemic IL-12 is too toxic to give patients.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 2,
+          "reason": "It is preclinical with efficacy in two mouse models and is heading into IND-enabling work.",
+          "quote": "the armored cells cleared ovarian and pancreatic tumors in two mouse models without weight loss or cytokine storm",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A granted US patent is offered under an exclusive license or with a startup partner.",
+          "quote": "Exclusive license or a startup partner to fund IND-enabling studies.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-09",
+        "title": "Gut Microbiome Consortium to Boost Checkpoint Inhibitor Response",
+        "ttoCaseNumber": "DEMO-09",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "potential",
+      "totalScore": 6,
+      "summary": "The area and problem fit is strong, but provisional-only IP and option terms do not meet the exclusive-license requirement.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 2,
+          "reason": "It is a live bacterial therapeutic designed to make checkpoint immunotherapy work.",
+          "quote": "This defined consortium of eight bacterial strains restores response.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 2,
+          "reason": "It directly addresses patient non-response to checkpoint inhibitors.",
+          "quote": "Patients whose gut bacteria lack certain strains respond poorly to checkpoint inhibitors.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 2,
+          "reason": "It has preclinical efficacy in mice.",
+          "quote": "the consortium turned non-responder mice into responders",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "Only a provisional application exists and the lab offers an option with sponsored research rather than an exclusive license.",
+          "quote": "Option to license with sponsored research.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-07",
+        "title": "Radiation-Activated Nanoparticles for Glioblastoma",
+        "ttoCaseNumber": "DEMO-07",
+        "status": "available",
+        "ipScore": 85.5
+      },
+      "category": "Life Sciences",
+      "label": "potential",
+      "totalScore": 5,
+      "summary": "The stage and deal fit well for this solid-tumor therapy, but it is not immuno-oncology and does not address a named problem.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 1,
+          "reason": "It treats a solid tumor but works by radiosensitization rather than immunotherapy.",
+          "quote": "amplify the radiation dose inside the tumor",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Recurrence after radiation is not one of the immuno-oncology problems the thesis names.",
+          "quote": "Glioblastoma recurs after radiation therapy.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 2,
+          "reason": "It is preclinical with survival benefit in rat models.",
+          "quote": "the particles extended survival by 60 percent in rat glioma models",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A granted patent is offered under an exclusive license or for startup formation.",
+          "quote": "Exclusive license or startup formation.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-08",
+        "title": "Antibody-Drug Conjugate Targeting Ovarian Cancer Stem Cells",
+        "ttoCaseNumber": "DEMO-08",
+        "status": "available",
+        "ipScore": 55.5
+      },
+      "category": "Life Sciences",
+      "label": "potential",
+      "totalScore": 4,
+      "summary": "This licensable solid-tumor antibody is oncology-adjacent but not immuno-oncology, so its problem fit is weak.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 1,
+          "reason": "It is an antibody-based solid-tumor therapeutic, but it kills cells with a payload rather than engaging the immune system.",
+          "quote": "This antibody-drug conjugate targets a stem cell surface marker and delivers a potent payload.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Relapse driven by chemotherapy-resistant stem cells is not one of the named problems.",
+          "quote": "Ovarian cancer often returns because chemotherapy spares cancer stem cells.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It is preclinical with activity in patient-derived models, but no animal efficacy or IND plan is explicitly described.",
+          "quote": "it eliminated stem cells in patient-derived tumor models",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A published application is offered under an exclusive license.",
+          "quote": "Exclusive license.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-03",
+        "title": "mRNA Neoantigen Vaccine Design Pipeline for Pancreatic Cancer",
+        "ttoCaseNumber": "DEMO-03",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "potential",
+      "totalScore": 4,
+      "summary": "The immuno-oncology platform is relevant, but it is too early and its IP and deal terms do not yet support an exclusive license.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 2,
+          "reason": "It is a personalized mRNA cancer vaccine platform for a solid tumor, which falls within immuno-oncology.",
+          "quote": "encodes the top 20 in a single mRNA vaccine",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 1,
+          "reason": "It targets hard-to-treat solid tumors but does not directly address any of the three named problems.",
+          "quote": "Pancreatic tumors carry few targetable mutations.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It is early preclinical and shows T cell expansion in mice, but no tumor efficacy data are reported.",
+          "quote": "vaccines designed by the pipeline expanded tumor-specific T cells in mice, and no human data exist yet",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "Only a provisional application exists and the lab wants sponsored research or an option rather than an exclusive license.",
+          "quote": "Sponsored research or an option to license.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-10",
+        "title": "Reversing T-Cell Exhaustion with a TOX Degrader",
+        "ttoCaseNumber": "DEMO-10",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "potential",
+      "totalScore": 3,
+      "summary": "The science is relevant, but discovery stage and absent IP rule it out for now.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 2,
+          "reason": "It is an immuno-oncology approach that restores T cell function against tumors.",
+          "quote": "This early discovery program degrades TOX, a master regulator of exhaustion, to restore T cell function.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 1,
+          "reason": "T cell exhaustion relates to immunotherapy failure but is not tied to one of the named problems.",
+          "quote": "Addresses a root cause of immunotherapy failure.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is an early discovery program with only in vitro data, which the thesis excludes.",
+          "quote": "degrader compounds work in human T cells in a dish",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "No patents or applications are listed and the lab seeks a discovery partnership.",
+          "quote": "Discovery partnership; the lab has an extensive IP portfolio under development.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-05",
+        "title": "Small-Molecule Inhibitor of the Immunosuppressive Enzyme ARG-2",
+        "ttoCaseNumber": "DEMO-05",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "potential",
+      "totalScore": 3,
+      "summary": "The mechanism is relevant to the tumor microenvironment, but the lack of animal data and of a licensable deal rule it out for now.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 2,
+          "reason": "It is a small-molecule therapeutic that relieves T cell suppression in tumors.",
+          "quote": "This program has selective small-molecule ARG-2 inhibitors.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 1,
+          "reason": "It targets the immunosuppressive tumor microenvironment but none of the three specific named problems.",
+          "quote": "Tumors use the enzyme ARG-2 to starve T cells of arginine.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is at hit-to-lead with no animal data, which the thesis explicitly excludes.",
+          "quote": "no animal efficacy data exist yet",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "It has only a PCT application with no confirmed record, and the lab seeks a research collaboration rather than a license.",
+          "quote": "Research collaboration with a medicinal chemistry partner.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-11",
+        "title": "Biologic Targeting IL-17F for Rheumatoid Arthritis",
+        "ttoCaseNumber": "DEMO-11",
+        "status": "available",
+        "ipScore": 85.5
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 4,
+      "summary": "Despite good stage and IP, autoimmune disease is explicitly out of scope.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Rheumatoid arthritis is an autoimmune and inflammatory disease, which the thesis excludes.",
+          "quote": "This antibody blocks IL-17F selectively to control joint inflammation.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Non-response to TNF blockers in arthritis is not a cancer problem.",
+          "quote": "Many rheumatoid arthritis patients stop responding to TNF blockers.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 2,
+          "reason": "It is preclinical with efficacy in two animal models.",
+          "quote": "it reduced joint swelling in two arthritis models",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A granted patent is available under an exclusive license.",
+          "quote": "Exclusive license to an immunology company.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-18",
+        "title": "Flow Battery Membrane from Recycled Plastics",
+        "ttoCaseNumber": "DEMO-18",
+        "status": "available",
+        "ipScore": 70.5
+      },
+      "category": "Physical Sciences",
+      "label": "none",
+      "totalScore": 2,
+      "summary": "An energy materials invention is outside the thesis regardless of its deal terms.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "A flow battery membrane is outside therapeutics.",
+          "quote": "This membrane is made from recycled PET bottles and matches the conductivity of commercial membranes.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Membrane cost is not a problem the thesis names.",
+          "quote": "Membranes are the most expensive part of grid-scale flow batteries.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is at lab validation with no therapeutic path.",
+          "quote": "test cells ran 1,000 cycles",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A published application is offered under an exclusive license.",
+          "quote": "Exclusive license.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-21",
+        "title": "Platinum-Free Catalyst for Hydrogen Electrolyzers",
+        "ttoCaseNumber": "DEMO-21",
+        "status": "available",
+        "ipScore": 70.5
+      },
+      "category": "Physical Sciences",
+      "label": "none",
+      "totalScore": 2,
+      "summary": "This clean-energy catalyst is outside the life-sciences scope.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Hydrogen catalysts are outside therapeutics.",
+          "quote": "This nickel-molybdenum catalyst matches platinum performance in alkaline electrolyzers.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Precious-metal dependence is not a problem the thesis names.",
+          "quote": "Electrolyzers that make green hydrogen depend on scarce platinum and iridium.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is at bench scale with no therapeutic path.",
+          "quote": "the catalyst ran 2,000 hours without losing activity",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A published application is offered under an exclusive license.",
+          "quote": "Exclusive license or joint development with an electrolyzer company.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-28",
+        "title": "Snow Load Monitoring System for Flat Roofs",
+        "ttoCaseNumber": "DEMO-28",
+        "status": "available",
+        "ipScore": 70.5
+      },
+      "category": "Physical Sciences",
+      "label": "none",
+      "totalScore": 2,
+      "summary": "This structural sensor technology is outside the life-sciences thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Building monitoring is outside therapeutics.",
+          "quote": "This system of wireless load sensors warns building managers before snow load becomes dangerous.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Roof collapse is unrelated to the named problems.",
+          "quote": "Heavy snow collapses flat roofs on warehouses and schools.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is installed in buildings, with no therapeutic path.",
+          "quote": "installed on six buildings in Vermont",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A granted patent is offered under an exclusive license.",
+          "quote": "Exclusive license.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-12",
+        "title": "Solid-State Sodium Battery with a Sulfide Electrolyte",
+        "ttoCaseNumber": "DEMO-12",
+        "status": "available",
+        "ipScore": 87.0
+      },
+      "category": "Physical Sciences",
+      "label": "none",
+      "totalScore": 2,
+      "summary": "This is an energy-storage technology entirely outside the life-sciences thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Battery technology is outside therapeutics.",
+          "quote": "This solid-state sodium battery uses a sulfide electrolyte that conducts ions at room temperature.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Lithium supply is not a problem the thesis names.",
+          "quote": "Lithium is costly and supply-constrained.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is a lab prototype with no therapeutic or IND path.",
+          "quote": "pouch cells kept 90 percent capacity after 500 cycles",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A granted patent is offered under an exclusive license or for startup formation.",
+          "quote": "Exclusive license or startup formation with a battery manufacturer.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-15",
+        "title": "Wireless Methane Leak Sensor Network for Gas Wells",
+        "ttoCaseNumber": "DEMO-15",
+        "status": "available",
+        "ipScore": 87.0
+      },
+      "category": "Physical Sciences",
+      "label": "none",
+      "totalScore": 2,
+      "summary": "This oil-and-gas sensor technology is outside the life-sciences scope.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Environmental sensing is outside therapeutics.",
+          "quote": "This network of solar-powered sensors detects leaks within minutes and locates them.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Methane leak detection is unrelated to the named problems.",
+          "quote": "Methane leaks from gas wells go undetected for weeks.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is a field pilot with no therapeutic development path.",
+          "quote": "40 sensors ran for a year at two well pads in Pennsylvania",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A granted patent is offered under an exclusive license or for startup formation.",
+          "quote": "Exclusive license or startup formation.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-24",
+        "title": "Low-Cost Dental Cavity Imaging Device",
+        "ttoCaseNumber": "DEMO-24",
+        "status": "available",
+        "ipScore": 70.5
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 1,
+      "summary": "Medical devices are explicitly outside the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "It is a medical imaging device, which the thesis explicitly excludes.",
+          "quote": "This handheld near-infrared camera images early cavities without radiation.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Dental cavity detection is unrelated to the named problems.",
+          "quote": "Dental X-rays miss early cavities and expose patients to radiation.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is in a clinical study as a device, not on a therapeutic IND path.",
+          "quote": "it detected early cavities in 150 patients with 94 percent accuracy",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "A granted patent is offered exclusively, but to a dental device company rather than a new therapeutics company.",
+          "quote": "Exclusive license to a dental device company.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-17",
+        "title": "Thermal Battery for Industrial Heat Using Molten-Salt Bricks",
+        "ttoCaseNumber": "DEMO-17",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Physical Sciences",
+      "label": "none",
+      "totalScore": 1,
+      "summary": "This energy technology is outside the life-sciences thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Industrial thermal storage is outside therapeutics.",
+          "quote": "This thermal battery stores cheap renewable electricity as heat in molten-salt bricks and releases steam on demand.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Industrial process heat is unrelated to the named problems.",
+          "quote": "Factories burn natural gas for process heat.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is a prototype with no therapeutic path.",
+          "quote": "a 100 kilowatt-hour unit delivered steam at 400 degrees Celsius",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "Licensing or startup formation is possible, but it has only a PCT application with no confirmed record.",
+          "quote": "Licensing or startup formation.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-29",
+        "title": "Vaccine Adjuvant for Poultry",
+        "ttoCaseNumber": "DEMO-29",
+        "status": "available",
+        "ipScore": 55.5
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 1,
+      "summary": "This animal health product is explicitly excluded by the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Animal health is explicitly out of scope.",
+          "quote": "This adjuvant makes poultry vaccines effective with a single dose.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Avian influenza in poultry is unrelated to the named problems.",
+          "quote": "Avian influenza outbreaks force farms to cull millions of birds.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is in veterinary field trials, not on a human IND path.",
+          "quote": "field trial on two commercial farms",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "A published application exists, but the license is aimed at an animal health company and is not stated as exclusive.",
+          "quote": "License to an animal health company.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-25",
+        "title": "Wearable Gait Sensor for Parkinson's Fall Risk",
+        "ttoCaseNumber": "DEMO-25",
+        "status": "available",
+        "ipScore": 72.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 1,
+      "summary": "This digital health device is excluded by the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Wearable digital health devices are explicitly out of scope.",
+          "quote": "This shoe-insole sensor predicts fall risk from walking patterns.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Fall risk in Parkinson's disease is unrelated to cancer immunotherapy.",
+          "quote": "Falls are a leading cause of hospitalization in Parkinson's disease.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is in a clinical device pilot with no therapeutic path.",
+          "quote": "Stage: clinical pilot with 60 patients.",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "A published application exists, but the license is aimed at a digital health company and is not stated as exclusive.",
+          "quote": "License to a digital health company.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-19",
+        "title": "AI Forecasting Software for Wind Farm Output",
+        "ttoCaseNumber": "DEMO-19",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Software & IT",
+      "label": "none",
+      "totalScore": 0,
+      "summary": "This software has no IP and no connection to the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Energy forecasting software is outside therapeutics.",
+          "quote": "This software forecasts wind farm output 48 hours ahead from weather data.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Wind forecasting is unrelated to the named problems.",
+          "quote": "Grid operators curtail wind power because output is hard to predict.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is a software pilot with no therapeutic path.",
+          "quote": "forecasts were 18 percent more accurate than a commercial service at one New England wind farm",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "No patents are listed and only a software license is offered.",
+          "quote": "Software license.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-22",
+        "title": "Adaptive Math Tutoring App for Middle Schools",
+        "ttoCaseNumber": "DEMO-22",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Software & IT",
+      "label": "none",
+      "totalScore": 0,
+      "summary": "This edtech software is entirely outside the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Education software is outside therapeutics.",
+          "quote": "This app adapts problem difficulty to each student in real time.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Math learning is unrelated to the named problems.",
+          "quote": "Middle school students fall behind in math",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is a deployed app with no therapeutic path.",
+          "quote": "used by 1,200 students in three New Hampshire school districts",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "No patents are listed and only a software license is offered.",
+          "quote": "Software license to an education company.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-27",
+        "title": "Biodegradable High-Performance Ski Wax",
+        "ttoCaseNumber": "DEMO-27",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Physical Sciences",
+      "label": "none",
+      "totalScore": 0,
+      "summary": "This consumer product has no relevance to the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "A consumer sports product is outside therapeutics.",
+          "quote": "This plant-based wax matches their glide performance and biodegrades.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Banned ski waxes are unrelated to the named problems.",
+          "quote": "Fluorinated ski waxes are now banned because they persist in the environment.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It has had user testing only, with no therapeutic path.",
+          "quote": "tested by the Dartmouth ski team for one season",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "It has a provisional application only and the lab seeks a license to a brand.",
+          "quote": "License to a winter sports brand.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-20",
+        "title": "Corrosion-Resistant Coating for Offshore Wind Turbines",
+        "ttoCaseNumber": "DEMO-20",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Physical Sciences",
+      "label": "none",
+      "totalScore": 0,
+      "summary": "A non-exclusive industrial coating license is outside the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "An industrial coating is outside therapeutics.",
+          "quote": "This ceramic-polymer coating resists corrosion for twice as long as current coatings.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Corrosion is unrelated to the named problems.",
+          "quote": "Salt spray corrodes offshore wind turbines and drives up maintenance costs.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is at field test with no therapeutic path.",
+          "quote": "coated panels have been exposed on a North Sea platform for 18 months",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "The lab offers non-exclusive licenses.",
+          "quote": "Non-exclusive licenses to coating manufacturers.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-16",
+        "title": "Direct Air Capture Sorbent Made from Mining Waste",
+        "ttoCaseNumber": "DEMO-16",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Physical Sciences",
+      "label": "none",
+      "totalScore": 0,
+      "summary": "This climate technology is entirely outside the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Carbon capture is outside therapeutics.",
+          "quote": "captures carbon dioxide from air at room temperature",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Sorbent cost is not a problem the thesis names.",
+          "quote": "Direct air capture sorbents are expensive.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is at bench scale with no therapeutic path.",
+          "quote": "one kilogram batches captured 1.2 millimoles of CO2 per gram",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "It has a provisional application only and the lab seeks sponsored research.",
+          "quote": "Sponsored research toward a pilot.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-26",
+        "title": "Handwriting Recognition for Archival Documents",
+        "ttoCaseNumber": "DEMO-26",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Software & IT",
+      "label": "none",
+      "totalScore": 0,
+      "summary": "This software is entirely outside the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Archival software is outside therapeutics.",
+          "quote": "This software reads 18th- and 19th-century handwriting.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Document search is unrelated to the named problems.",
+          "quote": "Libraries hold millions of handwritten pages that cannot be searched.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is deployed software with no therapeutic path.",
+          "quote": "deployed at the Dartmouth library on 40,000 pages",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "No patents are listed and only a software license is offered.",
+          "quote": "Software license.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-06",
+        "title": "Liquid Biopsy Assay Detecting Minimal Residual Disease in Colorectal Cancer",
+        "ttoCaseNumber": "DEMO-06",
+        "status": "available",
+        "ipScore": 57.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 0,
+      "summary": "A diagnostic offered on non-exclusive terms falls outside the thesis on both scope and deal structure.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "It is a diagnostic blood test, which the thesis explicitly excludes.",
+          "quote": "This blood test detects tumor DNA at one part per million.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Detecting residual disease is not one of the therapeutic problems the thesis names.",
+          "quote": "doctors cannot tell which colorectal cancer patients still carry tumor cells",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is clinically validated as an assay but is not on a therapeutic IND path.",
+          "quote": "the assay predicted relapse in a 210-patient retrospective study",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "The lab seeks non-exclusive licenses, which the fund does not take.",
+          "quote": "Non-exclusive licenses to diagnostic laboratories.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-14",
+        "title": "Low-Cost Perovskite Tandem Solar Coating",
+        "ttoCaseNumber": "DEMO-14",
+        "status": "available",
+        "ipScore": 70.5
+      },
+      "category": "Physical Sciences",
+      "label": "none",
+      "totalScore": 0,
+      "summary": "This solar coating is outside the thesis in sector, problem and deal type.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Solar technology is outside therapeutics.",
+          "quote": "This perovskite coating is printed on top of silicon cells to form a tandem cell.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Solar efficiency is not a problem the thesis names.",
+          "quote": "Silicon solar panels are near their efficiency limit.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is a lab prototype with no therapeutic path.",
+          "quote": "long-term stability is still being tested",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "The lab seeks joint development rather than an exclusive license.",
+          "quote": "Joint development with a solar module maker.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-30",
+        "title": "Noise-Reducing Smart Alarm System for Hospitals",
+        "ttoCaseNumber": "DEMO-30",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 0,
+      "summary": "This hospital IT system has no IP and is outside the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Hospital alarm hardware and software fall under the excluded device and digital health categories.",
+          "quote": "This system routes alarms to the right nurse's wearable and silences non-critical ones.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Alarm fatigue is unrelated to the named problems.",
+          "quote": "Hospital alarm fatigue causes staff to miss critical alerts.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is in a hospital pilot with no therapeutic path.",
+          "quote": "pilot on one intensive care unit",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "No patents are listed and the lab offers only a software and hardware license.",
+          "quote": "Software and hardware license.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-23",
+        "title": "Screening Method for Drought-Tolerant Maple Trees",
+        "ttoCaseNumber": "DEMO-23",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 0,
+      "summary": "This plant screening method has no relevance to an immuno-oncology fund.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Tree genetics screening is outside human therapeutics.",
+          "quote": "This genetic screening method identifies drought-tolerant seedlings in two weeks instead of five years.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Forest drought is unrelated to the named problems.",
+          "quote": "Drought is killing sugar maples across New England.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is validated in a greenhouse, with no therapeutic path.",
+          "quote": "Stage: validated in greenhouse trials.",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "It has a provisional application only and the lab seeks licensing to nurseries.",
+          "quote": "Licensing to tree nurseries.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "DEMO-13",
+        "title": "Self-Healing Polymer Binder for Silicon Anodes",
+        "ttoCaseNumber": "DEMO-13",
+        "status": "available",
+        "ipScore": 70.5
+      },
+      "category": "Physical Sciences",
+      "label": "none",
+      "totalScore": 0,
+      "summary": "A non-exclusive battery materials license is outside the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "A battery materials invention is outside therapeutics.",
+          "quote": "This self-healing polymer binder repairs the cracks during cycling.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "Anode cracking is unrelated to any named problem.",
+          "quote": "Silicon anodes store ten times more lithium than graphite but crack as they swell.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is at lab validation with no therapeutic development path.",
+          "quote": "coin cells with the binder lasted three times longer than commercial binders",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "The lab offers non-exclusive or field-of-use licenses.",
+          "quote": "Non-exclusive or field-of-use licenses.",
+          "quoteVerified": true
+        }
+      ]
+    }
+  ],
+  "unassessedIds": []
+}
