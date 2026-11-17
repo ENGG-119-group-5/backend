@@ -1,4 +1,4 @@
-"""FastAPI app over the Neo4j graph (data_contract v0.4):
+"""FastAPI app over the Neo4j graph (data_contract v0.5):
 /search, /technology/{id}, and /match (thesis PDF -> ranked inventions, via Claude).
 
 Run from the repo root:  uvicorn api.main:app --app-dir src --reload
@@ -277,8 +277,8 @@ async def get_technology(request: Request, id: str):
 DEMO_DIR = config.BASE_DIR / "data" / "demo"
 RESULTS_DIR = DEMO_DIR / "results"     # saved real results for the sample theses (no key needed)
 SAMPLES = {
-    "oncology-fund-thesis.pdf": "Sample: immuno-oncology therapeutics fund",
-    "climate-hardware-thesis.pdf": "Sample: climate and energy hardware fund",
+    "immune-engineering-thesis.pdf": "Sample: immune-engineering therapeutics fund",
+    "electrification-materials-thesis.pdf": "Sample: electrification materials fund",
 }
 MAX_PDF_BYTES = 10 * 1024 * 1024
 
