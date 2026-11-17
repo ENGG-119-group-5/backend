@@ -6,6 +6,7 @@ Usage:
     pip install neo4j
     export NEO4J_URI=bolt://localhost:7687 NEO4J_USER=neo4j NEO4J_PASSWORD=...
 
+    python load_to_neo4j.py reset                               # DELETES every node and relationship
     python load_to_neo4j.py schema                              # constraints, run once
     python load_to_neo4j.py tto technologies_life_sciences.json # TTO side
     python load_to_neo4j.py patents uspto_patents.json          # USPTO side (or test fixtures)
@@ -136,12 +137,15 @@ def run(statements, dry_run):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("what", choices=["schema", "tto", "patents"])
+    ap.add_argument("what", choices=["reset", "schema", "tto", "patents"],
+                    help="reset DELETES the whole graph (use before loading a different dataset)")
     ap.add_argument("file", nargs="?")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    if args.what == "schema":
+    if args.what == "reset":
+        run([("MATCH (n) DETACH DELETE n", {})], args.dry_run)
+    elif args.what == "schema":
         run([(c, {}) for c in SCHEMA], args.dry_run)
     else:
         records = json.load(open(args.file, encoding="utf-8"))
