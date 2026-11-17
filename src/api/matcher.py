@@ -3,6 +3,7 @@ investment-thesis PDF (MVP, "Pre Commercial Tech" deck slide 5).
 
     thesis PDF + merged TTO/USPTO record of each invention
         -> Claude (structured output): label + 4 fit scores, each with a quote
+           (a second call covers any invention Claude skipped)
         -> verify_quotes(): a quote counts only if it really appears in that record
         -> rank(): strong > potential > none, then by total fit score
 
@@ -77,10 +78,13 @@ MATCH (t:Technology)
 OPTIONAL MATCH (t)-[:CLAIMS_IP]->(r:IpRef)
 WITH t, collect(r{.raw_label, .ip_type}) AS refs
 OPTIONAL MATCH (t)-[:PROTECTED_BY]->(p:Patent)
+OPTIONAL MATCH (p)-[:ASSIGNED_TO]->(a:Assignee)
+WITH t, refs, p, collect(a.name) AS owners
 WITH t, refs, collect(p{.patent_key, .doc_type, .title, .abstract, .grant_date, .filing_date,
-                       .government_interest}) AS patents
+                       .government_interest, assignees: owners}) AS patents
 OPTIONAL MATCH (i:Inventor)-[l:LISTED_ON]->(t)
-RETURN t{.tto_id, .title, .category, .status, .description, .advantages, .looking_for} AS t,
+RETURN t{.tto_id, .title, .category, .status, .rights, .description, .advantages, .features,
+         .looking_for} AS t,
        refs, patents,
        collect(i.name + coalesce(' (' + l.title_affiliation + ')', '')) AS people
 ORDER BY t.tto_id
@@ -97,11 +101,14 @@ async def load_inventions(tx) -> list[dict]:
 def invention_text(inv: dict) -> str:
     """The merged TTO + USPTO record Claude reads, and that quotes are checked against."""
     lines = [f"### {inv['tto_id']}: {inv['title']}",
-             f"Category: {inv.get('category') or 'unknown'}. TTO status: {(inv.get('status') or 'unknown').replace('_', ' ')}."]
+             f"Category: {inv.get('category') or 'unknown'}. TTO status: {(inv.get('status') or 'unknown').replace('_', ' ')}."
+             + (f" Rights available: {inv['rights'].replace('_', ' ')}." if inv.get("rights") else "")]
     if inv.get("description"):
         lines.append(f"Description: {inv['description']}")
     if inv.get("advantages"):
         lines.append("Advantages: " + " ".join(inv["advantages"]))
+    if inv.get("features"):
+        lines.append("Details: " + " ".join(inv["features"]))
     if inv.get("looking_for"):
         lines.append("Looking for: " + " ".join(inv["looking_for"]))
     refs = [f"{r['raw_label']} ({(r.get('ip_type') or 'unknown').replace('_', ' ')})" for r in inv.get("refs", [])]
@@ -110,8 +117,9 @@ def invention_text(inv: dict) -> str:
         when = f"granted {p['grant_date']}" if p.get("grant_date") else f"filed {p.get('filing_date') or 'unknown'}"
         kind = "granted patent" if p.get("doc_type") == "grant" else "published application"
         funding = " Federally funded." if (p.get("government_interest") or "").strip() else ""
+        owners = f" Assignees: {'; '.join(p['assignees'])}." if p.get("assignees") else ""
         lines.append(f"USPTO record {p['patent_key']} ({kind}, {when}): {p.get('title') or ''}. "
-                     f"{p.get('abstract') or ''}{funding}")
+                     f"{p.get('abstract') or ''}{funding}{owners}")
     if not inv.get("patents"):
         lines.append("USPTO records: no confirmed patent or application.")
     if inv.get("people"):
@@ -121,7 +129,20 @@ def invention_text(inv: dict) -> str:
 
 # ---------------------------------------------------------------- Claude call
 async def run_match(client: anthropic.AsyncAnthropic, pdf: bytes, inventions: list[dict]) -> MatchOutput:
-    """One Claude call: thesis PDF + all invention records -> MatchOutput."""
+    """Thesis PDF + all invention records -> MatchOutput, in one Claude call. In a long list
+    Claude occasionally skips an invention; those few get one more call of their own."""
+    output = await score(client, pdf, inventions)
+    done = {v.invention_id for v in output.verdicts}
+    missing = [inv for inv in inventions if inv["tto_id"] not in done]
+    if missing:
+        extra = await score(client, pdf, missing)
+        wanted = {inv["tto_id"] for inv in missing}
+        output.verdicts += [v for v in extra.verdicts if v.invention_id in wanted]
+    return output
+
+
+async def score(client: anthropic.AsyncAnthropic, pdf: bytes, inventions: list[dict]) -> MatchOutput:
+    """One Claude call over the given inventions."""
     records = "\n\n".join(invention_text(inv) for inv in inventions)
     async with client.beta.messages.stream(
         model=MODEL,
