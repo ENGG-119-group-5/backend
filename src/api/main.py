@@ -2,6 +2,16 @@
 /search, /technology/{id}, and /match (thesis PDF -> ranked inventions, via Claude).
 
 Run from the repo root:  uvicorn api.main:app --app-dir src --reload
+
+In plain words: this is the "back office" the website talks to. The website never
+touches the database directly; it asks this API questions over the web, such as
+"search for 'vaccine'" or "give me everything about technology 2021-023", and the API
+looks up the answer in Neo4j and sends it back as JSON. The main endpoints are:
+
+  GET  /search            keyword search over technologies, patents and inventors
+  GET  /technology/{id}   everything about one invention, including its IP score
+  GET  /samples           the sample investment theses offered on the home page
+  POST /match             upload a thesis PDF, get every invention ranked against it
 """
 import hashlib
 import json
@@ -31,6 +41,8 @@ ID_KEY = {"technology": "tto_id", "patent": "patent_key", "inventor": "inventor_
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    """Runs once when the API starts: connects to Neo4j and sets up the Claude client.
+    Runs again when the API stops, to close the database connection."""
     driver = AsyncGraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
     await driver.verify_connectivity()
     app.state.driver = driver
@@ -50,6 +62,7 @@ app.add_middleware(
 
 # ------------------------------------------------------------------ helpers
 async def read(request: Request, work):
+    """Run a read-only database job (`work`) and return its result."""
     async with request.app.state.driver.session(database=NEO4J_DATABASE) as s:
         return await s.execute_read(work)
 
@@ -119,6 +132,8 @@ RETURN t.tto_id AS id, t.status AS status,
 
 
 def score_from_row(r: dict) -> dict:
+    """Turn the database facts about one invention into its IP-potential score
+    (see scoring.py), including any manual override an analyst has set."""
     patents = [{**p, "grant_date": iso(p.get("grant_date")), "filing_date": iso(p.get("filing_date")),
                 "number_label": number_label(p), "url": patent_url(p)} for p in r["patents"]]
     override = None
@@ -141,6 +156,9 @@ async def search(
     type: str = Query("all", pattern="^(all|technology|patent|inventor)$"),
     limit: int = Query(25, ge=1, le=100),
 ):
+    """Keyword search. Every word typed must appear somewhere in a result (title,
+    description, number...). Results whose title contains all the words rank first.
+    With no words, it returns a full list, with the highest-scoring inventions first."""
     q = q.strip()
     props = "{.tto_id, .patent_key, .inventor_id, .title, .name, .description, .abstract, .source}"
 
@@ -204,6 +222,9 @@ async def search(
 # ---------------------------------------------------------- technology/{id}
 @app.get("/technology/{id}", response_model=TechnologyDetail)
 async def get_technology(request: Request, id: str):
+    """Everything about one invention for its detail page: summary, confirmed patents
+    (with how sure we are of each link), inventors from both sources, the IP score
+    with its full breakdown, and the change history. Returns 404 if the id is unknown."""
     async def work(tx):
         tech = await rows(tx, """MATCH (t:Technology {tto_id: $id})
             RETURN t{.tto_id, .title, .category, .status, .description, .quality_flags,
@@ -285,17 +306,22 @@ MAX_PDF_BYTES = 10 * 1024 * 1024
 
 @app.get("/samples", response_model=list[SampleThesis])
 async def list_samples():
+    """The sample theses shown as buttons on the home page."""
     return [SampleThesis(name=n, title=t) for n, t in SAMPLES.items()]
 
 
 @app.get("/samples/{name}")
 async def get_sample(name: str):
+    """Download one sample thesis PDF. Only names from the list are allowed."""
     if name not in SAMPLES:   # allow-list: never serve arbitrary paths
         raise HTTPException(status_code=404, detail=f"No sample thesis '{name}'")
     return FileResponse(DEMO_DIR / "theses" / name, media_type="application/pdf", filename=name)
 
 
 def saved_result(sha256: str) -> dict | None:
+    """If this exact PDF was matched before and its result was saved (the sample
+    theses), return that result. The PDF is recognised by its fingerprint (SHA-256),
+    so the demo works instantly, for free and without an API key."""
     for f in sorted(RESULTS_DIR.glob("*.json")):
         data = json.loads(f.read_text(encoding="utf-8"))
         if data.get("thesisSha256") == sha256:
@@ -332,7 +358,12 @@ def build_matches(output: matcher.MatchOutput, inventions: list[dict],
 
 @app.post("/match", response_model=MatchResponse)
 async def match(request: Request, file: UploadFile = File(...)):
-    """Match an investment-thesis PDF against every invention in the graph."""
+    """Match an investment-thesis PDF against every invention in the graph.
+
+    In plain words: check the file really is a PDF under 10 MB; if it is a sample
+    thesis, return the saved answer; otherwise send the thesis and every invention
+    record to Claude (see matcher.py), double-check Claude's quotes, rank the results
+    and send them back. Errors are turned into short messages the website can show."""
     pdf = await file.read()
     if len(pdf) > MAX_PDF_BYTES:
         raise HTTPException(status_code=422, detail="The PDF is larger than 10 MB.")

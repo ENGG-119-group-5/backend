@@ -18,6 +18,13 @@ Design notes:
 - Header fields (ID, status, IP labels) and Google Patents links are read by
   position (top-left box of the page).
 - Nothing is guessed: unclear values are kept raw and listed in quality_flags.
+
+In plain words: Dartmouth's tech-transfer office (TTO) publishes PDF brochures with one
+invention per page. This script reads those pages like a person would: it finds the
+title, the case number, the patent numbers, the inventors, the description and the
+advantages, and saves each invention as a tidy record in a JSON file. When a page is
+unclear, it does not guess; it writes a note ("quality flag") so a person can check.
+This is step 1 of the data pipeline (see docs/how-it-works.md).
 """
 
 import argparse
@@ -133,6 +140,8 @@ def parse_ip_label(label):
 
 
 def parse_header(page):
+    """Read the small box at the top-left of a page: the case number, whether the
+    invention is available, and the list of patents and applications behind it."""
     box = crop(page, HEADER_BOX)
     lines = [clean(l) for l in (box.extract_text() or "").splitlines() if clean(l)]
     out = {"tto_id": None, "status": None, "rights": None, "ip_refs": [], "flags": []}
@@ -210,6 +219,8 @@ def split_person(chunk, role):
 
 
 def parse_people(page):
+    """Find the inventors named near the top of the page (lead researcher and
+    co-inventors), with their job title or department when it is printed."""
     band = crop(page, PEOPLE_BAND)
     text = flow_text(band)
     text = re.sub(r"VIEW PUBLICATIONS?", "", text)
@@ -264,6 +275,8 @@ def heading_of(line):
 
 
 def parse_sections(page):
+    """Split the body text into its sections (Description, Advantages, and so on)
+    by spotting the headings, so each part can be stored separately."""
     lines = [clean(l) for l in flow_text(page).splitlines()]
     sections, current = {}, None
     for line in lines:
@@ -343,6 +356,8 @@ def parse_publications(page):
 # ---------- one page -> one Technology record ----------
 
 def parse_page(page, page_no, document, category, extracted_at):
+    """Turn one PDF page into one invention record, or None for a cover page.
+    Also records where it came from (file and page number) and any quality notes."""
     header = parse_header(page)
     if not header["tto_id"]:
         return None                      # cover page or non-technology page
@@ -423,6 +438,7 @@ def merge_duplicates(records):
 
 
 def crawl(pdf_path, category):
+    """Read every page of one TTO PDF and return the list of invention records."""
     extracted_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
     document = pdf_path.split("/")[-1]
     records = []

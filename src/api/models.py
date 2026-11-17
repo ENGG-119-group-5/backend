@@ -1,4 +1,10 @@
-"""Pydantic models mirroring src/lib/api/types.ts (camelCase on the wire)."""
+"""Pydantic models mirroring src/lib/api/types.ts (camelCase on the wire).
+
+In plain words: these classes describe the exact shape of every answer the API sends
+(which fields, and what kind of value each one holds). The web app has a matching
+list in its src/lib/api/types.ts. If an answer does not fit the shape, the API stops
+with an error instead of sending the website something it cannot read.
+"""
 from typing import Literal
 
 from pydantic import BaseModel, ConfigDict

@@ -13,6 +13,12 @@ How each TTO reference is resolved:
                     number is the one printed on the page (the decks have copy-paste errors).
                     If USPTO has granted that application since, the grant is used instead.
   PCT / provisional / no number -> nothing to fetch (not in USPTO, or not public)
+
+In plain words: the TTO pages only list patent numbers. This script looks each number
+up on Google Patents (which mirrors the official US Patent Office, USPTO, records) and
+saves the official facts: title, abstract, dates, inventors, owners, and whether the
+government helped fund it. Every page it downloads is saved locally, so running it again
+is instant and does not hit the website. This is step 2 of the data pipeline.
 """
 import argparse
 import html

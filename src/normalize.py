@@ -1,6 +1,11 @@
 """
 Shared key and name normalization (data_contract.md, section 5).
 Every script uses these functions, so keys are always built the same way.
+
+In plain words: the same patent or person can be written many ways
+("US 10,123,456", "10123456"; "Dr. Randolph J. Noelle", "Randolph Noelle").
+These small helpers turn every spelling into one standard "key", so that two
+records about the same thing can be recognised as the same thing.
 """
 
 import re
