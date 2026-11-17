@@ -1,16 +1,23 @@
-"""FastAPI app: /search and /technology/{id} over the Neo4j graph (data_contract v0.3).
+"""FastAPI app over the Neo4j graph (data_contract v0.5):
+/search, /technology/{id}, and /match (thesis PDF -> ranked inventions, via Claude).
 
 Run from the repo root:  uvicorn api.main:app --app-dir src --reload
 """
+import hashlib
+import json
 import os
 from contextlib import asynccontextmanager
+from datetime import datetime, timezone
 
-from fastapi import FastAPI, HTTPException, Query, Request
+import anthropic
+from fastapi import FastAPI, File, HTTPException, Query, Request, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 from neo4j import AsyncGraphDatabase
 
-from .models import (AuditEntry, EntityRef, InventorSummary, IpScore, LinkEvidence,
-                     PatentWithLink, SimilarTechnology, SourceRef, TechnologyDetail)
+from . import matcher
+from .models import (AuditEntry, EntityRef, InventorSummary, IpScore, LinkEvidence, MatchResponse,
+                     PatentWithLink, SampleThesis, SimilarTechnology, SourceRef, TechnologyDetail)
 from .scoring import compute_ip_score
 
 import config
@@ -27,6 +34,7 @@ async def lifespan(app: FastAPI):
     driver = AsyncGraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
     await driver.verify_connectivity()
     app.state.driver = driver
+    app.state.claude = anthropic.AsyncAnthropic()   # reads ANTHROPIC_API_KEY (.env.local) when called
     yield
     await driver.close()
 
@@ -263,3 +271,110 @@ async def get_technology(request: Request, id: str):
             entity=tech_ref, from_=a.get("from"), to=str(a["to"]), reason=a.get("reason") or "",
         ) for a in (r["a"] for r in d["audit"])],
     )
+
+
+# -------------------------------------------------------------- thesis matching
+DEMO_DIR = config.BASE_DIR / "data" / "demo"
+RESULTS_DIR = DEMO_DIR / "results"     # saved real results for the sample theses (no key needed)
+SAMPLES = {
+    "immune-engineering-thesis.pdf": "Sample: immune-engineering therapeutics fund",
+    "electrification-materials-thesis.pdf": "Sample: electrification materials fund",
+}
+MAX_PDF_BYTES = 10 * 1024 * 1024
+
+
+@app.get("/samples", response_model=list[SampleThesis])
+async def list_samples():
+    return [SampleThesis(name=n, title=t) for n, t in SAMPLES.items()]
+
+
+@app.get("/samples/{name}")
+async def get_sample(name: str):
+    if name not in SAMPLES:   # allow-list: never serve arbitrary paths
+        raise HTTPException(status_code=404, detail=f"No sample thesis '{name}'")
+    return FileResponse(DEMO_DIR / "theses" / name, media_type="application/pdf", filename=name)
+
+
+def saved_result(sha256: str) -> dict | None:
+    for f in sorted(RESULTS_DIR.glob("*.json")):
+        data = json.loads(f.read_text(encoding="utf-8"))
+        if data.get("thesisSha256") == sha256:
+            return data
+    return None
+
+
+def build_matches(output: matcher.MatchOutput, inventions: list[dict],
+                  ip_scores: dict[str, float]) -> tuple[list[dict], list[str]]:
+    """Claude's verdicts -> API matches. Quotes are verified here, outside the model."""
+    by_id = {inv["tto_id"]: inv for inv in inventions}
+    matches, seen = [], set()
+    for v in output.verdicts:
+        inv = by_id.get(v.invention_id)
+        if inv is None or v.invention_id in seen:   # unknown or duplicate id: ignore
+            continue
+        seen.add(v.invention_id)
+        record = matcher.invention_text(inv)
+        fits = []
+        for key, question in matcher.FITS.items():
+            check = getattr(v, key)
+            fits.append({"key": key, "question": question, "score": max(0, min(2, check.score)),
+                         "reason": check.reason, "quote": check.quote,
+                         "quoteVerified": matcher.quote_found(check.quote, record)})
+        matches.append({
+            "technology": {"id": inv["tto_id"], "title": inv["title"], "ttoCaseNumber": inv["tto_id"],
+                           "status": map_status(inv.get("status")), "ipScore": ip_scores.get(inv["tto_id"])},
+            "category": inv.get("category"), "label": v.label,
+            "totalScore": sum(f["score"] for f in fits), "summary": v.summary, "fits": fits,
+        })
+    unassessed = [i for i in by_id if i not in seen]
+    return matcher.rank(matches), unassessed
+
+
+@app.post("/match", response_model=MatchResponse)
+async def match(request: Request, file: UploadFile = File(...)):
+    """Match an investment-thesis PDF against every invention in the graph."""
+    pdf = await file.read()
+    if len(pdf) > MAX_PDF_BYTES:
+        raise HTTPException(status_code=422, detail="The PDF is larger than 10 MB.")
+    if not pdf.startswith(b"%PDF"):
+        raise HTTPException(status_code=422, detail="The file is not a PDF.")
+    sha256 = hashlib.sha256(pdf).hexdigest()
+
+    saved = saved_result(sha256)
+    if saved:
+        return MatchResponse.model_validate({**saved, "source": "saved_demo", "matches": matcher.rank(saved["matches"])})
+
+    if not (os.getenv("ANTHROPIC_API_KEY") or os.getenv("ANTHROPIC_AUTH_TOKEN")):
+        raise HTTPException(status_code=503, detail=(
+            "Matching a new thesis needs an Anthropic API key: add ANTHROPIC_API_KEY to backend/.env.local "
+            "and restart the API. The sample theses work without a key."))
+
+    async def work(tx):
+        inventions = await matcher.load_inventions(tx)
+        score_rows = await rows(tx, SCORE_INPUTS, ids=[i["tto_id"] for i in inventions])
+        return inventions, {r["id"]: score_from_row(r)["effective"] for r in score_rows}
+
+    inventions, ip_scores = await read(request, work)
+    if not inventions:
+        raise HTTPException(status_code=503, detail="No technologies in the database. Run scripts/load_demo.sh.")
+
+    try:
+        output = await matcher.run_match(request.app.state.claude, pdf, inventions)
+    except matcher.MatchError as e:
+        raise HTTPException(status_code=e.status, detail=str(e))
+    except anthropic.AuthenticationError:
+        raise HTTPException(status_code=503, detail="The Anthropic API key was rejected. Check backend/.env.local.")
+    except anthropic.RateLimitError:
+        raise HTTPException(status_code=429, detail="Claude is rate-limited right now. Try again in a minute.")
+    except anthropic.APIConnectionError:
+        raise HTTPException(status_code=502, detail="Could not reach the Claude API.")
+    except anthropic.APIStatusError as e:
+        raise HTTPException(status_code=502, detail=f"Claude API error ({e.status_code}).")
+
+    matches, unassessed = build_matches(output, inventions, ip_scores)
+    return MatchResponse(
+        thesis_name=file.filename or "thesis.pdf", thesis_sha256=sha256, thesis_summary=output.thesis_summary,
+        model=matcher.MODEL, source="live", generated_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        matches=matches, unassessed_ids=unassessed,
+    )
+

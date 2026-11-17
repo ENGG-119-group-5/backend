@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "vc-dd-pipeline"
 version = "0.1.0"
-description = "Group 5 VC Due Diligence Tool: TTO crawler, Neo4j loader and linking v1"
+description = "Group 5 VC Due Diligence Tool: TTO crawler, Neo4j loader, linking v1 and thesis matcher"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
@@ -20,6 +20,8 @@ dependencies = [
   "python-dotenv>=1.0",
   "fastapi",
   "uvicorn[standard]",
+  "anthropic>=2.9",     # thesis matcher (Claude API)
+  "python-multipart",   # FastAPI file uploads (/match)
 ]
 
 [project.optional-dependencies]
@@ -30,7 +32,7 @@ dev = [
 
 [tool.setuptools]
 package-dir = { "" = "src" }
-py-modules = ["normalize", "tto_crawler", "load_to_neo4j", "link_v1", "config", "db"]
+py-modules = ["normalize", "tto_crawler", "fetch_patents", "load_to_neo4j", "link_v1", "config", "db"]
 packages = ["api"]
 
 [tool.pytest.ini_options]

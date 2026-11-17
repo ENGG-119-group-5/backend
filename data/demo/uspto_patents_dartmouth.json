@@ -1,0 +1,1039 @@
+[
+  {
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "10113979",
+    "application_number": "15140008",
+    "publication_number": "US10113979B2",
+    "title": "Systems, probes, and methods for dielectric testing of wine in bottle",
+    "abstract": "A system for dielectric testing of wine in a bottle includes (a) a coaxial probe for interrogating the wine, wherein the coaxial probe has an open end for contacting an exterior surface of the bottle, and (b) a measurement module for determining a dielectric property associated with the wine by generating and measuring radio waves propagating through the coaxial cable. A method for dielectric testing of wine in a bottle includes measuring a radio-wave reflection signal associated with the wine by interrogating the wine, through the bottle, with radio waves, and determining a dielectric property associated with the wine from the radio-wave reflection signal. A probe for radio-wave interrogation of wine in a bottle has an inner conductor, an outer conductor, and an open end with curvature matching the curvature of an exterior surface of the bottle.",
+    "filing_date": "2016-04-27",
+    "grant_date": "2018-10-30",
+    "inventors": [
+      {
+        "first": "Paul M.",
+        "last": "Meaney",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Timothy",
+        "last": "Raynolds",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Dartmouth College"
+      }
+    ],
+    "government_interest": null,
+    "source": {
+      "system": "google_patents",
+      "document": "US10113979B2",
+      "source_url": "https://patents.google.com/patent/US10113979B2/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "11771323",
+    "application_number": "17794297",
+    "publication_number": "US11771323B2",
+    "title": "Optical time-of-flight imaging methods and systems for surgical guidance and fluorescence depth estimation in tissue",
+    "abstract": "A system and method for depth-resolved imaging of fluorophore concentrations in tissue uses a pulsed light source stimulus wavelength to illuminate the tissue; and a time-gated electronic camera such as a single-photon avalanche detector camera to observe the tissue in multiple time windows after start of each light pulse. A filter-changer or tunable filter is between the tissue and the electronic camera with fluorescent imaging settings and a stimulus wavelength setting, and an image processor receives reflectance images and fluorescent emissions images from the time-gated camera and processes these images into depth and quantity resolved images of fluorophore concentrations in the tissue.",
+    "filing_date": "2021-11-15",
+    "grant_date": "2023-10-03",
+    "inventors": [
+      {
+        "first": "Petr",
+        "last": "Bruza",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Brian",
+        "last": "Pogue",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under R01 EB023909 awarded by the National Institutes of Health. The Government has certain rights in the invention.",
+    "source": {
+      "system": "google_patents",
+      "document": "US11771323B2",
+      "source_url": "https://patents.google.com/patent/US11771323B2/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "12026876",
+    "application_number": "17432847",
+    "publication_number": "US12026876B2",
+    "title": "System and method for automatic detection of vertebral fractures on imaging scans using deep networks",
+    "abstract": "This invention provides systems and methods that can detect incidental OVFs in CT examinations at the level of practicing radiologists. The OVF detection system leverages a deep convolutional neural network (CNN) to extract radiological features from each CT scan slice. These extracted features are processed through a feature aggregation module to make the final diagnosis for the full CT scan. Feature aggregation, can be performed in a variety of ways, including the use of a long short-term memory (LSTM) network. In one example, the CNN can be trained on a predetermined number of CT scans, which are established as reference standards. This result can effectively the performance of practicing radiologists on this test set in real world clinical circumstances. The system and method can be employed to assist and improve OVF diagnosis in clinical settings by pre-screening routine CT examinations and flagging suspicious cases prior to review by radiologists.",
+    "filing_date": "2020-02-21",
+    "grant_date": "2024-07-02",
+    "inventors": [
+      {
+        "first": "Saeed",
+        "last": "Hassanpour",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Yvonne",
+        "last": "Cheung",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Naofumi",
+        "last": "Tomita",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Dartmouth College"
+      },
+      {
+        "name": "Dartmouth Hitchcock Clinic"
+      }
+    ],
+    "government_interest": null,
+    "source": {
+      "system": "google_patents",
+      "document": "US12026876B2",
+      "source_url": "https://patents.google.com/patent/US12026876B2/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "12116579",
+    "application_number": "17642592",
+    "publication_number": "US12116579B2",
+    "title": "Compositions and methods related to fungal hypoxia responsive morphology factor a (hrmA) and biofilm architecture factor (baf) proteins",
+    "abstract": "Filamentous fungal host cells expressing hypoxia responsive morphology factor A (hrmA) and biofilm architecture factor (baf) proteins are provided. Methods of producing filamentous fungal host cells expressing hrmA and baf proteins are also provided. In one aspect, the disclosure provides a filamentous fungal host cell, comprising a nucleotide sequence encoding an Aspergillus fumigatus hypoxia responsive morphology factor A (hrmA) protein, or a homolog or ortholog thereof.",
+    "filing_date": "2020-09-11",
+    "grant_date": "2024-10-15",
+    "inventors": [
+      {
+        "first": "Robert A.",
+        "last": "Cramer",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Caitlin",
+        "last": "Kowalski",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under Grant Nos. F31 A1138354 and R01 A1130128 awarded by the National Institutes of Health. The Government has certain rights in this invention.",
+    "source": {
+      "system": "google_patents",
+      "document": "US12116579B2",
+      "source_url": "https://patents.google.com/patent/US12116579B2/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "12244726",
+    "application_number": "17189704",
+    "publication_number": "US12244726B2",
+    "title": "Data system with information provenance",
+    "abstract": "A secure, integrated data system and method users both blockchain and Trusted Execution Environment (TEE) technologies to achieve information provenance for data, particularly, mobile health device data. Using a blockchain to record and enforce data access policies removes the need to trust a single entity with gatekeeping the health data. Instead, participants form a consortium and collectively partake in verifying and enforcing access policies for data stored in private data silos. Data access and computation takes place inside of TEEs, which preserves data confidentiality and provides a verifiable attestation that can be stored on the blockchain for the purpose of information provenance.",
+    "filing_date": "2021-03-02",
+    "grant_date": "2025-03-04",
+    "inventors": [
+      {
+        "first": "Taylor",
+        "last": "Hardin",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "David",
+        "last": "Kotz",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Dartmouth College"
+      }
+    ],
+    "government_interest": null,
+    "source": {
+      "system": "google_patents",
+      "document": "US12244726B2",
+      "source_url": "https://patents.google.com/patent/US12244726B2/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "12427342",
+    "application_number": "18280289",
+    "publication_number": "US12427342B2",
+    "title": "Cherenkov imaging-based solution for MR-Linac quality assurance",
+    "abstract": "A system includes a cylindrical phantom and a conical structure disposed in the phantom. The conical structure is shaped as a frustum and emits Cherenkov radiation when exposed to ionizing radiation. The system can be used for calibration of an MR-Linac system by exposing the system to ionizing radiation. The Cherenkov radiation can be imaged during exposure to ionizing radiation.",
+    "filing_date": "2022-03-07",
+    "grant_date": "2025-09-30",
+    "inventors": [
+      {
+        "first": "Daniel A.",
+        "last": "Alexander",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Jacqueline",
+        "last": "Andreozzi",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Petr",
+        "last": "Bruza",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Rongxiao",
+        "last": "Zhang",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "David J.",
+        "last": "Gladstone",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Mary Hitchcock Memorial Hospital For Itself And On Behalf Of Dartmouth Hitchcock Clinic"
+      },
+      {
+        "name": "Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under grants R01 EB023909 and R44 CA232879 awarded by the National Institutes of Health. The government has certain rights in the invention.",
+    "source": {
+      "system": "google_patents",
+      "document": "US12427342B2",
+      "source_url": "https://patents.google.com/patent/US12427342B2/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "grant",
+    "patent_number": "12545734",
+    "application_number": "16639836",
+    "publication_number": "US12545734B2",
+    "title": "Chimeric antigen receptors that target molecules on disease-associated macrophages and methods related thererto, and treatment of fibrotic, inflammatory and autoimmune conditions",
+    "abstract": "The invention provides chimeric antigen receptors (CARs), nucleic acid sequences encoding a CAR, vectors comprising a nucleic acid sequence encoding a CAR, cells expressing a CAR, pharmaceutical compositions comprising a cell expressing a CAR, wherein the CAR binds to a target molecule expressed on disease-associated macrophages (DAMs) or over- or aberrantly-expressed in fibrosis. The invention further provides vectors encoding a CAR and a fibrotic disease-modulatory molecule (FDMM), and cells expressing both a CAR and an FDMM. The invention also provides methods of treating a subject using a CAR, a nucleic acid sequence, a vector or vectors, or a CAR-expressing cell, a cell expressing both a CAR and an FDMM, or a pharmaceutical composition, and to methods of generating a CAR-expressing cell or a cell expressing both a CAR and an FDMM. The invention also provides methods of treating diseases, fibrotic conditions, inflammatory conditions, autoimmune conditions, and conditions associated with DAMs.",
+    "filing_date": "2018-08-20",
+    "grant_date": "2026-02-10",
+    "inventors": [
+      {
+        "first": "Michael",
+        "last": "Whitfield",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Patricia",
+        "last": "Pioli",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Charles",
+        "last": "Sentman",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Jake",
+        "last": "Reder",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Joana",
+        "last": "Murad",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Yolanda",
+        "last": "Nesbeth",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "CELDARA MEDICAL LLC"
+      },
+      {
+        "name": "Dartmouth College"
+      }
+    ],
+    "government_interest": null,
+    "source": {
+      "system": "google_patents",
+      "document": "US12545734B2",
+      "source_url": "https://patents.google.com/patent/US12545734B2/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "17766121",
+    "publication_number": "US20220354425A1",
+    "title": "Dielectric transmission probes and methods of using the same",
+    "abstract": "Embodiments of the present disclosure pertain to transmission dielectric probes with at least one channel that extends across the probe. The channel includes a first opening on a first side of the transmission dielectric probe, and a second opening on a second side of the transmission dielectric probe. The first opening and the second opening are on opposite ends of the transmission dielectric probe, and the second opening is associated with an outer surface of the transmission dielectric probe. Additionally, the first opening and the second opening have different diameters, different geometries, or combinations thereof. Further embodiments pertain to methods of operating the transmission dielectric probes by placing the outer surface of the transmission dielectric probe on a surface of an object, transmitting a signal from a first channel through the surface and into the object, and receiving the transmitted signal back through a second channel.",
+    "filing_date": "2020-10-02",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Paul",
+        "last": "Meaney",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Timothy",
+        "last": "Raynolds",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Robin",
+        "last": "Augustine",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under R01 CA191227 and R01 CA240760 awarded by the National Institutes of Health. The government has certain rights in the invention.",
+    "source": {
+      "system": "google_patents",
+      "document": "US20220354425A1",
+      "source_url": "https://patents.google.com/patent/US20220354425A1/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "17790245",
+    "publication_number": "US20230047323A1",
+    "title": "Metal phosphorothioates and metal-sulfur electrochemical system containing the same",
+    "abstract": "The disclosure relates to metal phosphorothioates, batteries comprising metal phosphorothioate, cells comprising metal phosphorothioate, and methods of making thereof.",
+    "filing_date": "2020-12-31",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Chuanlong",
+        "last": "Wang",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Weiyang",
+        "last": "Li",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Dartmouth College"
+      }
+    ],
+    "government_interest": null,
+    "source": {
+      "system": "google_patents",
+      "document": "US20230047323A1",
+      "source_url": "https://patents.google.com/patent/US20230047323A1/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "17759045",
+    "publication_number": "US20230120677A1",
+    "title": "Immunologically optimized botulinum toxin light chain variants",
+    "abstract": "Deimmunized botulinum toxin light chain (e.g., botulinum toxin serotype A light chains (BoNT/A-LC)) or fragments thereof are provided. Methods for treating or preventing diseases or disorders comprising administering to a subject a deimmunized botulinum toxin light chain (e.g., BoNT/A-LC) are provided.",
+    "filing_date": "2021-01-20",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Karl E.",
+        "last": "Griswold",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Chris",
+        "last": "Bailey-Kellogg",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Yoonjoo",
+        "last": "Choi",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Yongliang",
+        "last": "Fang",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Deeptak",
+        "last": "Verma",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Susan",
+        "last": "Eszterhas",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Min",
+        "last": "Dong",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Shin-Ichiro",
+        "last": "Miyashita",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Dartmouth College"
+      },
+      {
+        "name": "Boston Children's Hospital"
+      }
+    ],
+    "government_interest": "This invention was made with government support under Grant No. R01 GM098977 awarded by the National Institutes of Health. The Government has certain rights in this invention.",
+    "source": {
+      "system": "google_patents",
+      "document": "US20230120677A1",
+      "source_url": "https://patents.google.com/patent/US20230120677A1/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18229086",
+    "publication_number": "US20240000316A1",
+    "title": "Optical time-of-flight imaging methods and systems for surgical guidance and fluorescence depth estimation in tissue",
+    "abstract": "A system and method for depth-resolved imaging of fluorophore concentrations in tissue uses a pulsed light source stimulus wavelength to illuminate the tissue; and a time-gated electronic camera such as a single-photon avalanche detector camera to observe the tissue in multiple time windows after start of each light pulse. A filter device is between the tissue and the electronic camera with fluorescent imaging and stimulus wavelength settings. an image processor receives reflectance images and fluorescent emissions images from the time-gated camera and processes these images into depth and quantity resolved images of fluorophore concentrations in the tissue. Then image processor derives a fluorescence lifetime signal from the received temporal fluorescence signals and derives from these fluorescence lifetime signals biochemical property images of the tissue.",
+    "filing_date": "2023-08-01",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Petr",
+        "last": "Bruza",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Brian",
+        "last": "Pogue",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under R01 EB023909 awarded by the National Institutes of Health. The Government has certain rights in the invention.",
+    "source": {
+      "system": "google_patents",
+      "document": "US20240000316A1",
+      "source_url": "https://patents.google.com/patent/US20240000316A1/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18359373",
+    "publication_number": "US20240109947A1",
+    "title": "Immunostimulatory cytokine combination and therapeutic use thereof",
+    "abstract": "Novel cytokine combinations comprising the combination of a type I cytokine, e.g., interleukin-2 (IL-2), or an IL-2 superkine variant (super-2); and a type II cytokine, e.g., IL-33 or IL-25 are provided for use in treating cancer or infection, e.g., solid tumors. These cytokines may be administered in soluble form or may be expressed by cells, e.g., immune cells which express an endogenous or chimeric receptor which binds to target cells, e.g., cancer cells such as those in a solid tumor.",
+    "filing_date": "2023-07-26",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Yina",
+        "last": "Huang",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Rachel",
+        "last": "Brog",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Prathna",
+        "last": "Kumar",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Jia",
+        "last": "Zou",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Dartmouth College"
+      }
+    ],
+    "government_interest": null,
+    "source": {
+      "system": "google_patents",
+      "document": "US20240109947A1",
+      "source_url": "https://patents.google.com/patent/US20240109947A1/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18521285",
+    "publication_number": "US20240177868A1",
+    "title": "Altering the intestinal microbiome in cystic fibrosis",
+    "abstract": "The present disclosure relates to computer-implemented systems for identifying a patient with cystic fibrosis as having a high risk for upper respiratory infections or systemic inflammation, based on the patient's stool microbiota. The systems use machine learning models trained with data comprising (a) risk classifications for subjects with cystic fibrosis and (b) stool microbiota information for each of the subjects. The present disclosure also relates to methods of reducing frequency and/or number of upper respiratory infections in a patient with cystic fibrosis. The present disclosure also relates to methods of identifying a patient with cystic fibrosis (CF) as having a high risk for frequent upper respiratory infections or high systemic inflammation based on the patient's stool microbiota.",
+    "filing_date": "2023-11-28",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "George A.",
+        "last": "O'Toole",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Juliette C.",
+        "last": "Madan",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Rebecca A",
+        "last": "Valls",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Thomas",
+        "last": "Hampton",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Mary Hitchcock Memorial Hospital For Itself And On Behalf Of Dartmouth Hitchcock Clinic"
+      },
+      {
+        "name": "Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under T32 HL134598-01 and T32-AI007363 and P30-DK117469 awarded by the National Institutes of Health. The government has certain rights in the invention.",
+    "source": {
+      "system": "google_patents",
+      "document": "US20240177868A1",
+      "source_url": "https://patents.google.com/patent/US20240177868A1/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18514761",
+    "publication_number": "US20240239851A1",
+    "title": "Engineered nemo and uses thereof",
+    "abstract": "The present disclosure relates to a modified NEMO protein that, inter alia, allows for structural determination of the NEMO protein in the apo-form and in complex with a ligand by NMR or X-ray crystallography. The present disclosure also relates to the use of such modified NEMO proteins to screen and validate inhibitors of the interaction between NEMO and IKKα and/or IKKβ and for structure determination of NEMO in the apo-form and in complex with a ligand, preferably by NMR or X-ray crystallography.",
+    "filing_date": "2023-11-20",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Maria",
+        "last": "Pellegrini",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Adam H.",
+        "last": "Barczewski",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Gevorg",
+        "last": "Grigoryan",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under R03 AR066130 awarded by the National Institutes of Health and R01 GM133844 awarded by the National Institutes of Health. The government has certain rights in the invention.",
+    "source": {
+      "system": "google_patents",
+      "document": "US20240239851A1",
+      "source_url": "https://patents.google.com/patent/US20240239851A1/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18709497",
+    "publication_number": "US20250015364A1",
+    "title": "Sodium/lithium phosphorothioates as novel solid-state electrolyte for sodium/lithium battery",
+    "abstract": "The disclosure relates to solid-phase and molten metal phosphorothioates useful as electrolytes, batteries comprising solid-phase and molten metal phosphorothioates, and methods of making solid-phase and molten metal phosphorothioates.",
+    "filing_date": "2022-11-11",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Chuanlong",
+        "last": "Wang",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Yiwen",
+        "last": "Zhang",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Weiyang",
+        "last": "Li",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Dartmouth College"
+      }
+    ],
+    "government_interest": null,
+    "source": {
+      "system": "google_patents",
+      "document": "US20250015364A1",
+      "source_url": "https://patents.google.com/patent/US20250015364A1/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18776887",
+    "publication_number": "US20250030240A1",
+    "title": "Dynamic framework for managing an integrated energy system and methods thereof",
+    "abstract": "A method for dynamically managing an energy system includes determining a production plan by determining a first stochastic system dynamic program (SSDP) based on a state of and a forecasted energy demand in the energy system, determining a second SSDP by relaxing the first SSDP, decomposing the second SSDP into energy unit-specific SSDPs, applying the unit-specific SSDPs with a price model to define a bound on the first SSDP, and determining a forward-looking dynamic economic dispatch plan based on the second SSDP by identifying actions for the energy units corresponding to reachable production levels, applying current unit-specific states and the identified actions to the production plan to generate an updated production plan including unit-specific actions and expected continuation values based on the second SSDP that modify subsequent actions, and dispatching the identified unit-specific actions to the energy system.",
+    "filing_date": "2024-07-18",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "David B.",
+        "last": "Brown",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "James E.",
+        "last": "Smith",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Dartmouth College"
+      },
+      {
+        "name": "Duke University"
+      }
+    ],
+    "government_interest": "This invention was made with government support under Federal Grant No. DE AR001283, awarded by the U.S. Department of Energy. The government has certain rights in the invention.",
+    "source": {
+      "system": "google_patents",
+      "document": "US20250030240A1",
+      "source_url": "https://patents.google.com/patent/US20250030240A1/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18440756",
+    "publication_number": "US20250034581A1",
+    "title": "Compositions and methods related to fungal hypoxia responsive morphology factor a (hrma) and biofilm architecture factor (baf) proteins",
+    "abstract": "Filamentous fungal host cells expressing hypoxia responsive morphology factor A (hrmA) and biofilm architecture factor (baf) proteins are provided. Methods of producing filamentous fungal host cells expressing hrmA and baf proteins are also provided.",
+    "filing_date": "2024-02-13",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Robert A.",
+        "last": "Cramer",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Caitlin",
+        "last": "Kowalski",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with government support under Grant Nos. F31 AI138354 and R01 AI130128 awarded by the National Institutes of Health. The Government has certain rights in this invention.",
+    "source": {
+      "system": "google_patents",
+      "document": "US20250034581A1",
+      "source_url": "https://patents.google.com/patent/US20250034581A1/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18883022",
+    "publication_number": "US20250084511A1",
+    "title": "Enhanced magnetic performance of manganese aluminum alloy via titanium addition",
+    "abstract": "A Mn—Al—Ti permanent magnet includes a body composed of an alloy consisting essentially of manganese in an amount of 50 to 56 atomic percent, aluminum in an amount of 44 to 50 atomic percent, and titanium in an amount of 0.5 to 1.5 atomic percent with a total amount of manganese, aluminum, and titanium not exceeding 100 atomic percent. In one preferred embodiment, a composition for the Mn—Al—Ti permanent magnet is Mn 54 Al 45 Ti 1 with substantially no other elemental additions being present. The addition of titanium in amounts of approximately 1 atomic percent to the Mn—Al system is believed to result in the titanium sitting on the anti-phase boundary (APB) sites with atoms coupling ferromagnetically across the APB in the presence of titanium, resulting in suppression of the negative effects of the APB and improving the remanence over a titanium-less Mn—Al permanent magnet. This system also exhibits sustained coercivity at high temperatures.",
+    "filing_date": "2024-09-12",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Thomas",
+        "last": "Keller",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Dylan",
+        "last": "Barbagallo",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Geoffroy",
+        "last": "Hautier",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Ian",
+        "last": "Baker",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Tushar Kanti",
+        "last": "Ghosh",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Natalya",
+        "last": "Sheremetyeva",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Université Catholique de Louvain"
+      },
+      {
+        "name": "Dartmouth College"
+      }
+    ],
+    "government_interest": "This invention was made with Government support under contracts 1852529 and 2032592 awarded by the National Science Foundation. The Government has certain rights in the invention.",
+    "source": {
+      "system": "google_patents",
+      "document": "US20250084511A1",
+      "source_url": "https://patents.google.com/patent/US20250084511A1/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18784881",
+    "publication_number": "US20250090727A1",
+    "title": "Integrated biomaterial scaffold with 3d printed lattice backbone",
+    "abstract": "A bone graft scaffold including the combination of a lattice structure having a triply periodic minimal surface (TPMS) shape and a cryogel solution disposed within the lattice structure. Also described is a method of making an integrated bone graft scaffold by freezing a cryogel solution, pouring the cryogel solution onto a scaffold, and freezing the cryogel solution poured onto the lattice structure to form an integrated bone graft scaffold. The cryogel solution may be a chitosan-gelatin cryogel and the lattice structure may be a 3D printed gyroid lattice structure.",
+    "filing_date": "2024-07-25",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Peter",
+        "last": "Bertone",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Levi",
+        "last": "Olevsky",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Katherine",
+        "last": "Hixon",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Dartmouth College"
+      }
+    ],
+    "government_interest": null,
+    "source": {
+      "system": "google_patents",
+      "document": "US20250090727A1",
+      "source_url": "https://patents.google.com/patent/US20250090727A1/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  },
+  {
+    "schema_version": "0.1",
+    "doc_type": "application",
+    "patent_number": null,
+    "application_number": "18837293",
+    "publication_number": "US20250140407A1",
+    "title": "Systems and methods for identifying and treating primary and latent infections and/or determining time since infection",
+    "abstract": "Systems and methods for identifying subjects as having latent or primary herpesvirus infections and/or determining the time since the subject was exposed to or infected with a herpesvirus using machine learning algorithms are disclosed. An example method includes detecting in a bodily fluid sample from a subject a set of anti-virus antibody features and generating an input vector that includes data indicative of the anti-virus antibody features of the subject. The method also includes applying the input vector to a trained machine learning algorithm that is configured to generate an assigned classification to the subject. The assigned classification is one of a plurality of potential classifications of the machine learning algorithm. The method also includes determining whether the subject is a suitable candidate for therapeutic intervention based on the assigned classification and, responsive to determining that the subject is suitable, providing the therapeutic intervention to the subject to improve health outcomes.",
+    "filing_date": "2023-02-10",
+    "grant_date": null,
+    "inventors": [
+      {
+        "first": "Andrew",
+        "last": "Hederman",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Margaret E.",
+        "last": "Ackerman",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Arnaud",
+        "last": "Marchant",
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      {
+        "first": "Daniele",
+        "last": "Lilleri",
+        "city": null,
+        "state": null,
+        "country": null
+      }
+    ],
+    "assignees": [
+      {
+        "name": "Individual"
+      }
+    ],
+    "government_interest": null,
+    "source": {
+      "system": "google_patents",
+      "document": "US20250140407A1",
+      "source_url": "https://patents.google.com/patent/US20250140407A1/en",
+      "extracted_at": "2026-11-17T17:18:24+00:00",
+      "extractor_version": "fetch_patents/0.1"
+    },
+    "quality_flags": []
+  }
+]

@@ -8,6 +8,9 @@ data_contract.md (schema_version 0.1).
 Usage:
     pip install pdfplumber
     python tto_crawler.py Life-Sciences.pdf --category "Life Sciences" -o technologies.json
+    python tto_crawler.py Life-Sciences.pdf Physical-Sciences.pdf -o technologies.json
+        (several PDFs: category comes from each file name; a technology listed twice,
+         in one deck or across decks, is merged into one record)
 
 Design notes:
 - Text is read with use_text_flow=True (InDesign content order). This gives
@@ -39,8 +42,14 @@ SECTION_HEADINGS = {
     "ADVANTAGES AND BENEFITS": "advantages",
     "ADVANTAGES AND SCOPE": "advantages",
     "FEATURES AND ADVANTAGES": "advantages",
+    "ADVANTAGES / SCOPE": "advantages",
+    "KEY ADVANTAGES": "advantages",
+    "FEATURES": "features",
+    "FEATURES AND BENEFITS": "features",
     "FEATURES AND OPERATING PRINCIPLES": "features",
     "FEATURES / OPERATING PRINCIPLES (CONT.)": "features",
+    "FEATURES / OPERATING PRINCIPALS": "features",   # typo exists in the source PDF
+    "MORE DETAILS": "details",
     "EFFICACY": "efficacy",
     "LOOKING FOR": "looking_for",
 }
@@ -88,10 +97,13 @@ def parse_ip_label(label):
            "google_patents_url": None, "flags": []}
     up = label.upper()
 
-    pct = re.search(r"PCT/([A-Z]{2})(\d{4})/(\d{6})", up)
+    pct = re.search(r"PCT/([A-Z]{2})(\d{4}|\d{2})/(\d{5,6})", up)
     if pct:
+        year, serial = pct.group(2), pct.group(3)
         ref.update(ip_type="pct", country="WO",
-                   number_normalized=f"PCT/{pct.group(1)}{pct.group(2)}/{pct.group(3)}")
+                   number_normalized=f"PCT/{pct.group(1)}{year if len(year) == 4 else '20' + year}/{serial.zfill(6)}")
+        if len(year) == 2 or len(serial) == 5:          # "PCT/US23/077930", "PCT/US24/33807"
+            ref["flags"].append("pct_number_short_form")
         return ref
 
     num = re.search(r"(?:US)?\s*(\d{2})\s*/\s*([\d,]+)", up)       # 17/264,691
@@ -135,9 +147,12 @@ def parse_header(page):
             out["status"] = "portfolio_available_for_review"
         elif "WORLDWIDE RIGHTS" in up:
             out["rights"] = "worldwide"
+        elif "US AND CHINA RIGHTS" in up:
+            out["rights"] = "us_and_china"
         elif "US RIGHTS" in up:
             out["rights"] = "us"
-        elif re.search(r"PATENT|APPLICATION|PCT", up):
+        elif re.search(r"PATENT|APPLICATION|PCT", up) and re.search(r"\d", line):
+            # a label with no number ("PCT PATENT APPLICATION:") just introduces the next line
             out["ip_refs"].append(parse_ip_label(line))
 
     # Google Patents links in the header box, top to bottom
@@ -360,18 +375,51 @@ def parse_page(page, page_no, document, category, extracted_at):
     return record
 
 
+SHARED_FLAGS = ("publication_number_shared:", "ip_number_shared:")
+
+
 def flag_cross_record_issues(records):
-    """Same publication number on two technologies is probably a copy-paste error."""
-    owners = {}
+    """The same publication or IP number on two technologies is probably a copy-paste
+    error on one of the pages. Safe to rerun: old cross-record flags are replaced."""
+    pubs, numbers = {}, {}
     for r in records:
+        r["quality_flags"] = [f for f in r["quality_flags"] if not f.startswith(SHARED_FLAGS)]
         for ref in r["ip_refs"]:
             if ref["publication_number"]:
-                owners.setdefault(ref["publication_number"], []).append(r["tto_id"])
-    for pub, ids in owners.items():
-        if len(ids) > 1:
-            for r in records:
-                if r["tto_id"] in ids:
-                    r["quality_flags"].append(f"publication_number_shared:{pub}:{','.join(ids)}")
+                pubs.setdefault(ref["publication_number"], []).append(r["tto_id"])
+            if ref["number_normalized"]:
+                numbers.setdefault(ref["number_normalized"], []).append(r["tto_id"])
+    for prefix, owners in (("publication_number_shared", pubs), ("ip_number_shared", numbers)):
+        for value, ids in owners.items():
+            ids = sorted(set(ids))
+            if len(ids) > 1:
+                for r in records:
+                    if r["tto_id"] in ids:
+                        r["quality_flags"].append(f"{prefix}:{value}:{','.join(ids)}")
+
+
+def merge_duplicates(records):
+    """A technology printed on several pages (or in several decks) becomes one record:
+    the first page wins, IP references are combined, and each extra page is noted."""
+    merged = {}
+    for r in records:
+        first = merged.get(r["tto_id"])
+        if first is None:
+            merged[r["tto_id"]] = r
+            continue
+        if r["category"] and r["category"] not in (first["category"] or "").split(" / "):
+            first["category"] = f"{first['category']} / {r['category']}" if first["category"] else r["category"]
+        seen = {(x["ip_type"], x["number_normalized"] or x["raw_label"]) for x in first["ip_refs"]}
+        for ref in r["ip_refs"]:
+            if (ref["ip_type"], ref["number_normalized"] or ref["raw_label"]) not in seen:
+                first["ip_refs"].append(ref)
+                first["quality_flags"] += [f"ip:{f}" for f in ref["flags"]]
+        first["rights"] = first["rights"] or r["rights"]
+        first["quality_flags"].append(f"also_listed:{r['source']['document']}:p{r['source']['page']}")
+    for r in merged.values():
+        if r["ip_refs"]:
+            r["quality_flags"] = [f for f in r["quality_flags"] if f != "no_ip_identifier_on_page"]
+    return list(merged.values())
 
 
 def crawl(pdf_path, category):
@@ -387,13 +435,24 @@ def crawl(pdf_path, category):
     return records
 
 
+def category_from_file(pdf_path):
+    """'data/raw/Physical-Sciences.pdf' -> 'Physical Sciences'."""
+    return pdf_path.split("/")[-1].rsplit(".", 1)[0].replace("-", " ").replace("_", " ")
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("pdf")
-    ap.add_argument("--category", default=None)
+    ap.add_argument("pdf", nargs="+")
+    ap.add_argument("--category", default=None, help="only with one PDF; default: from the file name")
     ap.add_argument("-o", "--output", default="technologies.json")
     args = ap.parse_args()
-    recs = crawl(args.pdf, args.category)
+    if args.category and len(args.pdf) > 1:
+        ap.error("--category works with one PDF; with several, each category comes from its file name")
+    recs = []
+    for pdf in args.pdf:
+        recs += crawl(pdf, args.category or category_from_file(pdf))
+    recs = merge_duplicates(recs)
+    flag_cross_record_issues(recs)
     with open(args.output, "w", encoding="utf-8") as f:
         json.dump(recs, f, indent=2, ensure_ascii=False)
     flagged = sum(1 for r in recs if r["quality_flags"])

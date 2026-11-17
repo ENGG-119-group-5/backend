@@ -1,0 +1,1938 @@
+{
+  "thesisName": "electrification-materials-thesis.pdf",
+  "thesisSha256": "443bee74219b1ae19b1874f103bc607fab465062470719559038145ad7c982bc",
+  "thesisSummary": "Foxglove Fund II leads $3-12M seed and Series A rounds in advanced-materials spinouts that make electrification cheaper and more reliable. Its targets are energy storage beyond conventional Li-ion (sodium/sulfur chemistries, electrolytes, capacitor dielectrics), earth-abundant electrolysis catalysts that replace platinum-group metals, rare-earth-free magnets, and abundant-element thin-film solar absorbers. It requires measured performance against an industry benchmark plus a scalable manufacturing route, and an exclusive license to filed US/PCT applications (provisionals only with a conversion plan); carbon removal, software, sensors/cameras, medical devices and life sciences are excluded.",
+  "model": "claude-opus-5-5",
+  "source": "live",
+  "generatedAt": "2026-11-17T17:27:31+00:00",
+  "matches": [
+    {
+      "technology": {
+        "id": "2024-004",
+        "title": "Enhanced magnetic performance of Manganese Aluminum alloy via Titanium addition",
+        "ttoCaseNumber": "2024-004",
+        "status": "available",
+        "ipScore": 72.0
+      },
+      "category": "Physical Sciences",
+      "label": "strong",
+      "totalScore": 8,
+      "summary": "This rare-earth-free Mn-Al-Ti magnet has a measured BHmax gain and a filed US application, squarely matching the critical-materials thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 2,
+          "reason": "A rare-earth-free permanent magnet is an explicit target.",
+          "quote": "permanent magnet (PM) composed of a manganese-aluminum-titanium (Mn-Al-Ti) alloy",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 2,
+          "reason": "It directly targets dependence on scarce rare-earth magnets.",
+          "quote": "potential replacement for expensive rare-earth magnets",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 2,
+          "reason": "Magnetic energy product (BHmax) is measured against the standard Mn-Al alloy, with stable coercivity during high-temperature processing.",
+          "quote": "a 33% improvement in the base magnetic performance factor (BHmax)",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A published US application covers the composition, though it is co-assigned with a Belgian university.",
+          "quote": "US PATENT APPLICATION 18/883,022 (application)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2020-039",
+        "title": "Novel Cathode Material to Improve Capacity & Life Span of Li & Na Batteries",
+        "ttoCaseNumber": "2020-039",
+        "status": "available",
+        "ipScore": 59.0
+      },
+      "category": "Physical Sciences",
+      "label": "strong",
+      "totalScore": 8,
+      "summary": "This is a sodium/lithium-sulfur cathode with benchmarked capacity, cold performance, a scalable synthesis and filed US/PCT IP, which squarely matches the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 2,
+          "reason": "A sulfur-battery cathode and electrolyte chemistry beyond conventional Li-ion is a core target.",
+          "quote": "Compatible with both Li- and Na- Sulfur batteries.",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 2,
+          "reason": "It addresses cold-temperature performance and enables sodium chemistries, reducing lithium dependence.",
+          "quote": "Low temperature battery performance shown down to −60°C",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 2,
+          "reason": "Capacity and efficiency are benchmarked against conventional cells, and the synthesis route is described as scalable.",
+          "quote": "25% greater initial capacity with significantly greater Coulombic efficiency compared to conventional metal-sulfur battery",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "Two published US applications and a PCT are filed.",
+          "quote": "PCT/US2020/067713 (pct)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2023-036",
+        "title": "Micro-lattice transition metal oxide materials and structures for efficient electrocatalysis",
+        "ttoCaseNumber": "2023-036",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Physical Sciences",
+      "label": "strong",
+      "totalScore": 8,
+      "summary": "This earth-abundant HER/OER electrode has benchmarked overpotential, durability data, a manufacturable 3D-printing route and PCT IP, which hits the green hydrogen thesis directly.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 2,
+          "reason": "Earth-abundant transition metal oxide electrodes for water electrolysis are a core target.",
+          "quote": "highly stable and efficient electrocatalysts for hydrogen evolution reaction (HER) and oxygen evolution reaction (OER)",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 2,
+          "reason": "It directly addresses costly PGM catalysts and the instability of cheaper alternatives.",
+          "quote": "Platinum group metal electrocatalysts are efficient and stable but expensive.",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 2,
+          "reason": "Overpotential and 240-hour durability are measured against noble-metal benchmarks, and a 3D-printing fabrication route is claimed to be low-cost.",
+          "quote": "an overpotential of 155 mV at 10 mA/cm² for HER",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A pending PCT application covers the materials and process.",
+          "quote": "PENDING APPLICATION PCT/US24/33807 (pct)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2020-075",
+        "title": "Acyclic/cyclic ether-based electrolyte that outstretches the low temperature limit of sodium metal anode",
+        "ttoCaseNumber": "2020-075",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Physical Sciences",
+      "label": "potential",
+      "totalScore": 6,
+      "summary": "This is a near-perfect thematic fit for cold-weather sodium batteries, but symmetric-cell-only data and restricted, unverified IP make it potential rather than strong.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 2,
+          "reason": "Sodium-metal battery electrolytes are explicitly targeted.",
+          "quote": "Novel low-temperature electrolytes designed for sodium metal batteries",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 2,
+          "reason": "It directly targets Li-ion energy loss in extreme cold.",
+          "quote": "Lithium-ion batteries (LIBs) suffer from significant energy losses below 0°C",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "Data come from symmetric cells only, with no full-cell capacity or manufacturing route described.",
+          "quote": "stable cycling for more than 2000 hours in Na/Na symmetric cells",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "Only a PCT is listed, with no confirmed USPTO record. Rights are limited to the US and China, and the PCT number matches another listed invention, which needs verification.",
+          "quote": "Rights available: us and china",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2023-006",
+        "title": "Nitrogen and Sulfur co-doped MXene compounds for improved hydrogen evolution reaction",
+        "ttoCaseNumber": "2023-006",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Physical Sciences",
+      "label": "potential",
+      "totalScore": 6,
+      "summary": "This is an on-thesis HER catalyst with filed PCT IP, but it is benchmarked only against undoped MXene with no stability or device data, so it is less mature than needed.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 2,
+          "reason": "A hydrogen evolution electrocatalyst without precious metals fits the green hydrogen focus.",
+          "quote": "improved performance and stability in hydrogen evolution reaction",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 1,
+          "reason": "It targets catalyst activity and stability but does not explicitly compare against or displace platinum-group catalysts.",
+          "quote": "more stable than Mxenes with metallic electron donors (Fe, Ni, and Co)",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "Overpotential is measured against pristine MXene rather than an industry benchmark, and there are no durability or device data. A simple annealing route is described.",
+          "quote": "achieving 260 mV at 10 mA/cm² which is three times lower than pristine Ti3C2Tx",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A pending PCT application covers the material.",
+          "quote": "PENDING APPLICATION PCT/US23/077930 (pct)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2026-036",
+        "title": "Anti-ferroelectric Weberite-type Materials",
+        "ttoCaseNumber": "2026-036",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Physical Sciences",
+      "label": "potential",
+      "totalScore": 5,
+      "summary": "This is a relevant new capacitor dielectric family, but it is at first-demonstration stage with only a provisional filing, so maturity and IP are concerns.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 2,
+          "reason": "Antiferroelectric dielectrics for energy storage match the capacitor dielectric target.",
+          "quote": "Antiferroelectrics (AFEs) are valuable for applications in energy storage",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 1,
+          "reason": "It improves high-field robustness for storage, but capacitors are not among the three named problems.",
+          "quote": "much higher breakdown strength than currently optimised AFEs",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It is a first demonstration with qualitative comparisons only, and gives no energy-density, cycle data or manufacturing route.",
+          "quote": "first demonstration of a switchable Kittel-type AFE",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "The filing is provisional only, with no stated conversion plan.",
+          "quote": "US PROVISIONAL APPLICATION : 63/949,926 (provisional)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2024-046",
+        "title": "A New Class of Stable and Earth-Abundant Thin Film PV Materials",
+        "ttoCaseNumber": "2024-046",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Physical Sciences",
+      "label": "potential",
+      "totalScore": 4,
+      "summary": "This is an on-thesis abundant-element PV absorber, but it rests on computational screening and unoptimized powder with only a provisional filing, so it is too early.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 2,
+          "reason": "Thin-film solar absorbers from abundant elements are an explicit target.",
+          "quote": "thin-film solar applications that combine earth-abundant compositions",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 1,
+          "reason": "It is relevant to critical-material substitution, but the flagship compound contains cadmium and solar is not among the named problems.",
+          "quote": "opportunities to extend to cadmium-free analogs",
+          "quoteVerified": true
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "The material came from computational screening with results on unoptimized powder and no device data, which the thesis calls too early.",
+          "quote": "observed even in unoptimized powder",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "The filing is provisional only, with no stated conversion plan.",
+          "quote": "US PATENT APPLICATION 63/688,132 (provisional)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2020-015",
+        "title": "Modulation of Fungal Oxygen Consumption via Expression of a Novel Gene Cluster",
+        "ttoCaseNumber": "2020-015",
+        "status": "available",
+        "ipScore": 92.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 3,
+      "summary": "This is an industrial biotech asset outside the fund's materials focus.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Engineering fungal strains for fermentation is life sciences.",
+          "quote": "fungal bioproduction via large-scale fermentation",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses enzyme fermentation efficiency, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It reports measured strain improvements, but they are unrelated to the thesis benchmarks.",
+          "quote": "reduce 02 consumption by 50%",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A granted patent and a pending application exist.",
+          "quote": "US PATENT 12,116,579 (granted patent)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2021-026",
+        "title": "Optical time-of-flight imaging methods and systems for surgical guidance and fluorescence depth estimation in tissue",
+        "ttoCaseNumber": "2021-026",
+        "status": "available",
+        "ipScore": 90.5
+      },
+      "category": "Life Sciences / Physical Sciences",
+      "label": "none",
+      "totalScore": 3,
+      "summary": "This is a medical imaging system outside the fund's scope.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Surgical imaging cameras are excluded as both cameras and medical devices.",
+          "quote": "optical imaging system that leverages time-of-flight data",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses surgical guidance, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "The record contains no quantitative performance data relevant to the thesis.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A granted patent and a pending application exist.",
+          "quote": "US PATENT NO 11,771,323 (granted patent)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2021-027",
+        "title": "MR-Linac Compatible Daily Quality Assurance System and Methods Utilizing Cherenkov Imaging for Imaging-Radiation Isocenter Coincidence Measurement",
+        "ttoCaseNumber": "2021-027",
+        "status": "available",
+        "ipScore": 88.5
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 3,
+      "summary": "This is medical equipment in an excluded category.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Radiotherapy QA imaging is a medical device.",
+          "quote": "Cherenkov imaging-based system as a daily use MR-Linac QA systems",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses clinical QA, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "The record contains no materials benchmark data.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A US application is filed and a related patent has been granted.",
+          "quote": "US PATENT APPLICATION 18/280,289 (application)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2020-047",
+        "title": "Amanuensis - A Healthcare Data System for Information Provenance",
+        "ttoCaseNumber": "2020-047",
+        "status": "available",
+        "ipScore": 73.5
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 3,
+      "summary": "This is software-only health IT outside scope.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Health data software is excluded.",
+          "quote": "secure and integrated health data system",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses data provenance, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "A prototype exists, but it is irrelevant to materials benchmarks.",
+          "quote": "A prototype implementation using Intel SGX and VeChain Thor blockchain",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A granted US patent is available.",
+          "quote": "US PATENT 12,244,726 (granted patent)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2024-049",
+        "title": "A Dynamic Framework for Managing an Integrated Energy System Under Uncertainty",
+        "ttoCaseNumber": "2024-049",
+        "status": "available",
+        "ipScore": 72.0
+      },
+      "category": "Physical Sciences",
+      "label": "none",
+      "totalScore": 3,
+      "summary": "This is grid/energy-management software, which the thesis explicitly excludes.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Energy-management software is explicitly excluded.",
+          "quote": "dynamic framework for managing an integrated energy system",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses dispatch optimization, not materials problems.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It has simulated cost savings only.",
+          "quote": "reduce operational costs by ~2% on average",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A published US application exists.",
+          "quote": "US PATENT 18/776,887 (application)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2019-001",
+        "title": "Automatic Detection of Vertebral Fractures on CT Scans",
+        "ttoCaseNumber": "2019-001",
+        "status": "available",
+        "ipScore": 72.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 3,
+      "summary": "This is software-only medical AI outside the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Medical imaging software is excluded as both software and life sciences.",
+          "quote": "automatically detecting vertebral fractures using deep neural networks",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses radiology diagnosis, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It reports radiologist-level performance, but that is not a materials benchmark.",
+          "quote": "at the level of practicing radiologists",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A granted US patent is available.",
+          "quote": "US PATENT 12,026,876 (granted patent)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2022-043",
+        "title": "A Method to Diagnosis Infants and Children with CF at Risk for Respiratory Infections Using Stool Composition Data",
+        "ttoCaseNumber": "2022-043",
+        "status": "available",
+        "ipScore": 70.5
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 3,
+      "summary": "This is a clinical diagnostic outside scope.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "A medical ML diagnostic is life sciences and software.",
+          "quote": "machine learning-based diagnostic tool",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses cystic fibrosis infection risk, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "Model accuracy is reported, but it is not relevant to the thesis.",
+          "quote": "predicts high upper respiratory infection frequency (URIfreq) with only 16% error",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A published US application exists.",
+          "quote": "US PATENT APPLICATION 18/521,285 (application)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2021-049",
+        "title": "NEMO protein engineering for NMR and Structural Biology",
+        "ttoCaseNumber": "2021-049",
+        "status": "available",
+        "ipScore": 70.5
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 3,
+      "summary": "This is a research reagent for drug discovery, so it is out of scope.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Protein engineering for drug discovery is life sciences.",
+          "quote": "novel variants of the natural NEMO protein",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses structural biology, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It has lab validation only.",
+          "quote": "Mutant NEMO proteins like MP12 generate high-quality, well-dispersed NMR spectra",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A published US application exists.",
+          "quote": "US PATENT APPLICATION 18/514,761 (application)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2020-027",
+        "title": "Immunologically Optimized Botulinum Toxin Light Chain Variants",
+        "ttoCaseNumber": "2020-027",
+        "status": "available",
+        "ipScore": 67.5
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 3,
+      "summary": "This is a protein therapeutic in the excluded life sciences.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "A biotherapeutic toxin is life sciences.",
+          "quote": "Botulinum neurotoxin serotype A (BoNT/A) is a biotherapeutic",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses drug immunogenicity, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It has screening results only, which are irrelevant to materials criteria.",
+          "quote": "highly deimmunized yet highly active BoNT light chain variants are produced",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "PCT and US applications are filed.",
+          "quote": "PCT/US2021/014145 (pct)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2020-014",
+        "title": "Handheld, Inexpensive, Side-by-side Transmission Probe",
+        "ttoCaseNumber": "2020-014",
+        "status": "available",
+        "ipScore": 66.0
+      },
+      "category": "Life Sciences / Physical Sciences",
+      "label": "none",
+      "totalScore": 3,
+      "summary": "This is a medical sensor device in an excluded category.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "A clinical dielectric probe is a medical device and sensor, both excluded.",
+          "quote": "handheld, inexpensive, side-by-side transmission dielectric probe",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses tissue diagnosis, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "Prototypes exist, but there is no relevant benchmark.",
+          "quote": "Prototypes have been fabricated using advanced CAD and metal 3D metal printing",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A US application is filed.",
+          "quote": "US PATENT APPLICATION 17/766,121 (application)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2018-168",
+        "title": "Non-Invasive Dielectric Probe for Testing Closed Bottles of Wine",
+        "ttoCaseNumber": "2018-168",
+        "status": "available",
+        "ipScore": 63.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 3,
+      "summary": "This is a sensor for beverage testing, so it is outside scope despite solid IP.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "A testing probe is a sensor product, which the thesis excludes.",
+          "quote": "non-invasive microwave testing of liquids contained within bottles",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses wine quality testing, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "Its lab experiments show discrimination ability, but there is no materials benchmark.",
+          "quote": "Experiments confirm the system's robust capability to distinguish clearly between various alcoholic beverages",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A granted patent and a pending US application are available.",
+          "quote": "US PATENT NO 10,113,979B2 (granted patent)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2021-023",
+        "title": "IL-33 + IL-2 Cytokine Platform: Achieving CAR T Cell Efficacy Against Solid Cancers",
+        "ttoCaseNumber": "2021-023",
+        "status": "available",
+        "ipScore": 55.5
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 3,
+      "summary": "This is an oncology platform in the excluded life sciences.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Cancer immunotherapy is life sciences.",
+          "quote": "IL-33 + IL-2 Cytokine Platform",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses solid tumors, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It has preclinical claims only, and these are irrelevant to materials criteria.",
+          "quote": "activate new T cells to delay tumor growth",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A published US application exists.",
+          "quote": "US PATENT NO 18/359,373 (application)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2022-020",
+        "title": "Clay Minerals to Sequester Carbon from the Ocean Surface",
+        "ttoCaseNumber": "2022-020",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Physical Sciences",
+      "label": "none",
+      "totalScore": 3,
+      "summary": "This is a carbon-removal technology, a category the thesis explicitly excludes.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Ocean carbon removal is explicitly excluded.",
+          "quote": "Clay Minerals to Sequester Carbon from the Ocean Surface",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses CO2 removal, not electrification materials problems.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It has lab and microcosm data only, with field trials pending.",
+          "quote": "in Gulf of Maine bloom microcosms",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A US application is listed, though it has no confirmed USPTO record.",
+          "quote": "US PATENT APPLICATION 18/849,436 (application)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2022-032",
+        "title": "Compositions And Methods For Preventing Or Ameliorating Neonatal HSV Infection",
+        "ttoCaseNumber": "2022-032",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 3,
+      "summary": "This is a therapeutic antibody outside scope.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "An antiviral antibody is life sciences.",
+          "quote": "anti-HSV antibody",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses neonatal HSV, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It has mouse data only.",
+          "quote": "Mouse studies demonstrate that this delivery of anti-HSV antibody results in ameliorated or prevented nHSV",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A PCT is filed.",
+          "quote": "PCT/US2019/055685 (pct)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2024-005",
+        "title": "Creation of Anti-Canine PD-1 Monoclonal Antibodies to Treat Cancer",
+        "ttoCaseNumber": "2024-005",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 3,
+      "summary": "This is a veterinary therapeutic outside scope.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Veterinary cancer antibodies are life sciences.",
+          "quote": "novel antibody for detecting or treating canine cancers",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses canine cancer, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It has a small proof-of-concept trial, which is irrelevant to materials criteria.",
+          "quote": "showed safety in a proof-of-concept trial",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A PCT is filed.",
+          "quote": "PCT APPLICATION PCT/US2024/055735 (pct)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2024-009",
+        "title": "Method and composition for conferring abiotic stress resistance on plants by modulating activity of an F-box protein family",
+        "ttoCaseNumber": "2024-009",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 3,
+      "summary": "This is an agricultural biotech asset outside the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Plant gene editing is life sciences.",
+          "quote": "abiotic stress resistance in plants",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses crop drought tolerance, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It has greenhouse-type plant data only.",
+          "quote": "improved seed set under drought conditions",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A PCT is filed.",
+          "quote": "PCT/US2025/017244 (pct)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2018-119",
+        "title": "Cellular Therapies for Fibrotic, Inflammatory and Autoimmune Disease",
+        "ttoCaseNumber": "2018-119",
+        "status": "available",
+        "ipScore": 75.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 2,
+      "summary": "This is a cell therapy that falls in the excluded life sciences.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "CAR-T cell therapy is life sciences.",
+          "quote": "Anti-CD206 Chimeric Antigen Receptor (CAR) T Cell to attack fibrosis",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses fibrosis, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It has animal-model efficacy data, but nothing relevant to materials benchmarks.",
+          "quote": "reduces dermal thickness in local delivery model",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "It holds a granted patent, but co-ownership with a company may complicate an exclusive license.",
+          "quote": "Assignees: CELDARA MEDICAL LLC; Dartmouth College.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2021-032",
+        "title": "Barcoded-Antibody Library for in vitro Enhanced Fc Function Variance Screening",
+        "ttoCaseNumber": "2021-032",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 2,
+      "summary": "This is a biotech research platform outside the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Antibody screening is life sciences.",
+          "quote": "protein engineering platform",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses antibody discovery, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It has early validation data only.",
+          "quote": "Experiments confirmed <0.1% incorrect identifiers",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "Only a provisional application is listed.",
+          "quote": "US PROVISIONAL APPLICATION 63/744,007 (provisional)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2025-023",
+        "title": "Development of Porous Heterogeneous Catalysts for Energy-efficient & Sustainable Industrial Synthesis",
+        "ttoCaseNumber": "2025-023",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Physical Sciences",
+      "label": "none",
+      "totalScore": 2,
+      "summary": "This is a chemical-synthesis catalyst platform unrelated to electrification, with no data.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Catalysts for chemical and pharmaceutical synthesis are not in the electrification sectors.",
+          "quote": "heterogeneous catalysis in industrial and fine-chemical synthesis",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses synthesis selectivity, not electrolyzer, battery or magnet problems.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "No measured performance data is given.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A PCT is filed.",
+          "quote": "PCT/US2025/057931 (pct)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2023-003",
+        "title": "Discovery and Development of Novel Small Molecules with Antifungal Properties",
+        "ttoCaseNumber": "2023-003",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 2,
+      "summary": "This is an early drug discovery asset outside the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Antifungal drugs are life sciences.",
+          "quote": "novel compounds and methods for treating fungal infections",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses fungal infections, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is at a preliminary screening stage.",
+          "quote": "Preliminary data from testing suggests",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A PCT application is filed.",
+          "quote": "PCT APPLICATION PCT/US2024/030955 (pct)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2024-038",
+        "title": "Evolved Bacteroides Strains for Use as a probiotic in Cystic Fibrosis and Inflammatory Bowel Disease",
+        "ttoCaseNumber": "2024-038",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 2,
+      "summary": "This is a probiotic therapeutic outside the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "A probiotic is life sciences.",
+          "quote": "Evolved Bacteroides Strains",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses gut inflammation, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It has animal-model colonization data only.",
+          "quote": "demonstrated the capability to colonize the GI tract in mammalian CF models",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "Only a provisional is filed.",
+          "quote": "US PROVISIONAL APPLICATION 63/753,628 (provisional)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2024-029",
+        "title": "Inhibition of Oligosaccharyltransferase (OST) as Therapy for Prion Disease",
+        "ttoCaseNumber": "2024-029",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 2,
+      "summary": "This is a therapeutic in the excluded life sciences.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "A neurodegeneration therapy is life sciences.",
+          "quote": "Therapy for Prion Disease",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses prion disease, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It has cell-culture data only.",
+          "quote": "achieved complete removal of PrPSc from cells",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "Only a provisional is filed, with no stated conversion plan.",
+          "quote": "US PROVISIONAL APPLICATION 63/730,661 (provisional)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2025-022",
+        "title": "MIST: Mucosal-Associated Invariant T (MAIT) Cell Induced Skin Therapy",
+        "ttoCaseNumber": "2025-022",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 2,
+      "summary": "This is a dermatology therapeutic outside the thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "A topical lupus therapy is life sciences.",
+          "quote": "MIST leverages MAIT cells to promote skin healing",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses lupus skin disease, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It has preclinical efficacy claims.",
+          "quote": "Topical expansion of MAIT cells heals lupus skin lesion.",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "Only a provisional is filed.",
+          "quote": "US PROVISIONAL APPLICATION 63/770,185 (provisional)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2024-010",
+        "title": "Method for Inducing Aneuploidy and/or Chromosomal Instability in Human or Non-Human Primate Pluripotent Stem Cells",
+        "ttoCaseNumber": "2024-010",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 2,
+      "summary": "This is a life-sciences research platform outside scope.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "A stem cell research tool is life sciences.",
+          "quote": "uniformly aneuploid human pluripotent stem cell",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses aneuploidy research, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It is supported by a preprint only.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A PCT is listed.",
+          "quote": "PCT/US2024/055039 (pct)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2025-025",
+        "title": "Methods for Enhancing T Cell-Based Adoptive Cell Therapy Products with Small Molecule Combinations",
+        "ttoCaseNumber": "2025-025",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 2,
+      "summary": "This is an immunotherapy method outside scope.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Cell therapy manufacturing is life sciences.",
+          "quote": "improve ACT by treating the cells with a combination of pathway inhibitors and activators",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses T cell persistence, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It has mouse tumor data only.",
+          "quote": "Tested combinations significantly reduced tumor burden in a B16-OVA model",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "Only a provisional is filed.",
+          "quote": "US PROVISIONAL APPLICATION 63/760,153 (provisional)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2023-035",
+        "title": "Novel Soil Amendment to Remove Atmospheric Carbon Dioxide",
+        "ttoCaseNumber": "2023-035",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Physical Sciences",
+      "label": "none",
+      "totalScore": 2,
+      "summary": "This is a carbon-removal material in an excluded category.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "A soil-based carbon removal product is explicitly excluded.",
+          "quote": "Novel Soil Amendment to Remove Atmospheric Carbon Dioxide",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses CO2 removal, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "Performance figures are projections.",
+          "quote": "ABFB is projected to remove 0.3-0.5 tons of CO2 per ton of ABFB per year",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 2,
+          "reason": "A PCT is filed.",
+          "quote": "PCT/US2024/025537 (pct)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2023-039",
+        "title": "GyroGel: Redefining Bone Oncological Reconstruction",
+        "ttoCaseNumber": "2023-039",
+        "status": "available",
+        "ipScore": 57.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 1,
+      "summary": "This is a medical biomaterial in an excluded category.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "A bone graft scaffold is a medical device.",
+          "quote": "bone graft scaffold",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses bone reconstruction, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "No quantitative data is presented.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "A US application exists, but rights are limited to the US.",
+          "quote": "Rights available: us",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2022-019",
+        "title": "Methods To Predict Time Since CMV Infection",
+        "ttoCaseNumber": "2022-019",
+        "status": "available",
+        "ipScore": 55.5
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 1,
+      "summary": "This is a medical diagnostic algorithm outside scope.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "An infection diagnostic algorithm is life sciences and software.",
+          "quote": "trained machine learning algorithm to classify the sample",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses CMV diagnosis, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "No performance data is given.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "An application exists, but the assignee is listed as an individual, so licensing rights are unclear.",
+          "quote": "Assignees: Individual.",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2014-0828",
+        "title": "Deimmunized Lysostaphin is effective against multi-resistant S. aureus without inducing unwanted immune response",
+        "ttoCaseNumber": "2014-0828",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 1,
+      "summary": "This is a life-sciences therapeutic with no IP, so it is out of scope.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "An antibacterial biologic is a life-sciences asset, which is excluded.",
+          "quote": "Deimmunized Lysostaphin is effective against multi-resistant S. aureus",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It targets drug-resistant infection, not an electrification problem.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It has preclinical in vivo data, but no materials benchmark applies.",
+          "quote": "F12 rescued all mice",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "No patent or application is listed.",
+          "quote": "no confirmed patent or application",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2025-031",
+        "title": "High-Speed Event Cameras for Extreme Motion and High-Dynamic-Range Scenarios",
+        "ttoCaseNumber": "2025-031",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Physical Sciences",
+      "label": "none",
+      "totalScore": 1,
+      "summary": "This is a camera technology in an excluded category.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Cameras are explicitly excluded.",
+          "quote": "leveraging a complementary setup of event cameras",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses high-speed imaging, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "No quantitative performance data is given.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "Only a provisional is filed.",
+          "quote": "US PROVISIONAL APPLICATION 63/820,802 (provisional)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2025-021",
+        "title": "Lymph Node (LN) Resident Memory (Trm) Cells for the Treatment of Cancer",
+        "ttoCaseNumber": "2025-021",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 1,
+      "summary": "This is an early cell therapy outside scope.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "A cancer cell therapy is life sciences.",
+          "quote": "Lymph Node (LN) Resident Memory (Trm) Cells",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses cancer immunotherapy, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "It has preliminary mouse data.",
+          "quote": "Preliminary data shows",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 1,
+          "reason": "Only a provisional is filed.",
+          "quote": "US PATENT APPLICATION 63/777,912 (provisional)",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2022-036",
+        "title": "Methylation Cytometry DNA-based Cell Typing Technology for Advanced Immune and Cell Type Profiling",
+        "ttoCaseNumber": "2022-036",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 1,
+      "summary": "This is an unpatented life-sciences diagnostic platform.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Immune profiling is life sciences.",
+          "quote": "DNA-based immune cell profiling technology",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses precision medicine, not electrification.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It is validated as an assay, but this is irrelevant to materials criteria.",
+          "quote": "Can provide highly accurate quantification of 12+ cell types",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "No IP is listed.",
+          "quote": "no confirmed patent or application",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2017-1005",
+        "title": "Portfolio of Novel Steroid-like Molecules for Oncology and Inflammatory Disorders",
+        "ttoCaseNumber": "2017-1005",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 1,
+      "summary": "This is a pharmaceutical chemistry portfolio outside the fund's sectors.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Drug discovery compounds are life sciences.",
+          "quote": "steroid-like novel compounds",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses oncology and inflammation, not thesis problems.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 1,
+          "reason": "It reports binding assays only, and these are irrelevant to materials benchmarks.",
+          "quote": "ALZ-201 demonstrates 10x better binding affinity to the Androgen Receptor compared to Enzalutamide",
+          "quoteVerified": true
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "No IP is listed.",
+          "quote": "no confirmed patent or application",
+          "quoteVerified": true
+        }
+      ]
+    },
+    {
+      "technology": {
+        "id": "2004-0269",
+        "title": "Leveraging PD-L3 and VISTA Antibodies to Address the Following Indications: Autoimmunity, Cancer, Viral Infection, and Inflammation",
+        "ttoCaseNumber": "2004-0269",
+        "status": "available",
+        "ipScore": 10.0
+      },
+      "category": "Life Sciences",
+      "label": "none",
+      "totalScore": 0,
+      "summary": "This is an unpatented life-sciences portfolio entirely outside an electrification materials thesis.",
+      "fits": [
+        {
+          "key": "area",
+          "question": "Area fit: is it in the sectors or therapeutic areas the thesis targets?",
+          "score": 0,
+          "reason": "Immunology therapeutics fall under life sciences, which the thesis excludes.",
+          "quote": "Autoimmune disorders, various cancers, inflammatory diseases, and viral infections",
+          "quoteVerified": true
+        },
+        {
+          "key": "problem",
+          "question": "Problem fit: does it address a need or gap the thesis names?",
+          "score": 0,
+          "reason": "It addresses immune disease, not battery, catalyst or rare-earth supply problems.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "stage",
+          "question": "Stage fit: is it mature enough for this investor's stage?",
+          "score": 0,
+          "reason": "No quantitative performance data is presented in the record.",
+          "quote": "",
+          "quoteVerified": false
+        },
+        {
+          "key": "deal",
+          "question": "Deal fit: do its IP status and what the lab is looking for allow the deal the thesis wants?",
+          "score": 0,
+          "reason": "No patent filings are listed, so there is nothing to license exclusively.",
+          "quote": "no confirmed patent or application",
+          "quoteVerified": true
+        }
+      ]
+    }
+  ],
+  "unassessedIds": []
+}
